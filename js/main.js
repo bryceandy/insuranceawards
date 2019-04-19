@@ -1,69 +1,105 @@
-/*
- * Change Navbar color while scrolling
-*/
+; (function () {
 
-$(window).scroll(function(){
-	handleTopNavAnimation();
-});
+    'use strict';
 
-$(window).load(function(){
-	handleTopNavAnimation();
-});
+    var carousels = function () {
+        jQuery(".owl-carousel1").owlCarousel(
+            {
+              loop:true,
+              center: true,
+              margin:0,
+              responsiveClass:true,
+              nav:false,
+              responsive:{
+                  0:{
+                      items:1,
+                      nav:false
+                  },
+                  600:{
+                      items:1,
+                      nav:false
+                  },
+                  1000:{
+                      items:1,
+                      nav:true,
+                      loop:false
+                  }
+              }
+          }
+          );
+        
+          jQuery(".owl-carousel2").owlCarousel(
+            {
+              loop:true,
+              center: true,
+              margin:30,
+              responsiveClass:true,
+              nav:true,
+              responsive:{
+                  0:{
+                      items:1,
+                      nav:true
+                  },
+                  600:{
+                      items:2,
+                      nav:true,
+                      margin:10,
+                      center: false,
+                  },
+                  1000:{
+                      items:3,
+                      nav:true,
+                      loop:true
+                  }
+              }
+          }
+          );
+    }
 
-function handleTopNavAnimation() {
-	var top=$(window).scrollTop();
 
-	if(top>10){
-		$('#site-nav').addClass('navbar-solid'); 
-	}
-	else{
-		$('#site-nav').removeClass('navbar-solid'); 
-	}
-}
+    var isotope = function () {
+        var $container = $('.portfolioContainer');
+        $container.isotope({
+            filter: '*',
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        });
 
-/*
- * Registration Form
-*/
+        $('.portfolioFilter a').click(function () {
+            $('.portfolioFilter .active').removeClass('active');
+            $(this).addClass('active');
 
-$('#registration-form').submit(function(e){
-    e.preventDefault();
-    
-    var postForm = { //Fetch form data
-            'fname'     : $('#registration-form #fname').val(),
-            'lname'     : $('#registration-form #lname').val(),
-            'email'     : $('#registration-form #email').val(),
-            'cell'      : $('#registration-form #cell').val(),
-            'address'   : $('#registration-form #address').val(),
-            'zip'       : $('#registration-form #zip').val(),
-            'city'      : $('#registration-form #city').val(),
-            'program'   : $('#registration-form #program').val()
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector,
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear',
+                    queue: false
+                }
+            });
+            return false;
+        }); 
     };
 
-    $.ajax({
-            type      : 'POST',
-            url       : './assets/php/contact.php',
-            data      : postForm,
-            dataType  : 'json',
-            success   : function(data) {
-                            if (data.success) {
-                                $('#registration-msg .alert').html("Registration Successful");
-                                $('#registration-msg .alert').removeClass("alert-danger");
-                                $('#registration-msg .alert').addClass("alert-success");
-                                $('#registration-msg').show();
-                            }
-                            else
-                            {
-                                $('#registration-msg .alert').html("Registration Failed");
-                                $('#registration-msg .alert').removeClass("alert-success");
-                                $('#registration-msg .alert').addClass("alert-danger");
-                                $('#registration-msg').show();
-                            }
-                        }
+    var navbar = function () {
+        $(window).scroll(function () {
+            $("nav.navbar").offset().top > -70 ? $(".navbar-fixed-top").addClass("top-nav-collapse") : $(".navbar-fixed-top").removeClass("top-nav-collapse")
+        }),
+        $(function () {
+            $("a.page-scroll").bind("click", function (a) { var o = $(this); $("html, body").stop().animate({ scrollTop: $(o.attr("href")).offset().top - 58 }, 1e3), a.preventDefault()
+        })
         });
-});
+    };
 
-/*
- * SmoothScroll
-*/
+    (function ($) {
+        carousels();
+        isotope();
+        navbar();
+    })(jQuery);
 
-smoothScroll.init();
+
+}());
