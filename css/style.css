@@ -554,7 +554,7 @@ p.w3pvt-phone {
 
 .banner-w3layouts-info h3 {
     font-size: 2.7em;
-    color: #fff;
+    color: #f8a81b;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
     font-weight: 300;
     margin: 1em 0;
@@ -635,9 +635,15 @@ a.btn.btn-course:hover {
 
 .tittle-w3layouts,
 .tittle-w3layouts.two {
-    color: #fff;
+    color: #f8a81b;
     font-size: 1.7em;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tittle-w3layouts,
+.tittle-w3layouts.two h3 {
+    color: #f8a81b;
+    
 }
 
 .tittle-w3layouts.two {
@@ -958,14 +964,14 @@ footer {
 }
 
 .footer-w3pvt-copy-social ul li a {
-    color: #333;
+    color: #f8a81b;
     text-align: center;
 }
 
 .footer-w3pvt-copy-social ul li a span {
     width: 20px;
     font-size: 20px;
-    color: #666;
+    color: #f8a81b;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -997,10 +1003,11 @@ footer {
 
 .w3layouts-copy p {
     letter-spacing: 1px;
+    color: #f8a81b;
 }
 
 .w3layouts-copy p a {
-    color: #aaa;
+    color: #f8a81b;
 }
 .w3layouts-copy hr{
     color: #fff;
@@ -1391,15 +1398,15 @@ a.move-top span {
 
 
 /*---carousel--*/
-/* .cr{
-    background-color: red;
-} */
-.carousel-inner{
-    /* background-color: #f7f7f7; */
+
+.cr{
+    background-color: #f8a81b;
 
 }
 
-
+#carouselExampleControls h3{
+    color:#ffff;
+}
 .carousel-indicators .active{
     background-color: red !important;
     border-color: green !important;
