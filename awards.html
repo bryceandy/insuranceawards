@@ -93,8 +93,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                                                         </div>
                                                                 </div>
                                                             <div class="col-md-7 content-left-bottom entry-w3layouts-info text-left mt-5">
-                                                                <p class="mb-3">Number of Votes: </p>    
-                                                                <button type="button" class="btn btn-success">Click to vote</button>
+                                                                    <form>
+                                                                            <p class="mb-3">Number of Votes: <label  id="votes">0</input></p>
+                                                                            
+                                                                            <input type="button" class="btn btn-success" onclick="buttonClick()" value="Click to vote" />
+                                                                         </form>
                                                             </div>
                                             
                                                     </div>
@@ -230,7 +233,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
  <script src="js/smooth-scroll.min.js"></script>
  <script src="js/main.js"></script>
 
-
+ <script>
+        var i = 0;
+        function buttonClick() {
+            document.getElementById('votes').innerHTML = ++i;
+            console.log(i);
+        }
+    </script>
 
 </body>
 
