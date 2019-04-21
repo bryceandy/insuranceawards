@@ -1,6 +1,6 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Yatra+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 // Variables
@@ -70,7 +70,8 @@ body{
             position: absolute;
             right: 5%;
             top: 10%;
-            font-size: 3rem
+            font-size: 3rem;
+            font-weight: bolder
         }
         img{
             position: absolute;
