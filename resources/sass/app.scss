@@ -17,7 +17,7 @@ body{
 
 #homeContent{
     display: grid;
-    grid-template-rows: 16vh 84vh 100vh 130vh 65vh;
+    grid-template-rows: 16vh 84vh 100vh 130vh 80vh;
     grid-template-columns: 100vw;
 
     #landingTop{
@@ -134,6 +134,7 @@ body{
             position: absolute;
             top: 10%;
             left: 50%;
+            font-weight: bolder;
             @include css3-prefix(transform, translateX(-50%))
         }
         .one, .two, .three, .four{
@@ -167,7 +168,7 @@ body{
         p{
             color: #000000;
             font-size: 2rem;
-            font-weight: lighter;
+            font-weight: bolder;
             position: absolute;
             top: 15vh;
             width: 100%
