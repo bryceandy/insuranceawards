@@ -17,7 +17,7 @@ body{
 
 #homeContent{
     display: grid;
-    grid-template-rows: 16vh 84vh 100vh 130vh 115vh;
+    grid-template-rows: 16vh 84vh 100vh 130vh 50vh;
     grid-template-columns: 100vw;
 
     #landingTop{
@@ -177,22 +177,12 @@ body{
             width: 20%;
             height: auto;
             position: absolute;
+            top: 25vh;
 
-            &:nth-of-type(1), &:nth-of-type(3){
-                left: 20vw;
-            }
-            &:nth-of-type(even){
-                margin-left: 20vw;
-                left: 40vw;
-            }
-            &:nth-of-type(1),  &:nth-of-type(2){
-                position: absolute;
-                top: 25vh;
-            }
-            &:nth-of-type(3),  &:nth-of-type(4){
-                position: absolute;
-                top: 70vh;
-            }
+            &:nth-of-type(1){ left: 5%;}
+            &:nth-of-type(2){ left: 30%;}
+            &:nth-of-type(1){ left: 55%;}
+            &:nth-of-type(1){ left: 80%;}
         }
     }
 }
