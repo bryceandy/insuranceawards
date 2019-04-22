@@ -17,7 +17,7 @@ body{
 
 #homeContent{
     display: grid;
-    grid-template-rows: 16vh 84vh 100vh 115vh 115vh;
+    grid-template-rows: 16vh 84vh 100vh 130vh 115vh;
     grid-template-columns: 100vw;
 
     #landingTop{
@@ -125,10 +125,39 @@ body{
     #howWeDoIt{
         position: relative;
         grid-area: 4/1/5/2;
-        background: $primary-color;
-        color: #000000;
         padding: 5%;
-        font-size: xx-large;
+        font-size: 1.5rem;
+        background: 450px 400px/cover no-repeat;
+
+        h1{
+            color: $primary-color;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            @include css3-prefix(transform, translateX(-50%))
+        }
+        .one, .two, .three, .four{
+            display: block;
+            position: absolute;
+            text-align: center;
+            max-width: 35vw;
+        }
+        .one{
+            top: 20%;
+            left: 5%;
+        }
+        .two{
+            top: 20%;
+            right: 5%;
+        }
+        .three{
+            bottom: 20%;
+            left: 5%;
+        }
+        .four{
+            bottom: 15%;
+            right: 5%;
+        }
     }
 
     #insurancePlayers{
