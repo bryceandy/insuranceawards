@@ -87,12 +87,14 @@ body{
             right: 20vw;
             @include css3-prefix(transform, translateX(50%));
             color: $primary-color;
+            background: #000000;
             font-family: 'Oswald', monospace;
             font-weight: lighter;
             font-size: xx-large;
-            padding: 1rem;
-            border: 2px solid $primary-color;
-            @include brad(6px)
+            padding: 0 20px 5px;
+            border: 1px solid transparent;
+            cursor: pointer;
+            @include brad(0)
         }
     }
 }

@@ -36,3 +36,10 @@ $cyan: #6cb2eb;
     -moz-border-radius: $value;
     border-radius: $value;
 }
+
+@mixin bimg($value){
+    -webkit-border-image: $value;
+    -moz-border-image: $value;
+    -o-border-image: $value;
+    border-image: $value;
+}
