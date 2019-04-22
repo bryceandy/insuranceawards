@@ -36,6 +36,12 @@
         </div>
     </div>
 
+    <div id="whatWeDo">
+        <p>Identifying, Recognising <br> and Rewarding <br>
+            Excellence in the Insurance Sector <br> in Tanzania
+        </p>
+        <img src="" alt="What we do">
+    </div>
 </div>
 
 </body>
