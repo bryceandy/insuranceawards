@@ -32,12 +32,3 @@ require('./bootstrap');
 //     el: '#app'
 // });
 
-import avant from '../fonts/avantn.ttf';
-injectGlobal`
-  @font-face {
-    font-family: 'AvantNormal';
-    src: url(${avant}) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-`;
