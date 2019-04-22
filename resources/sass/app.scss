@@ -135,6 +135,7 @@ body{
             top: 10%;
             left: 50%;
             font-weight: bolder;
+            font-family: $font-family-serif;
             @include css3-prefix(transform, translateX(-50%))
         }
         .one, .two, .three, .four{
