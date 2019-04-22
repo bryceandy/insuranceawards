@@ -1,6 +1,5 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 // Variables
@@ -22,7 +21,7 @@ body{
 
 #homeContent{
     display: grid;
-    grid-template-rows: 16vh 84vh 100vh 100vh 115vh;
+    grid-template-rows: 16vh 84vh 100vh 115vh 115vh;
     grid-template-columns: 100vw;
 
     #landingTop{
@@ -130,7 +129,10 @@ body{
     #howWeDoIt{
         position: relative;
         grid-area: 4/1/5/2;
-        background: #ffffff;
+        background: $primary-color;
+        color: #000000;
+        padding: 5%;
+        font-size: xx-large;
     }
 
     #insurancePlayers{

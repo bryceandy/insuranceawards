@@ -45,14 +45,14 @@
 
     <div id="howWeDoIt">
         A set of categories of awards shall be agreed upon by the select committee for
-        both individuals and organisations.
+        both individuals and organisations. <br>
         Professionals, former CEOs, academia, and other respected industry players
         shall constitute the selection committee. The public shall be invited to
         nominate companies, individuals, or organisations whose performance was
-        outstanding in a particular period.
+        outstanding in a particular period. <br>
         After nominations, finalists for each category will be chosen and required
         to submit supporting documentation (write-ups, photos or videos) for the
-        respective selections.
+        respective selections. <br>
         For awards that need public participation, e.g. voting, naming etc, a specific
         360 degrees media plan shall be developed and shall include traditional media,
         alternative media, all online media platforms with a dedicated independent
@@ -70,6 +70,7 @@
     </div>
 </div>
 
+<script async src="{{'js/app.js'}}"></script>
 <script async type="text/javascript">
     window.smoothScroll = function(target) {
         var scrollContainer = target;
