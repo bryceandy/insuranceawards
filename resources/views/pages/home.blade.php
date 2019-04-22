@@ -29,9 +29,9 @@
     </div>
 
     <div id="landingMain">
-        <p class="text-center">Welcome to the <br> Tanzania InsuranceAwards <br> 2019</p>
+        <p class="text-center">Welcome to the <br> Tanzania Insurance Awards <br> 2019</p>
         <img src="{{'images/winners.svg'}}" alt="Award Winners">
-        <div class="discoverMore">
+        <div class="discoverMore" onclick="smoothScroll(document.getElementById('whatWeDo'))">
             Discover More
         </div>
     </div>
@@ -41,6 +41,22 @@
             Excellence in the Insurance Sector <br> in Tanzania
         </p>
         <img src="{{'images/identify.svg'}}" alt="What we do">
+    </div>
+
+    <div id="howWeDoIt">
+        A set of categories of awards shall be agreed upon by the select committee for
+        both individuals and organisations.
+        Professionals, former CEOs, academia, and other respected industry players
+        shall constitute the selection committee. The public shall be invited to
+        nominate companies, individuals, or organisations whose performance was
+        outstanding in a particular period.
+        After nominations, finalists for each category will be chosen and required
+        to submit supporting documentation (write-ups, photos or videos) for the
+        respective selections.
+        For awards that need public participation, e.g. voting, naming etc, a specific
+        360 degrees media plan shall be developed and shall include traditional media,
+        alternative media, all online media platforms with a dedicated independent
+        website and application
     </div>
 
     <div id="insurancePlayers">
@@ -53,6 +69,31 @@
 
     </div>
 </div>
+
+<script async type="text/javascript">
+    window.smoothScroll = function(target) {
+        var scrollContainer = target;
+        do { //find scroll container
+            scrollContainer = scrollContainer.parentNode;
+            if (!scrollContainer) return;
+            scrollContainer.scrollTop += 1;
+        } while (scrollContainer.scrollTop == 0);
+
+        var targetY = 0;
+        do { //find the top of target relatively to the container
+            if (target == scrollContainer) break;
+            targetY += target.offsetTop;
+        } while (target = target.offsetParent);
+
+        scroll = function(c, a, b, i) {
+            i++; if (i > 30) return;
+            c.scrollTop = a + (b - a) / 30 * i;
+            setTimeout(function(){ scroll(c, a, b, i); }, 20);
+        }
+        // start scrolling
+        scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+    }
+</script>
 
 </body>
 </html>

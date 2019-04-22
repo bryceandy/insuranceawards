@@ -22,7 +22,7 @@ body{
 
 #homeContent{
     display: grid;
-    grid-template-rows: 16vh 84vh 100vh 100vh;
+    grid-template-rows: 16vh 84vh 100vh 100vh 115vh;
     grid-template-columns: 100vw;
 
     #landingTop{
@@ -94,7 +94,11 @@ body{
             padding: 0 20px 5px;
             border: 1px solid transparent;
             cursor: pointer;
-            @include brad(0)
+            @include brad(0);
+            &:hover{
+                color: #000000;
+                background: $primary-color;
+            }
         }
     }
 
@@ -117,15 +121,21 @@ body{
             position: absolute;
             top: 30vh;
             height: auto;
-            width: 60vw;
+            width: 50vw;
             display: block;
             right: 0;
         }
     }
 
-    #insurancePlayers{
+    #howWeDoIt{
         position: relative;
         grid-area: 4/1/5/2;
+        background: #ffffff;
+    }
+
+    #insurancePlayers{
+        position: relative;
+        grid-area: 5/1/6/2;
         background: #ffffff;
         p{
             color: #000000;
@@ -154,7 +164,7 @@ body{
             }
             &:nth-of-type(3),  &:nth-of-type(4){
                 position: absolute;
-                top: 60vh;
+                top: 70vh;
             }
         }
     }
