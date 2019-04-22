@@ -17,10 +17,10 @@
 
     <div id="landingTop">
         <div class="navigation">
-            <a href="/awards">Awards</a>
-            <a href="/categories">Categories</a>
-            <a href="/about">About</a>
-            <a href="/about">Contact</a>
+            <a href="#">Awards</a>
+            <a href="#">Categories</a>
+            <a href="#">About</a>
+            <a href="#footer">Contact</a>
         </div>
 
         <a class="homeLink" href="/">
@@ -73,6 +73,12 @@
         <img src="{{'images/iit.png'}}" alt="IIT">
 
     </div>
+
+    <div id="footer">
+
+        
+    </div>
+
 </div>
 
 <script async src="{{'js/app.js'}}"></script>

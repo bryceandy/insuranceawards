@@ -17,7 +17,7 @@ body{
 
 #homeContent{
     display: grid;
-    grid-template-rows: 16vh 84vh 100vh 115vh 80vh;
+    grid-template-rows: 16vh 84vh 100vh 115vh 80vh 84vh;
     grid-template-columns: 100vw;
 
     #landingTop{
@@ -188,6 +188,11 @@ body{
             &:nth-of-type(3){ left: 55%;}
             &:nth-of-type(4){ left: 80%;}
         }
+    }
+    #footer{
+        position: relative;
+        grid-area: 6/1/7/2;
+        background: $primary-color;
     }
 }
 
