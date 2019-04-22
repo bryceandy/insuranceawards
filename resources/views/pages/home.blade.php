@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{'css/app.min.css'}}">
+    <link rel="stylesheet" href="{{'css/fonts.css'}}">
 
     <title>The Tanzania Insurance Awards 2019 - Identifying, Recognising and Rewarding
         Excellence in the Insurance Sector in Tanzania</title>

@@ -1,7 +1,3 @@
-
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-
 // Variables
 @import 'variables';
 
@@ -43,7 +39,7 @@ body{
                 font-size: x-large;
                 padding-left: 3rem;
                 text-decoration: none;
-                font-family: 'Oswald', monospace;
+                font-family: $font-family-serif;
             }
         }
         .homeLink{
@@ -87,7 +83,7 @@ body{
             @include css3-prefix(transform, translateX(50%));
             color: $primary-color;
             background: #000000;
-            font-family: 'Oswald', monospace;
+            font-family: $font-family-serif;
             font-weight: lighter;
             font-size: xx-large;
             padding: 0 20px 5px;
