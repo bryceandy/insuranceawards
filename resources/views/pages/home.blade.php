@@ -65,7 +65,7 @@
     </div>
 
     <div id="insurancePlayers">
-        <p class="text-center">Key Insurance Players</p>
+        <h1 class="text-center">Key Insurance Players</h1>
 
         <img src="{{'images/tiba.png'}}" alt="TIBA">
         <img src="{{'images/tira.png'}}" alt="TIRA">
