@@ -40,7 +40,17 @@
         <p>Identifying, Recognising <br> and Rewarding <br>
             Excellence in the Insurance Sector <br> in Tanzania
         </p>
-        <img src="" alt="What we do">
+        <img src="{{'images/identify.svg'}}" alt="What we do">
+    </div>
+
+    <div id="insurancePlayers">
+        <p class="text-center">Key Insurance Players</p>
+
+        <img src="{{'images/tiba.png'}}" alt="TIBA">
+        <img src="{{'images/tira.png'}}" alt="TIRA">
+        <img src="{{'images/ati.png'}}" alt="ATI">
+        <img src="{{'images/iit.png'}}" alt="IIT">
+
     </div>
 </div>
 

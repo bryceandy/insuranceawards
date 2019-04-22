@@ -22,7 +22,7 @@ body{
 
 #homeContent{
     display: grid;
-    grid-template-rows: 16vh 84vh 100vh;
+    grid-template-rows: 16vh 84vh auto auto;
     grid-template-columns: 100vw;
 
     #landingTop{
@@ -109,14 +109,46 @@ body{
             position: absolute;
             top: 20vh;
             left: 5%;
-            font-size: 3rem;
+            font-size: 2.5rem;
+            font-weight: bolder;
+            z-index: 1
         }
         img{
+            position: absolute;
             top: 30vh;
             height: auto;
             width: 60vw;
             display: block;
             right: 0;
+        }
+    }
+
+    #insurancePlayers{
+        position: relative;
+        grid-area: 4/1/5/2;
+        background: #ffffff;
+        p{
+            color: #000000;
+            font-size: 2rem;
+            font-weight: lighter;
+            position: absolute;
+            top: 10vh;
+            width: 100%
+        }
+        img{
+            display: inline-block;
+            width: 20%;
+            height: auto;
+            position: absolute;
+
+            &:nth-of-type(1){
+                position: absolute;
+                top: 20vh;
+                left: 20vw;
+            }
+            &:nth-of-type(odd){
+                margin-left: 20vw;
+            }
         }
     }
 }
