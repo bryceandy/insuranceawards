@@ -5,13 +5,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'ArnoPro';
-    src: url('../fonts/arnopro.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /*extra css*/
 #howWeDoIt{
     background-image: url("../images/howwedo.svg")!important;
