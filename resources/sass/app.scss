@@ -72,7 +72,7 @@ body{
                 display: block;
                 font-size: 1.75rem;
                 font-family: $font-family-sans-serif-normal;
-                margin-top: 10vh;
+                margin-top: 5vh;
                 color: $primary-color;
             }
         }
@@ -153,7 +153,6 @@ body{
         padding: 5%;
         font-size: 1.5rem;
         background-color: yellow;
-        background: center/cover no-repeat;
 
         h1{
             color: $primary-color;
@@ -163,6 +162,14 @@ body{
             font-family: $font-family-sans-serif-heavy;
             font-size: 3rem;
             @include css3-prefix(transform, translateX(-50%))
+        }
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20vw;
+            height: auto;
+            @include css3-prefix(transform, translate(-50%, -50%));
         }
         .one, .two, .three, .four{
             display: block;
