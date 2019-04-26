@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="{{'css/app.min.css'}}">
     <link rel="stylesheet" href="{{'css/fonts.css'}}">
 
-    <title>The Tanzania Insurance Awards 2019 - Identifying, Recognising and Rewarding
-        Excellence in the Insurance Sector in Tanzania</title>
+    <title>The Tanzania Insurance Awards 2019 - Rewarding Insurance Excellence in Tanzania</title>
 </head>
 <body>
 
@@ -29,7 +28,9 @@
     </div>
 
     <div id="landingMain">
-        <p class="text-center">Welcome to the <br> Tanzania Insurance Awards <br> 2019</p>
+        <p class="text-center">Welcome to the <br> Tanzania Insurance Awards <br> 2019
+            <span>Rewarding Insurance Excellence in Tanzania</span>
+        </p>
         <img src="{{'images/winners.svg'}}" alt="Award Winners">
         <div class="discoverMore" onclick="smoothScroll(document.getElementById('whatWeDo'))">
             Discover More
@@ -41,6 +42,9 @@
             Excellence in the Insurance Sector <br> in Tanzania
         </p>
         <img src="{{'images/identify.svg'}}" alt="What we do">
+        <div class="viewCategories" >
+            Awards Categories
+        </div>
     </div>
 
     <div id="howWeDoIt">
@@ -101,7 +105,7 @@
             i++; if (i > 30) return;
             c.scrollTop = a + (b - a) / 30 * i;
             setTimeout(function(){ scroll(c, a, b, i); }, 20);
-        }
+        };
         // start scrolling
         scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
     }
