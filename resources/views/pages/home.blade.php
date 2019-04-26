@@ -17,9 +17,10 @@
     <div id="landingTop">
         <div class="navigation">
             <a href="#">Awards</a>
-            <a href="#">Categories</a>
-            <a href="#">About</a>
-            <a href="#footer">Contact</a>
+            <a href="/judges">Judges</a>
+            <a href="#">Forms</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
         </div>
 
         <a class="homeLink" href="/">
@@ -43,7 +44,7 @@
         </p>
         <img src="{{'images/identify.svg'}}" alt="What we do">
         <div class="viewCategories" >
-            Awards Categories
+            Award Categories
         </div>
     </div>
 
@@ -77,6 +78,29 @@
         <img src="{{'images/tira.png'}}" alt="TIRA">
         <img src="{{'images/ati.png'}}" alt="ATI">
         <img src="{{'images/iit.png'}}" alt="IIT">
+
+    </div>
+
+    <div id="dates">
+
+        <h1>Presentation Dates</h1>
+        <p>
+            After receiving all the submissions, a shortlist of the selected companies from the judges
+            will be made. These firms will be expected to make presentations on specific dates to the
+            panel of the Insurance Awards Judges. <br><br>
+            <b>No entry fees shall be applicable to any category this year, 2019.</b>
+            <br><br>
+            If you are entering more than one category, please note multiple entries do not need to be
+            submitted at the same time. All entries must be registered from the same accounts.
+            <br>
+            <span>Dates</span><br>
+            <b>2<sup>nd</sup> August 2019</b> <br>
+            <b>3<sup>rd</sup> August 2019</b>
+        </p>
+
+        <button class="moreInfo">
+            <a href="/contact">More Info</a>
+        </button>
 
     </div>
 

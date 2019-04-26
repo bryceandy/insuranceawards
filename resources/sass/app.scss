@@ -17,7 +17,7 @@ body{
 
 #homeContent{
     display: grid;
-    grid-template-rows: 16vh 84vh 100vh 115vh 80vh 84vh;
+    grid-template-rows: 16vh 84vh 100vh 115vh 80vh 100vh 84vh;
     grid-template-columns: 100vw;
 
     #landingTop{
@@ -155,7 +155,7 @@ body{
         background-color: yellow;
 
         h1{
-            color: $primary-color;
+            color: #ffffff;
             position: absolute;
             top: 10%;
             left: 50%;
@@ -220,10 +220,67 @@ body{
             &:nth-of-type(4){ left: 77.5%;}
         }
     }
-    #footer{
+
+    #dates{
         position: relative;
         grid-area: 6/1/7/2;
         background: $primary-color;
+
+        h1{
+            top: 10vh;
+            left: 50%;
+            @include css3-prefix(transform, translateX(-50%));
+            position: absolute;
+            color: #ffffff;
+            font-family: $font-family-sans-serif-heavy;
+            font-size: 3rem;
+        }
+        p{
+            top: 20vh;
+            left: 15vw;
+            position: absolute;
+            font-size: 1.3rem;
+            color: #001001;
+            font-family: $font-family-sans-serif-normal;
+            text-align: center;
+            max-width: 70%;
+            span{
+                color: #ffffff;
+                font-family: $font-family-sans-serif-heavy;
+                display: block;
+                font-size: 2rem;
+                text-align: left;
+            }
+            b{
+                font-family: $font-family-sans-serif-heavy;
+                &:nth-of-type(2), &:nth-of-type(3){
+                    text-align: left;
+                    display: block;
+                    line-height: 0
+                }
+            }
+        }
+        .moreInfo{
+            position: absolute;
+            bottom: 15vh;
+            right: 25vw;
+            font-family: $font-family-sans-serif-normal;
+            font-size: x-large;
+            @include css3-prefix(transform, translateX(50%));
+            background: #001001;
+            border: 1px solid transparent;
+            padding: 5px 20px 5px;
+            a{ color: #ffffff; text-decoration: none }
+            &:hover {
+                background: #ffffff;
+                a{ color: #001001 }
+            }
+        }
+    }
+
+    #footer{
+        position: relative;
+        grid-area: 7/1/8/2;
     }
 }
 

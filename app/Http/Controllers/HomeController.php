@@ -10,4 +10,19 @@ class HomeController extends Controller
         //display the homepage
         return view('pages.home');
     }
+
+    public function about(){
+        //display the aboutpage
+        return view('pages.about');
+    }
+
+    public function contact(){
+        //display the contactpage
+        return view('pages.contact');
+    }
+
+    public function judges(){
+        //display the judges page
+        return view('pages.judges');
+    }
 }
