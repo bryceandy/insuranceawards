@@ -5,7 +5,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 body{
-    font-family: $font-family-sans-serif;
+    font-family: $font-family-sans-serif-normal;
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
@@ -39,6 +39,8 @@ body{
                 font-size: x-large;
                 padding-left: 3rem;
                 text-decoration: none;
+                font-family: $font-family-sans-serif-light;
+                font-weight: bolder;
             }
         }
         .homeLink{
@@ -65,7 +67,7 @@ body{
             right: 5%;
             top: 10%;
             font-size: 3rem;
-            font-weight: bolder
+            font-family: $font-family-sans-serif-heavy
         }
         img{
             position: absolute;
@@ -107,7 +109,7 @@ body{
             top: 20vh;
             left: 5%;
             font-size: 2.5rem;
-            font-weight: bolder;
+            font-family: $font-family-sans-serif-heavy;
             z-index: 1
         }
         img{
@@ -132,7 +134,7 @@ body{
             position: absolute;
             top: 10%;
             left: 50%;
-            font-weight: bolder;
+            font-family: $font-family-sans-serif-heavy;
             font-size: 3rem;
             @include css3-prefix(transform, translateX(-50%))
         }
@@ -167,7 +169,7 @@ body{
         h1{
             color: #000000;
             font-size: 3rem;
-            font-weight: bolder;
+            font-family: $font-family-sans-serif-heavy;
             position: absolute;
             top: 10vh;
             width: 100%;

@@ -1,7 +1,19 @@
 @font-face {
     font-family: 'AvantNormal';
-    src: url('../fonts/avant-garde-medium-condensed.woff') format('webopenfontformat');
+    src: url('../fonts/avant-garde-book.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvantLight';
+    src: url('../fonts/avant-garde-extra-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvantHeavy';
+    src: url('../fonts/avant-garde-bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
 }
 
