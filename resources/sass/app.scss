@@ -15,12 +15,12 @@ body{
     -ms-overflow-x: hidden;
 }
 
-#homeContent{
+#defaultContent{
     display: grid;
-    grid-template-rows: 16vh 84vh 100vh 115vh 80vh 100vh 63vh;
+    grid-template-rows: 16vh auto 63vh;
     grid-template-columns: 100vw;
 
-    #landingTop{
+    #top{
         grid-area: 1/1/2/2;
         height: 16vh;
         width: 100vw;
@@ -56,9 +56,81 @@ body{
         }
     }
 
+    #main{
+        grid-area: 2/1/3/2;
+    }
+
+    #footer{
+        position: relative;
+        grid-area: 3/1/4/2;
+        background: #ffffff;
+
+        svg{
+            position: absolute;
+            height: 66.67%;
+            width: 100%;
+            top: 0;
+            left: 0
+        }
+        p{
+            &:nth-of-type(1){
+                position: absolute;
+                top: 1%;
+                left: 50%;
+                @include css3-prefix(transform, translateX(-50%));
+                color: #001001;
+                font-family: $font-family-sans-serif-heavy-italic;
+                font-size: xx-large;
+                text-align: center;
+            }
+            &:nth-of-type(2){
+                position: absolute;
+                bottom: 5%;
+                left: 50%;
+                @include css3-prefix(transform, translateX(-50%));
+                text-align: center;
+                color: #001001;
+                font-family: $font-family-sans-serif-light;
+                font-size: large;
+            }
+        }
+        .footer-links{
+            top: 66.67%;
+            position: absolute;
+            height: auto;
+            width: 40%;
+            left: 50%;
+            @include css3-prefix(transform, translateX(-50%));
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+
+            div{
+                justify-self: center;
+                align-self: center;
+                &:nth-of-type(1){ grid-area: 1/1/2/2 }
+                &:nth-of-type(2){ grid-area: 1/2/2/3 }
+                &:nth-of-type(3){ grid-area: 1/3/2/4 }
+
+                a{
+                    text-decoration: none;
+                    font-size: large;
+                    font-family: $font-family-sans-serif-normal;
+                    color: $primary-color
+                }
+            }
+        }
+    }
+}
+
+#homeContent{
+    display: grid;
+    grid-template-rows: 84vh 100vh 115vh 80vh 100vh ;
+    grid-template-columns: 100vw;
+
     #landingMain{
         background: #ffffff;
-        grid-area: 2/1/3/2;
+        grid-area: 1/1/2/2;
         z-index: 1;
         position: relative;
         p{
@@ -105,7 +177,7 @@ body{
     }
 
     #whatWeDo{
-        grid-area: 3/1/4/2;
+        grid-area: 2/1/3/2;
         position: relative;
         background: #ffffff;
 
@@ -149,7 +221,7 @@ body{
 
     #howWeDoIt{
         position: relative;
-        grid-area: 4/1/5/2;
+        grid-area: 3/1/4/2;
         padding: 5%;
         font-size: 1.5rem;
         background-color: $primary-color2;
@@ -197,7 +269,7 @@ body{
 
     #insurancePlayers{
         position: relative;
-        grid-area: 5/1/6/2;
+        grid-area: 4/1/5/2;
         background: #ffffff;
         h1{
             color: #001001;
@@ -223,7 +295,7 @@ body{
 
     #dates{
         position: relative;
-        grid-area: 6/1/7/2;
+        grid-area: 5/1/6/2;
         background: #ffffff;
 
         h1{
@@ -278,66 +350,5 @@ body{
         }
     }
 
-    #footer{
-        position: relative;
-        grid-area: 7/1/8/2;
-        background: #ffffff;
-
-        svg{
-            position: absolute;
-            height: 66.67%;
-            width: 100%;
-            top: 0;
-            left: 0
-        }
-        p{
-            &:nth-of-type(1){
-            position: absolute;
-            top: 1%;
-            left: 50%;
-            @include css3-prefix(transform, translateX(-50%));
-            color: #001001;
-            font-family: $font-family-sans-serif-heavy-italic;
-            font-size: xx-large;
-                text-align: center;
-            }
-            &:nth-of-type(2){
-                position: absolute;
-                bottom: 5%;
-                left: 50%;
-                @include css3-prefix(transform, translateX(-50%));
-                text-align: center;
-                color: #001001;
-                font-family: $font-family-sans-serif-light;
-                font-size: large;
-            }
-        }
-        .footer-links{
-            top: 66.67%;
-            position: absolute;
-            height: auto;
-            width: 40%;
-            left: 50%;
-            @include css3-prefix(transform, translateX(-50%));
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-
-            div{
-                justify-self: center;
-                align-self: center;
-                &:nth-of-type(1){ grid-area: 1/1/2/2 }
-                &:nth-of-type(2){ grid-area: 1/2/2/3 }
-                &:nth-of-type(3){ grid-area: 1/3/2/4 }
-
-                a{
-                    text-decoration: none;
-                    font-size: large;
-                    font-family: $font-family-sans-serif-normal;
-                    color: $primary-color
-                }
-            }
-        }
-    }
 }
 
