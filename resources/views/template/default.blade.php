@@ -16,7 +16,6 @@
 
     <div id="top">
         <div class="navigation">
-            <a href="/awards">Awards</a>
             <a href="/judges">Judges</a>
             <a href="/forms">Forms</a>
             <a href="/about">About</a>
@@ -49,7 +48,7 @@
         <p>Copyright &copy; Insurance Awards Tanzania 2019</p>
 
         <div class="footer-links">
-            <div><a href="/awards">Awards</a></div>
+            <div><a href="/about">About</a></div>
             <div><a href="/forms">Forms</a></div>
             <div><a href="/contact">Contact</a></div>
         </div>

@@ -21,6 +21,11 @@ class HomeController extends Controller
         return view('pages.contact');
     }
 
+    public function forms(){
+        //display the aboutpage
+        return view('pages.forms');
+    }
+
     public function judges(){
         //display the judges page
         return view('pages.judges');
