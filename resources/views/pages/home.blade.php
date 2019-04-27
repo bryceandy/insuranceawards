@@ -13,7 +13,7 @@
                 <span>Rewarding Insurance Excellence in Tanzania</span>
             </p>
             <img src="{{'images/winners.svg'}}" alt="Award Winners">
-            <a class="voteNow" href="/">
+            <a class="voteNow" href="/vote">
                 Vote Now
             </a>
         </div>
