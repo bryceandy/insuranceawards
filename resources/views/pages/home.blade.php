@@ -1,3 +1,5 @@
+@extends('template.default')
+
 @section('title')
     The Tanzania Insurance Awards 2019 - Rewarding Insurance Excellence in Tanzania
 @endsection
