@@ -14,17 +14,31 @@
 
     <div id="voteContent">
 
-        <form action="#" method="post" style="padding: 20vh">
+        <form action="#" method="post" id="one" style="padding: 10vh" >
             @csrf
 
+            <label for="award">
+                <input type="hidden" name="award" value="Young Achievers" readonly >
+            </label>
             <label for="name">
                 <input type="text" name="name" >
             </label>
+
+            <button type="submit" name="submit1">Send</button>
+
+        </form>
+
+        <form action="#" method="post" id="two" style="padding: 10vh" >
+            @csrf
+
             <label for="award">
-                <input type="text" name="award" >
+                <input type="hidden" name="award" value="Most Compliant" readonly >
+            </label>
+            <label for="name">
+                <input type="text" name="name" >
             </label>
 
-            <button type="submit" name="submit">Send</button>
+            <button type="submit" name="submit2">Send</button>
 
         </form>
 
@@ -38,22 +52,32 @@
     <script>
         $(document).ready( function () {
             $(function () {
-                $('form').submit(function (e) {
-                    e.preventDefault();
 
-                    let url = e.target.action;
-                    let formData = $(this).serialize();
-                    $.post(url, formData, function (response) {
+                //when any form is submitted
+                $('form').each(function () {
 
-                        new Noty({
-                            text: 'Vote Sent',
-                            type: 'success',
-                            theme: 'relax',
-                            layout : 'topRight',
-                            closeWith: ['click', 'button']
-                        }).show();
+                    $(this).submit(function (e) {
+                        e.preventDefault();
+
+                        let url = e.target.action;
+                        let formData = $(this).serialize();
+
+                        $(this).fadeOut(1500);
+                        $.post(url, formData, function (response) {
+
+                            //Do something when the form is submitted
+                            new Noty({
+                                text: 'Vote Success!',
+                                type: 'success',
+                                theme: 'relax',
+                                layout : 'topRight',
+                                closeWith: ['click', 'button']
+                            }).show();
+
+                        })
                     })
                 })
+
             })
         })
     </script>

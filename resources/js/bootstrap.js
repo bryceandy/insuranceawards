@@ -57,7 +57,7 @@ window.Echo = new Echo({
 
 window.Echo.channel('vote')
     .listen('VoteCasted', (e) => {
-        console.log(e);
+
     });
 
 
