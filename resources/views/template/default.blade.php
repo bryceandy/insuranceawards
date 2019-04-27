@@ -36,11 +36,12 @@
     <div id="footer">
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path fill="#15ace4" d="M0,95 0,100 100,20 100,15 Z"></path>
             <path fill="black" d="M0,95 0,80 9,88 Z"></path>
             <path fill="#ffeb3b" d="M0,80 0,75 14.5,88.35 11.5,91 Z"></path>
+            <path fill="#15ace4" d="M0,95 0,100 100,20 100,15 Z"></path>
             <path fill="green" d="M0,75 0,10 40,63.2 11.65,85.7 Z" ></path>
             <path fill="#15ace4" d="M0,10 0,5 42.5,64 41,67 Z"></path>
+            <path fill="#15ace4" d="M0,100 100,20 100,100 Z"></path>
         </svg>
 
         <p>Rewarding Insurance Excellence <br> in Tanzania</p>

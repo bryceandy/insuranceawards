@@ -14,7 +14,9 @@ body{
     overflow-x: hidden;
     -ms-overflow-x: hidden;
 }
+a{ text-decoration: none!important }
 
+/*default template*/
 #defaultContent{
     display: grid;
     grid-template-rows: 16vh auto 63vh;
@@ -38,7 +40,6 @@ body{
                 color: $primary-color;
                 font-size: x-large;
                 padding-left: 3rem;
-                text-decoration: none;
                 font-family: $font-family-sans-serif-normal;
             }
         }
@@ -94,7 +95,7 @@ body{
             }
         }
         .footer-links{
-            top: 66.67%;
+            top: 72.5%;
             position: absolute;
             height: auto;
             width: 40%;
@@ -112,7 +113,6 @@ body{
                 &:nth-of-type(3){ grid-area: 1/3/2/4 }
 
                 a{
-                    text-decoration: none;
                     font-size: large;
                     font-family: $font-family-sans-serif-normal;
                     color: $primary-color
@@ -121,7 +121,9 @@ body{
         }
     }
 }
+/*end default template*/
 
+/*home page*/
 #homeContent{
     display: grid;
     grid-template-rows: 84vh 100vh 115vh 80vh 100vh ;
@@ -155,7 +157,7 @@ body{
             width: auto;
             display: block;
         }
-        .discoverMore{
+        .voteNow{
             position: absolute;
             bottom: 5vw;
             left: 30vw;
@@ -198,13 +200,13 @@ body{
             display: block;
             left: 0;
         }
-        .viewCategories{
+        .ourJudges{
             position: absolute;
             bottom: 10vw;
             right: 25vw;
             @include css3-prefix(transform, translateX(25%));
             background: #001001;
-            color: green;
+            color: $primary-color;
             font-family: $font-family-sans-serif-normal;
             font-size: x-large;
             padding: 5px 20px 5px;
@@ -212,7 +214,7 @@ body{
             cursor: pointer;
             @include brad(0);
             &:hover{
-                background: green;
+                background: $primary-color;
                 color: #001001;
             }
         }
@@ -341,7 +343,7 @@ body{
             background: #001001;
             border: 1px solid transparent;
             padding: 5px 20px 5px;
-            a{ color: #ffffff; text-decoration: none }
+            a{ color: #ffffff}
             &:hover {
                 background: #ffffff;
                 a{ color: #001001 }
@@ -350,4 +352,4 @@ body{
     }
 
 }
-
+/*end home page*/

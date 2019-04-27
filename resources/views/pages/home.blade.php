@@ -13,9 +13,9 @@
                 <span>Rewarding Insurance Excellence in Tanzania</span>
             </p>
             <img src="{{'images/winners.svg'}}" alt="Award Winners">
-            <div class="discoverMore" onclick="smoothScroll(document.getElementById('whatWeDo'))">
-                Discover More
-            </div>
+            <a class="voteNow" href="/">
+                Vote Now
+            </a>
         </div>
 
         <div id="whatWeDo">
@@ -23,9 +23,9 @@
                 Excellence in the Insurance Sector <br> in Tanzania
             </p>
             <img src="{{'images/identify.svg'}}" alt="What we do">
-            <div class="viewCategories" >
-                Award Categories
-            </div>
+            <a class="ourJudges" href="/judges" >
+                Our Judges
+            </a>
         </div>
 
         <div id="howWeDoIt">
@@ -88,32 +88,4 @@
 
 @endsection
 
-@section('scripts')
-
-    <script async type="text/javascript">
-        window.smoothScroll = function(target) {
-            var scrollContainer = target;
-            do { //find scroll container
-                scrollContainer = scrollContainer.parentNode;
-                if (!scrollContainer) return;
-                scrollContainer.scrollTop += 1;
-            } while (scrollContainer.scrollTop == 0);
-
-            var targetY = 0;
-            do { //find the top of target relatively to the container
-                if (target == scrollContainer) break;
-                targetY += target.offsetTop;
-            } while (target = target.offsetParent);
-
-            scroll = function(c, a, b, i) {
-                i++; if (i > 30) return;
-                c.scrollTop = a + (b - a) / 30 * i;
-                setTimeout(function(){ scroll(c, a, b, i); }, 20);
-            };
-            // start scrolling
-            scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-        }
-    </script>
-
-@endsection
 
