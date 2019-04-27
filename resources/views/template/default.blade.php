@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{'css/app.min.css'}}">
     <link rel="stylesheet" href="{{'css/fonts.css'}}">
+    @yield('stylesheets')
 
     <title>@yield('title')</title>
 </head>

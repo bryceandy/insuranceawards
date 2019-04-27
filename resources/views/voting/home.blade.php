@@ -1,5 +1,11 @@
 @extends('template.default')
 
+@section('stylesheets')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" />
+    <noscript>To use this site please enable javascript on your browser!</noscript>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+@endsection
+
 @section('title')
     The Tanzania Insurance Awards 2019 - Vote
 @endsection
@@ -38,7 +44,14 @@
                     let url = e.target.action;
                     let formData = $(this).serialize();
                     $.post(url, formData, function (response) {
-                        alert('report sent: '+response)
+
+                        new Noty({
+                            text: 'Vote Sent',
+                            type: 'success',
+                            theme: 'relax',
+                            layout : 'topRight',
+                            closeWith: ['click', 'button']
+                        }).show();
                     })
                 })
             })
