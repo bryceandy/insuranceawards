@@ -219,7 +219,7 @@
         };
 
 
-        let ctx = document.getElementById("icoya");
+        let ctx = document.getElementById("icoya").getContext("2d");
         let chart = new Chart(ctx, {
             type: 'bar',
             data: {
@@ -233,7 +233,7 @@
             options: options
         });
 
-        let ctx2 = document.getElementById("miip");
+        let ctx2 = document.getElementById("miip").getContext("2d");
         let chart2 = new Chart(ctx2, {
             type: 'bar',
             data: {
@@ -247,7 +247,7 @@
             options: options
         });
 
-        let ctx3 = document.getElementById("mce");
+        let ctx3 = document.getElementById("mce").getContext("2d");
         let chart3 = new Chart(ctx3, {
             type: 'bar',
             data: {
@@ -261,7 +261,7 @@
             options: options
         });
 
-        let ctx4 = document.getElementById("mioya");
+        let ctx4 = document.getElementById("mioya").getContext("2d");
         let chart4 = new Chart(ctx4, {
             type: 'bar',
             data: {
@@ -275,7 +275,7 @@
             options: options
         });
 
-        let ctx5 = document.getElementById("ya");
+        let ctx5 = document.getElementById("ya").getContext("2d");
         let chart5 = new Chart(ctx5, {
             type: 'bar',
             data: {
@@ -286,7 +286,16 @@
                     data: {!! json_encode($ya) !!},
                 }]
             },
-            options: options
+            options: {
+                responsive: true,
+                legend: {
+                    display: true,
+                    labels: {
+                        fontColor: '#15ace4',
+                        fontSize: 18
+                    }
+                }
+            }
         });
 
 
