@@ -14,7 +14,7 @@
 
     <div id="voteContent">
 
-        <form action="#" method="post" id="one" style="padding: 10vh" >
+        <form action="/vote" method="post" id="one" style="padding: 10vh" >
             @csrf
 
             <label for="award">
@@ -34,7 +34,7 @@
 
         </form>
 
-        <form action="#" method="post" id="two" style="padding: 10vh" >
+        <form action="/vote" method="post" id="two" style="padding: 10vh" >
             @csrf
 
             <label for="award">
@@ -54,7 +54,7 @@
 
         </form>
 
-        <form action="#" method="post" id="two" style="padding: 10vh" >
+        <form action="/vote" method="post" id="two" style="padding: 10vh" >
             @csrf
 
             <label for="award">
@@ -74,7 +74,7 @@
 
         </form>
 
-        <form action="#" method="post" id="two" style="padding: 10vh" >
+        <form action="/vote" method="post" id="two" style="padding: 10vh" >
             @csrf
 
             <label for="award">
@@ -94,7 +94,7 @@
 
         </form>
 
-        <form action="#" method="post" id="two" style="padding: 10vh" >
+        <form action="/vote" method="post" id="two" style="padding: 10vh" >
             @csrf
 
             <label for="award">
@@ -136,10 +136,9 @@
 
                         $(this).fadeOut(1500);
 
-                        $.ajax({
+                        $.post({
                             url: url,
-                            type: 'post',
-                            data: {"_token": $('meta[name="csrf-token"]').attr('content'), formData},
+                            data: formData,
                             success: function (response) {
                                 //Do something when the form is submitted
                                 new Noty({
