@@ -9,7 +9,16 @@ use Illuminate\Http\Request;
 class VoteController extends Controller
 {
     public function index(){
-        return view('voting.home');
+
+        $voteNames = Vote::all()->pluck('name');
+        $icoya = Vote::all()->pluck('icoya');
+        $miip = Vote::all()->pluck('miip');
+        $mce = Vote::all()->pluck('name');
+        $mioya = Vote::all()->pluck('mioya');
+        $ya = Vote::all()->pluck('ya');
+
+
+        return view('voting.home', compact('voteNames', 'icoya', 'miip', 'mce', 'mioya', 'ya' ));
     }
 
     /**
@@ -23,15 +32,14 @@ class VoteController extends Controller
         if(!$currentPoll){
 
             //store a new instance
-            Vote::create([
-                'name' => $request->input('name'),
-                $request->input('award') => 1,
-            ]);
+            Vote::create([ 'name' => $request->input('name'), $request->input('award') => 1 ]);
+
+            //get all data
+            Vote::all();
         }
         else{
             //instead update the existing
-            Vote::where('name', $request->input('name'))
-                ->update($request->input('award'), $currentPoll->$request->input('award') + $request->input('award'));
+            Vote::where('name', $request->input('name'))->increment($request->input('award'));
         }
 
     }

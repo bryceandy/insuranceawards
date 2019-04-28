@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" />
     <noscript>To use this site please enable javascript on your browser!</noscript>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 @endsection
 
 @section('title')
@@ -14,105 +15,124 @@
 
     <div id="voteContent">
 
-        <form action="/vote" method="post" id="one" style="padding: 10vh" >
-            @csrf
+        <div class="vote-block">
+            <form action="/vote" method="post" id="one" >
+                @csrf
 
-            <label for="award">
-                Insurance Company of the Year
-                <input type="hidden" name="award" value="icoya" readonly >
-            </label>
-            <label for="icoya">
-                <select name="name" id="icoya">
-                    <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
-                    <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
-                    <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
-                    <option value="I.I.T">I.I.T</option>
-                </select>
-            </label>
+                <label for="award">
+                    Insurance Company of the Year
+                    <input type="hidden" name="award" value="icoya" readonly >
+                </label>
+                <label for="icoya">
+                    <select name="name" id="icoya">
+                        <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
+                        <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
+                        <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
+                        <option value="I.I.T">I.I.T</option>
+                    </select>
+                </label>
 
-            <button type="submit" name="submit1">Send</button>
+                <button type="submit" name="submit1">Vote</button>
 
-        </form>
+            </form>
+            <canvas id="icoya" aria-label="icoya Chart" role="img"></canvas>
+        </div>
 
-        <form action="/vote" method="post" id="two" style="padding: 10vh" >
-            @csrf
+        <div class="vote-block">
+            <form action="/vote" method="post" id="two" >
+                @csrf
 
-            <label for="award">
-                Most Innovative Insurance Product
-                <input type="hidden" name="award" value="miip" readonly >
-            </label>
-            <label for="miip">
-                <select name="name" id="miip">
-                    <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
-                    <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
-                    <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
-                    <option value="I.I.T">I.I.T</option>
-                </select>
-            </label>
+                <label for="award">
+                    Most Innovative Insurance Product
+                    <input type="hidden" name="award" value="miip" readonly >
+                </label>
+                <label for="miip">
+                    <select name="name" id="miip">
+                        <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
+                        <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
+                        <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
+                        <option value="I.I.T">I.I.T</option>
+                    </select>
+                </label>
 
-            <button type="submit" name="submit2">Send</button>
+                <button type="submit" name="submit2">Vote</button>
 
-        </form>
+            </form>
+            <canvas id="miip" aria-label="icoya Chart" role="img"></canvas>
 
-        <form action="/vote" method="post" id="three" style="padding: 10vh" >
-            @csrf
+        </div>
 
-            <label for="award">
-                Most Compliant Entity Award
-                <input type="hidden" name="award" value="mce" readonly >
-            </label>
-            <label for="mce">
-                <select name="name" id="mce">
-                    <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
-                    <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
-                    <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
-                    <option value="I.I.T">I.I.T</option>
-                </select>
-            </label>
+        <div class="vote-block">
+            <form action="/vote" method="post" id="three" >
+                @csrf
 
-            <button type="submit" name="submit3">Send</button>
+                <label for="award">
+                    Most Compliant Entity Award
+                    <input type="hidden" name="award" value="mce" readonly >
+                </label>
+                <label for="mce">
+                    <select name="name" id="mce">
+                        <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
+                        <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
+                        <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
+                        <option value="I.I.T">I.I.T</option>
+                    </select>
+                </label>
 
-        </form>
+                <button type="submit" name="submit3">Vote</button>
 
-        <form action="/vote" method="post" id="four" style="padding: 10vh" >
-            @csrf
+            </form>
+            <canvas id="mce" aria-label="icoya Chart" role="img"></canvas>
 
-            <label for="award">
-                Marketing Initiative of the Year Award
-                <input type="hidden" name="award" value="mioya" readonly >
-            </label>
-            <label for="mioya">
-                <select name="name" id="mioya">
-                    <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
-                    <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
-                    <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
-                    <option value="I.I.T">I.I.T</option>
-                </select>
-            </label>
+        </div>
 
-            <button type="submit" name="submit4">Send</button>
+        <div class="vote-block">
+            <form action="/vote" method="post" id="four" >
+                @csrf
 
-        </form>
+                <label for="award">
+                    Marketing Initiative of the Year Award
+                    <input type="hidden" name="award" value="mioya" readonly >
+                </label>
+                <label for="mioya">
+                    <select name="name" id="mioya">
+                        <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
+                        <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
+                        <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
+                        <option value="I.I.T">I.I.T</option>
+                    </select>
+                </label>
 
-        <form action="/vote" method="post" id="five" style="padding: 10vh" >
-            @csrf
+                <button type="submit" name="submit4">Vote</button>
 
-            <label for="award">
-                Young Achievers' Award
-                <input type="hidden" name="award" value="ya" readonly >
-            </label>
-            <label for="ya">
-                <select name="name" id="ya">
-                    <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
-                    <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
-                    <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
-                    <option value="I.I.T">I.I.T</option>
-                </select>
-            </label>
+            </form>
+            <canvas id="mioya" aria-label="icoya Chart" role="img"></canvas>
 
-            <button type="submit" name="submit5">Send</button>
+        </div>
 
-        </form>
+        <div class="vote-block">
+            <form action="/vote" method="post" id="five" >
+                @csrf
+
+                <label for="award">
+                    Young Achievers' Award
+                    <input type="hidden" name="award" value="ya" readonly >
+                </label>
+                <label for="ya">
+                    <select name="name" id="ya">
+                        <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
+                        <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
+                        <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
+                        <option value="I.I.T">I.I.T</option>
+                    </select>
+                </label>
+
+                <button type="submit" name="submit5">Vote</button>
+
+            </form>
+            <canvas id="ya" aria-label="icoya Chart" role="img"></canvas>
+
+        </div>
 
     </div>
 
@@ -120,6 +140,7 @@
 
 @section('scripts')
 
+    {{--jquery--}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
@@ -139,6 +160,15 @@
                         }
                     });
 
+                    $(this).fadeOut(1200);
+                    new Noty({
+                        text: 'Vote Success',
+                        type: 'success',
+                        theme: 'relax',
+                        layout : 'topRight',
+                        closeWith: ['click', 'button']
+                    }).show();
+
                     $.ajax({
                         url: url,
                         method: "POST",
@@ -148,17 +178,63 @@
                         },
                         dataType: "json"
                     })
-                        .done(function( msg ) {
-                        console.log( msg );
-                    })
                         .fail(function( jqXHR, textStatus ) {
-                        console.log( "Request failed: " + jqXHR );
+                        //debug
                     });
 
                 })
 
             })
         });
+    </script>
+
+    {{--chartJs--}}
+    <script>
+
+        function getRandomColor() {
+            let letters = '0123456789ABCDEF'.split('');
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        function getRandomColorEach(count) {
+            let data =[];
+            for (let i = 0; i < count; i++) {
+                data.push(getRandomColor());
+            }
+            return data;
+        }
+
+        $('canvas').each(function () {
+            let id = $(this).attr("id");
+
+            let ctx = this.getContext('2d');
+            let chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: {!! json_encode($voteNames) !!},
+                    datasets: [{
+                        label: "Number of Votes",
+                        backgroundColor: getRandomColorEach(12),
+                        data: {!! json_encode($ya) !!},
+                    }]
+                },
+                // Configuration options go here
+                options: {
+                    responsive: true,
+                    legend: {
+                        display: true,
+                        labels: {
+                            fontColor: '#15ace4',
+                            fontSize: 18
+                        }
+                    }
+                }
+            });
+        })
+
     </script>
 
 @endsection

@@ -353,3 +353,35 @@ a{ text-decoration: none!important }
 
 }
 /*end home page*/
+
+/*vote page*/
+#voteContent{
+    background: #ffffff;
+}
+.vote-block{
+    padding: 5vw;
+    display: inline-block;
+    width: 100vw;
+    margin-bottom: 5vh;
+    max-height: 90vh;
+
+    &:nth-of-type(1){
+        margin-top: -5vw;
+    }
+
+    canvas{
+        height: 70vh!important;
+        width: 60vw!important;
+        margin-left: 15vw
+    }
+    form{
+        text-align: center;
+        font-size: 1.5rem;
+        label{
+            color: $primary-color
+        }
+        select{
+            outline: none;
+        }
+    }
+}
