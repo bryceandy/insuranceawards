@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{'css/app.min.css'}}">
     <link rel="stylesheet" href="{{'css/fonts.css'}}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     @yield('stylesheets')
 
     <title>@yield('title')</title>
@@ -18,10 +19,12 @@
     <div id="top">
         <div class="navigation">
             <a href="/vote">Vote</a>
-            <a href="/judges">Judges</a>
             <a href="/forms">Forms</a>
+            <a href="/judges">Judges</a>
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
+            <i class="fas fa-times"></i>
+            <i class="fas fa-bars"></i>
         </div>
 
         <a class="homeLink" href="/">
@@ -60,6 +63,19 @@
 </div>
 
 <script async src="{{'js/app.js'}}"></script>
+
+{{--jquery--}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $('.fa-bars').click(function () {
+            $('.navigation').addClass('showMenu')
+        });
+        $('.fa-times').click(function () {
+            $('.navigation').removeClass('showMenu')
+        })
+    })
+</script>
 
 @yield('scripts')
 

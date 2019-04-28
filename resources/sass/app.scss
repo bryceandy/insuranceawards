@@ -42,6 +42,13 @@ a{ text-decoration: none!important }
                 padding-left: 3rem;
                 font-family: $font-family-sans-serif-normal;
             }
+            .fa-times, .fa-bars{
+                color: $primary-color;
+                display: none;
+                font-size: 3rem;
+                cursor: pointer;
+            }
+
         }
         .homeLink{
             display: block;
@@ -115,12 +122,53 @@ a{ text-decoration: none!important }
                 a{
                     font-size: large;
                     font-family: $font-family-sans-serif-normal;
-                    color: $primary-color
+                    color: #001001;
                 }
             }
         }
     }
 }
+
+/*default page responsiveness*/
+@media screen and (max-width: 960px) {
+    #defaultContent #top .navigation{
+        a{
+            display: none;
+        }
+        .fa-bars{
+            display: block;
+        }
+        &.showMenu{
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 100vw;
+            z-index: 1000;
+            background: #001001;
+
+            a{
+                display: block;
+                text-align: center;
+                margin-left: -5%;
+                font-size: xx-large;
+                margin-bottom: 5%;
+                &:nth-of-type(1){
+                    margin-top: 18vh;
+                }
+            }
+            .fa-bars{
+                display: none
+            }
+            .fa-times{
+                display: block;
+                position: absolute;
+                right: 5vw;
+                top: calc(8vh - 1rem)
+            }
+        }
+    }
+}
+
 /*end default template*/
 
 /*home page*/
