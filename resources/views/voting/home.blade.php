@@ -218,20 +218,20 @@
             }
         };
 
+        let chart = new Chart('icoya', {
+            type: 'bar',
+            data: {
+                labels: {!! json_encode($voteNames) !!},
+                datasets: [{
+                    label: "Number of Votes",
+                    backgroundColor: getRandomColorEach(12),
+                    data: {!! json_encode($icoya) !!},
+                }]
+            },
+            options: options
+        });
+
         $(document).ready(function () {
-            let ctx = document.getElementById("icoya").getContext("2d");
-            let chart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: {!! json_encode($voteNames) !!},
-                    datasets: [{
-                        label: "Number of Votes",
-                        backgroundColor: getRandomColorEach(12),
-                        data: {!! json_encode($icoya) !!},
-                    }]
-                },
-                options: options
-            });
 
             let ctx2 = document.getElementById("miip").getContext("2d");
             let chart2 = new Chart(ctx2, {
