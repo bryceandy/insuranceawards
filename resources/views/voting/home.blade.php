@@ -218,7 +218,8 @@
             }
         };
 
-        let chart = new Chart('icoya', {
+        let ctx = $("#icoya");
+        let chart = new Chart(ctx, {
             type: 'bar',
             data: {
                 labels: {!! json_encode($voteNames) !!},
@@ -231,64 +232,61 @@
             options: options
         });
 
-        $(document).ready(function () {
+        let ctx2 = document.getElementById("miip").getContext("2d");
+        let chart2 = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: {!! json_encode($voteNames) !!},
+                datasets: [{
+                    label: "Number of Votes",
+                    backgroundColor: getRandomColorEach(12),
+                    data: {!! json_encode($miip) !!},
+                }]
+            },
+            options: options
+        });
 
-            let ctx2 = document.getElementById("miip").getContext("2d");
-            let chart2 = new Chart(ctx2, {
-                type: 'bar',
-                data: {
-                    labels: {!! json_encode($voteNames) !!},
-                    datasets: [{
-                        label: "Number of Votes",
-                        backgroundColor: getRandomColorEach(12),
-                        data: {!! json_encode($miip) !!},
-                    }]
-                },
-                options: options
-            });
+        let ctx3 = document.getElementById("mce").getContext("2d");
+        let chart3 = new Chart(ctx3, {
+            type: 'bar',
+            data: {
+                labels: {!! json_encode($voteNames) !!},
+                datasets: [{
+                    label: "Number of Votes",
+                    backgroundColor: getRandomColorEach(12),
+                    data: {!! json_encode($mce) !!},
+                }]
+            },
+            options: options
+        });
 
-            let ctx3 = document.getElementById("mce").getContext("2d");
-            let chart3 = new Chart(ctx3, {
-                type: 'bar',
-                data: {
-                    labels: {!! json_encode($voteNames) !!},
-                    datasets: [{
-                        label: "Number of Votes",
-                        backgroundColor: getRandomColorEach(12),
-                        data: {!! json_encode($mce) !!},
-                    }]
-                },
-                options: options
-            });
+        let ctx4 = document.getElementById("mioya").getContext("2d");
+        let chart4 = new Chart(ctx4, {
+            type: 'bar',
+            data: {
+                labels: {!! json_encode($voteNames) !!},
+                datasets: [{
+                    label: "Number of Votes",
+                    backgroundColor: getRandomColorEach(12),
+                    data: {!! json_encode($mioya) !!},
+                }]
+            },
+            options: options
+        });
 
-            let ctx4 = document.getElementById("mioya").getContext("2d");
-            let chart4 = new Chart(ctx4, {
-                type: 'bar',
-                data: {
-                    labels: {!! json_encode($voteNames) !!},
-                    datasets: [{
-                        label: "Number of Votes",
-                        backgroundColor: getRandomColorEach(12),
-                        data: {!! json_encode($mioya) !!},
-                    }]
-                },
-                options: options
-            });
-
-            let ctx5 = document.getElementById("ya").getContext("2d");
-            let chart5 = new Chart(ctx5, {
-                type: 'bar',
-                data: {
-                    labels: {!! json_encode($voteNames) !!},
-                    datasets: [{
-                        label: "Number of Votes",
-                        backgroundColor: getRandomColorEach(12),
-                        data: {!! json_encode($ya) !!},
-                    }]
-                },
-                options: options
-            });
-        })
+        let ctx5 = document.getElementById("ya").getContext("2d");
+        let chart5 = new Chart(ctx5, {
+            type: 'bar',
+            data: {
+                labels: {!! json_encode($voteNames) !!},
+                datasets: [{
+                    label: "Number of Votes",
+                    backgroundColor: getRandomColorEach(12),
+                    data: {!! json_encode($ya) !!},
+                }]
+            },
+            options: options
+        });
 
     </script>
 
