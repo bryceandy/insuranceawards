@@ -42,7 +42,7 @@ class VoteController extends Controller
             Vote::where('name', $request->input('name'))->increment($request->input('award'));
             $updatedVotes = Vote::all()->pluck($request->input('name'));
 
-            event(new VoteCasted($request->input('name'), json_encode($updatedVotes)));
+            event(new VoteCasted($request->input('name'), $updatedVotes));
         }
 
     }
