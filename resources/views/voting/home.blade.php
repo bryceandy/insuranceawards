@@ -15,7 +15,7 @@
     <div id="voteContent">
 
         <form action="/vote" method="post" id="one" style="padding: 10vh" >
-            @csrf
+            {{csrf_field()}}
 
             <label for="award">
                 Insurance Company of the Year
@@ -35,7 +35,7 @@
         </form>
 
         <form action="/vote" method="post" id="two" style="padding: 10vh" >
-            @csrf
+            {{csrf_field()}}
 
             <label for="award">
                 Most Innovative Insurance Product
@@ -55,7 +55,7 @@
         </form>
 
         <form action="/vote" method="post" id="three" style="padding: 10vh" >
-            @csrf
+            {{csrf_field()}}
 
             <label for="award">
                 Most Compliant Entity Award
@@ -75,7 +75,7 @@
         </form>
 
         <form action="/vote" method="post" id="four" style="padding: 10vh" >
-            @csrf
+            {{csrf_field()}}
 
             <label for="award">
                 Marketing Initiative of the Year Award
@@ -95,7 +95,7 @@
         </form>
 
         <form action="/vote" method="post" id="five" style="padding: 10vh" >
-            @csrf
+            {{csrf_field()}}
 
             <label for="award">
                 Young Achievers' Award
