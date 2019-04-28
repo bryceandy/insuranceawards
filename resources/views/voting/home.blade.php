@@ -54,7 +54,7 @@
 
         </form>
 
-        <form action="/vote" method="post" id="two" style="padding: 10vh" >
+        <form action="/vote" method="post" id="three" style="padding: 10vh" >
             @csrf
 
             <label for="award">
@@ -74,7 +74,7 @@
 
         </form>
 
-        <form action="/vote" method="post" id="two" style="padding: 10vh" >
+        <form action="/vote" method="post" id="four" style="padding: 10vh" >
             @csrf
 
             <label for="award">
@@ -94,7 +94,7 @@
 
         </form>
 
-        <form action="/vote" method="post" id="two" style="padding: 10vh" >
+        <form action="/vote" method="post" id="five" style="padding: 10vh" >
             @csrf
 
             <label for="award">
@@ -132,21 +132,13 @@
                         e.preventDefault();
 
                         let url = e.target.action;
-                        let name = $('input[name="name"]').val();
-                        let award = $('input[name="award"]').val();
+                        let formData = $(this).serialize();
 
                         $(this).fadeOut(1500);
 
-                        $.ajax({
-                            type: "POST",
+                        $.post({
                             url: url,
-                            data: {
-                                'name': name,
-                                'award': award
-                            },
-                            headers: {
-                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                            },
+                            data: formData,
                             success: function() {
                                 new Noty({
                                     text: 'Vote Success!',
