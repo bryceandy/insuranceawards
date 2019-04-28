@@ -144,7 +144,7 @@
                         console.log('name: '+name+'and award: '+award);
                         $(this).fadeOut(1500);
 
-                        $.post( url, {'name': name, 'award': award} )
+                        $.post( url, {name: name, award: award, _token: '{!! csrf_token() !!}' })
                             .done(function() {
                                 new Noty({
                                     text: 'Vote Success!',
