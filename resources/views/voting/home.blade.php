@@ -118,4 +118,43 @@
 
 @endsection
 
+@section('scripts')
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('form').each(function () {
+
+                $(this).submit(function (e) {
+                    e.preventDefault();
+
+                    let data = $(this).serialize();
+                    let url ='/vote';
+
+                    $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                    });
+
+                    $.ajax({
+                        url: url,
+                        method: "POST",
+                        data: data,
+                        dataType: "json"
+                    })
+                        .done(function( msg ) {
+                        console.log( msg );
+                    })
+                        .fail(function( jqXHR, textStatus ) {
+                        console.log( "Request failed: " + textStatus );
+                    });
+
+                })
+
+            })
+        });
+    </script>
+
+@endsection
 
