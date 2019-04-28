@@ -125,6 +125,12 @@
         $(document).ready( function () {
             $(function () {
 
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+
                 //when any form is submitted
                 $('form').each(function () {
 

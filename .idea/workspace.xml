@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="095a5a16-62b8-4ada-a5e1-3855b2f1c33f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/voting/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/voting/home.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/voting/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="139" column="28" selection-start-line="139" selection-start-column="28" selection-end-line="139" selection-end-column="28" />
+            <state relative-caret-position="224">
+              <caret line="131" column="19" selection-start-line="131" selection-start-column="19" selection-end-line="131" selection-end-column="19" />
               <folding>
                 <element signature="e#195#216#0#HTML" expanded="true" />
                 <element signature="e#895#916#0#HTML" expanded="true" />
@@ -382,12 +383,12 @@
       <workItem from="1555927352061" duration="2114000" />
       <workItem from="1555999274155" duration="1279000" />
       <workItem from="1556260856703" duration="48616000" />
-      <workItem from="1556388221528" duration="17104000" />
+      <workItem from="1556388221528" duration="17699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91034000" />
+    <option name="totallyTimeSpent" value="91629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1441" height="824" extended-state="6" />
@@ -680,8 +681,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/voting/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="139" column="28" selection-start-line="139" selection-start-column="28" selection-end-line="139" selection-end-column="28" />
+        <state relative-caret-position="224">
+          <caret line="131" column="19" selection-start-line="131" selection-start-column="19" selection-end-line="131" selection-end-column="19" />
           <folding>
             <element signature="e#195#216#0#HTML" expanded="true" />
             <element signature="e#895#916#0#HTML" expanded="true" />
