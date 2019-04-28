@@ -233,8 +233,8 @@
                 options: options
             });
 
-        let ctx = document.getElementById('miip').getContext('2d');
-        let chart = new Chart(ctx, {
+        let ctx2 = document.getElementById('miip').getContext('2d');
+        let chart = new Chart(ctx2, {
             type: 'bar',
             data: {
                 labels: {!! json_encode($voteNames) !!},
@@ -247,8 +247,8 @@
             options: options
         });
 
-        let ctx = document.getElementById('mce').getContext('2d');
-        let chart = new Chart(ctx, {
+        let ctx3 = document.getElementById('mce').getContext('2d');
+        let chart = new Chart(ctx3, {
             type: 'bar',
             data: {
                 labels: {!! json_encode($voteNames) !!},
@@ -261,8 +261,8 @@
             options: options
         });
 
-        let ctx = document.getElementById('mioya').getContext('2d');
-        let chart = new Chart(ctx, {
+        let ctx4 = document.getElementById('mioya').getContext('2d');
+        let chart = new Chart(ctx4, {
             type: 'bar',
             data: {
                 labels: {!! json_encode($voteNames) !!},
@@ -275,8 +275,8 @@
             options: options
         });
 
-        let ctx = document.getElementById('ya').getContext('2d');
-        let chart = new Chart(ctx, {
+        let ctx5 = document.getElementById('ya').getContext('2d');
+        let chart = new Chart(ctx5, {
             type: 'bar',
             data: {
                 labels: {!! json_encode($voteNames) !!},
