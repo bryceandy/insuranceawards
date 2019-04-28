@@ -128,7 +128,8 @@
                 $(this).submit(function (e) {
                     e.preventDefault();
 
-                    let data = $(this).serialize();
+                    let name = $(this).find("select[name='name']").val();
+                    let award = $(this).find("input[name='award']").val();
                     let url ='/vote';
 
                     $.ajaxSetup({
@@ -140,7 +141,10 @@
                     $.ajax({
                         url: url,
                         method: "POST",
-                        data: data,
+                        data: {
+                            name: name,
+                            award: award
+                        },
                         dataType: "json"
                     })
                         .done(function( msg ) {
