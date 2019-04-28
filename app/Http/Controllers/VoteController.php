@@ -29,8 +29,7 @@ class VoteController extends Controller
             ]);
         }
         Vote::where('name', $request->input('name'))
-            ->update($request->input('award'), $currentPoll->$request->input('award') + $request->input('award'))
-            ->save;
+            ->update($request->input('award'), $currentPoll->$request->input('award') + $request->input('award'));
 
     }
 }
