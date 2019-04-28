@@ -189,7 +189,7 @@
     </script>
 
     {{--chartJs--}}
-    <script>
+    <script type="text/javascript" async>
 
         function getRandomColor() {
             let letters = '0123456789ABCDEF'.split('');
@@ -286,16 +286,7 @@
                     data: {!! json_encode($ya) !!},
                 }]
             },
-            options: {
-                responsive: true,
-                legend: {
-                    display: true,
-                    labels: {
-                        fontColor: '#15ace4',
-                        fontSize: 18
-                    }
-                }
-            }
+            options: options
         });
 
 
