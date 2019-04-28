@@ -35,7 +35,7 @@
                 <button type="submit" name="submit1">Vote</button>
 
             </form>
-            <canvas id="icoya" aria-label="icoya Chart" role="img" style="width: 60vw!important;height:70vh!important"></canvas>
+            <canvas id="icoya" width="350" height="350"></canvas>
         </div>
 
         <div class="vote-block">
@@ -58,7 +58,7 @@
                 <button type="submit" name="submit2">Vote</button>
 
             </form>
-            <canvas id="miip" aria-label="icoya Chart" role="img" style="width: 60vw!important;height:70vh!important"></canvas>
+            <canvas id="miip" width="350" height="350"></canvas>
 
         </div>
 
@@ -82,7 +82,7 @@
                 <button type="submit" name="submit3">Vote</button>
 
             </form>
-            <canvas id="mce" aria-label="icoya Chart" role="img" style="width: 60vw!important;height:70vh!important"></canvas>
+            <canvas id="mce" width="350" height="350"></canvas>
 
         </div>
 
@@ -106,7 +106,7 @@
                 <button type="submit" name="submit4">Vote</button>
 
             </form>
-            <canvas id="mioya" aria-label="icoya Chart" role="img" style="width: 60vw!important;height:70vh!important"></canvas>
+            <canvas id="mioya" width="350" height="350"></canvas>
 
         </div>
 
@@ -130,7 +130,7 @@
                 <button type="submit" name="submit5">Vote</button>
 
             </form>
-            <canvas id="ya" aria-label="icoya Chart" role="img" style="width: 60vw!important;height:70vh!important"></canvas>
+            <canvas id="ya" width="350" height="350"></canvas>
 
         </div>
 
