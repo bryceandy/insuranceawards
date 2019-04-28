@@ -132,7 +132,8 @@
                         e.preventDefault();
 
                         let url = e.target.action;
-                        let formData = $(this).serialize();
+                        let name = $('input[name="name"]').val();
+                        let award = $('input[name="award"]').val();
 
                         console.log(formData);
 
@@ -140,8 +141,11 @@
 
                         $.ajax({
                             type: "POST",
-                            url: '/vote',
-                            data: formData,
+                            url: url,
+                            data: {
+                                'name': name,
+                                'award': award
+                            },
                             headers: {
                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                             },
