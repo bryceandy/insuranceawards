@@ -135,8 +135,6 @@
                         let name = $('input[name="name"]').val();
                         let award = $('input[name="award"]').val();
 
-                        console.log(formData);
-
                         $(this).fadeOut(1500);
 
                         $.ajax({
