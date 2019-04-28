@@ -17,11 +17,11 @@ class CreateVotesTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
             $table->string('name');
-            $table->integer('icoya');
-            $table->integer('miip');
-            $table->integer('mce');
-            $table->integer('mioya');
-            $table->integer('ya');
+            $table->integer('icoya')->default(0);
+            $table->integer('miip')->default(0);
+            $table->integer('mce')->default(0);
+            $table->integer('mioya')->default(0);
+            $table->integer('ya')->default(0);
         });
     }
 

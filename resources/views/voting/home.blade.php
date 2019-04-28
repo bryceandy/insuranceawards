@@ -23,10 +23,10 @@
             </label>
             <label for="icoya">
                 <select name="name" id="icoya">
-                    <option value="tiba">Tanzania Insurance Brokers Association</option>
-                    <option value="tira">Tanzania Insurance Regulatory Authority</option>
-                    <option value="ati">Association of Tanzania Insurers</option>
-                    <option value="iit">I.I.T</option>
+                    <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
+                    <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
+                    <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
+                    <option value="I.I.T">I.I.T</option>
                 </select>
             </label>
 
@@ -43,10 +43,10 @@
             </label>
             <label for="miip">
                 <select name="name" id="miip">
-                    <option value="tiba">Tanzania Insurance Brokers Association</option>
-                    <option value="tira">Tanzania Insurance Regulatory Authority</option>
-                    <option value="ati">Association of Tanzania Insurers</option>
-                    <option value="iit">I.I.T</option>
+                    <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
+                    <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
+                    <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
+                    <option value="I.I.T">I.I.T</option>
                 </select>
             </label>
 
@@ -63,10 +63,10 @@
             </label>
             <label for="mce">
                 <select name="name" id="mce">
-                    <option value="tiba">Tanzania Insurance Brokers Association</option>
-                    <option value="tira">Tanzania Insurance Regulatory Authority</option>
-                    <option value="ati">Association of Tanzania Insurers</option>
-                    <option value="iit">I.I.T</option>
+                    <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
+                    <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
+                    <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
+                    <option value="I.I.T">I.I.T</option>
                 </select>
             </label>
 
@@ -83,10 +83,10 @@
             </label>
             <label for="mioya">
                 <select name="name" id="mioya">
-                    <option value="tiba">Tanzania Insurance Brokers Association</option>
-                    <option value="tira">Tanzania Insurance Regulatory Authority</option>
-                    <option value="ati">Association of Tanzania Insurers</option>
-                    <option value="iit">I.I.T</option>
+                    <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
+                    <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
+                    <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
+                    <option value="I.I.T">I.I.T</option>
                 </select>
             </label>
 
@@ -103,10 +103,10 @@
             </label>
             <label for="ya">
                 <select name="name" id="ya">
-                    <option value="tiba">Tanzania Insurance Brokers Association</option>
-                    <option value="tira">Tanzania Insurance Regulatory Authority</option>
-                    <option value="ati">Association of Tanzania Insurers</option>
-                    <option value="iit">I.I.T</option>
+                    <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
+                    <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
+                    <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
+                    <option value="I.I.T">I.I.T</option>
                 </select>
             </label>
 
