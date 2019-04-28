@@ -232,8 +232,8 @@
             options: options
         });
 
-        let ctx2 = document.getElementById("miip").getContext("2d");
-        let chart2 = new Chart(ctx2, {
+
+        let chart2 = new Chart(element[1].getContext('2d'), {
             type: 'bar',
             data: {
                 labels: {!! json_encode($voteNames) !!},
@@ -246,8 +246,8 @@
             options: options
         });
 
-        let ctx3 = document.getElementById("mce").getContext("2d");
-        let chart3 = new Chart(ctx3, {
+
+        let chart3 = new Chart(element[2].getContext('2d'), {
             type: 'bar',
             data: {
                 labels: {!! json_encode($voteNames) !!},
@@ -260,8 +260,8 @@
             options: options
         });
 
-        let ctx4 = document.getElementById("mioya").getContext("2d");
-        let chart4 = new Chart(ctx4, {
+
+        let chart4 = new Chart(element[3].getContext('2d'), {
             type: 'bar',
             data: {
                 labels: {!! json_encode($voteNames) !!},
@@ -274,8 +274,8 @@
             options: options
         });
 
-        let ctx5 = document.getElementById("ya").getContext("2d");
-        let chart5 = new Chart(ctx5, {
+
+        let chart5 = new Chart(element[4].getContext('2d'), {
             type: 'bar',
             data: {
                 labels: {!! json_encode($voteNames) !!},
