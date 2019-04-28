@@ -35,7 +35,7 @@
                 <button type="submit" name="submit1">Vote</button>
 
             </form>
-            <canvas id="icoya" aria-label="icoya Chart" role="img"></canvas>
+            <canvas id="icoya" aria-label="icoya Chart" role="img" style="width: 60vw!important;height:70vh!important"></canvas>
         </div>
 
         <div class="vote-block">
@@ -58,7 +58,7 @@
                 <button type="submit" name="submit2">Vote</button>
 
             </form>
-            <canvas id="miip" aria-label="icoya Chart" role="img"></canvas>
+            <canvas id="miip" aria-label="icoya Chart" role="img" style="width: 60vw!important;height:70vh!important"></canvas>
 
         </div>
 
@@ -82,7 +82,7 @@
                 <button type="submit" name="submit3">Vote</button>
 
             </form>
-            <canvas id="mce" aria-label="icoya Chart" role="img"></canvas>
+            <canvas id="mce" aria-label="icoya Chart" role="img" style="width: 60vw!important;height:70vh!important"></canvas>
 
         </div>
 
@@ -106,7 +106,7 @@
                 <button type="submit" name="submit4">Vote</button>
 
             </form>
-            <canvas id="mioya" aria-label="icoya Chart" role="img"></canvas>
+            <canvas id="mioya" aria-label="icoya Chart" role="img" style="width: 60vw!important;height:70vh!important"></canvas>
 
         </div>
 
@@ -130,7 +130,7 @@
                 <button type="submit" name="submit5">Vote</button>
 
             </form>
-            <canvas id="ya" aria-label="icoya Chart" role="img"></canvas>
+            <canvas id="ya" aria-label="icoya Chart" role="img" style="width: 60vw!important;height:70vh!important"></canvas>
 
         </div>
 
@@ -219,21 +219,21 @@
         };
 
 
-            let ctx = document.getElementById('icoya');
-            let chart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: {!! json_encode($voteNames) !!},
-                    datasets: [{
-                        label: "Number of Votes",
-                        backgroundColor: getRandomColorEach(12),
-                        data: {!! json_encode($icoya) !!},
-                    }]
-                },
-                options: options
-            });
+        let ctx = document.getElementById("icoya");
+        let chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: {!! json_encode($voteNames) !!},
+                datasets: [{
+                    label: "Number of Votes",
+                    backgroundColor: getRandomColorEach(12),
+                    data: {!! json_encode($icoya) !!},
+                }]
+            },
+            options: options
+        });
 
-        let ctx2 = document.getElementById('miip');
+        let ctx2 = document.getElementById("miip");
         let chart2 = new Chart(ctx2, {
             type: 'bar',
             data: {
@@ -247,7 +247,7 @@
             options: options
         });
 
-        let ctx3 = document.getElementById('mce');
+        let ctx3 = document.getElementById("mce");
         let chart3 = new Chart(ctx3, {
             type: 'bar',
             data: {
@@ -261,7 +261,7 @@
             options: options
         });
 
-        let ctx4 = document.getElementById('mioya');
+        let ctx4 = document.getElementById("mioya");
         let chart4 = new Chart(ctx4, {
             type: 'bar',
             data: {
@@ -275,7 +275,7 @@
             options: options
         });
 
-        let ctx5 = document.getElementById('ya');
+        let ctx5 = document.getElementById("ya");
         let chart5 = new Chart(ctx5, {
             type: 'bar',
             data: {
