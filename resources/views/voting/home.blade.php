@@ -219,7 +219,7 @@
         };
 
 
-        let ctx = document.getElementById("icoya").getContext("2d");
+        let ctx = document.getElementById("icoya")[0].getContext("2d");
         let chart = new Chart(ctx, {
             type: 'bar',
             data: {
