@@ -135,18 +135,24 @@
                         let formData = $(this).serialize();
 
                         $(this).fadeOut(1500);
-                        $.post(url, formData, function (response) {
 
-                            //Do something when the form is submitted
-                            new Noty({
-                                text: 'Vote Success!',
-                                type: 'success',
-                                theme: 'relax',
-                                layout : 'topRight',
-                                closeWith: ['click', 'button']
-                            }).show();
-
+                        $.ajax({
+                            headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
+                            url: url,
+                            type: 'post',
+                            data: formData,
+                            success: function (response) {
+                                //Do something when the form is submitted
+                                new Noty({
+                                    text: 'Vote Success!',
+                                    type: 'success',
+                                    theme: 'relax',
+                                    layout : 'topRight',
+                                    closeWith: ['click', 'button']
+                                }).show();
+                            }
                         })
+
                     })
                 })
 
