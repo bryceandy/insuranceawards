@@ -34,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/voting/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="140" column="31" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
+            <state relative-caret-position="1526">
+              <caret line="147" column="66" lean-forward="true" selection-start-line="147" selection-start-column="66" selection-end-line="147" selection-end-column="66" />
               <folding>
                 <element signature="e#195#216#0#HTML" expanded="true" />
                 <element signature="e#895#916#0#HTML" expanded="true" />
@@ -388,12 +388,12 @@
       <workItem from="1555927352061" duration="2114000" />
       <workItem from="1555999274155" duration="1279000" />
       <workItem from="1556260856703" duration="48616000" />
-      <workItem from="1556388221528" duration="21712000" />
+      <workItem from="1556388221528" duration="21936000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95642000" />
+    <option name="totallyTimeSpent" value="95866000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1441" height="824" extended-state="0" />
@@ -685,8 +685,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/voting/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="140" column="31" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
+        <state relative-caret-position="1526">
+          <caret line="147" column="66" lean-forward="true" selection-start-line="147" selection-start-column="66" selection-end-line="147" selection-end-column="66" />
           <folding>
             <element signature="e#195#216#0#HTML" expanded="true" />
             <element signature="e#895#916#0#HTML" expanded="true" />
