@@ -15,7 +15,6 @@
     <div id="voteContent">
 
         <form action="/vote" method="post" id="one" style="padding: 10vh" >
-            @csrf
 
             <label for="award">
                 Insurance Company of the Year
@@ -35,7 +34,6 @@
         </form>
 
         <form action="/vote" method="post" id="two" style="padding: 10vh" >
-            @csrf
 
             <label for="award">
                 Most Innovative Insurance Product
@@ -55,7 +53,6 @@
         </form>
 
         <form action="/vote" method="post" id="three" style="padding: 10vh" >
-            @csrf
 
             <label for="award">
                 Most Compliant Entity Award
@@ -75,7 +72,6 @@
         </form>
 
         <form action="/vote" method="post" id="four" style="padding: 10vh" >
-            @csrf
 
             <label for="award">
                 Marketing Initiative of the Year Award
@@ -95,7 +91,6 @@
         </form>
 
         <form action="/vote" method="post" id="five" style="padding: 10vh" >
-            @csrf
 
             <label for="award">
                 Young Achievers' Award
@@ -123,11 +118,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script>
         $(document).ready( function () {
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
 
             $(function () {
 
@@ -144,8 +134,10 @@
                         console.log('name: '+name+'and award: '+award);
                         $(this).fadeOut(1500);
 
-                        $.post( url, {name: name, award: award, _token: '{!! csrf_token() !!}' })
-                            .done(function() {
+                        $.post(
+                            url,
+                            {name: name, award: award },
+                            function() {
                                 new Noty({
                                     text: 'Vote Success!',
                                     type: 'success',
@@ -153,12 +145,9 @@
                                     layout : 'topRight',
                                     closeWith: ['click', 'button']
                                 }).show();
-                            })
-                            .fail(function (err) {
-                                console.log(JSON.stringify(err))
-                            })
-
-
+                            },
+                            'json'
+                        )
                     })
                 })
 
