@@ -140,6 +140,8 @@
                         let url = e.target.action;
                         let formData = $(this).serialize();
 
+                        console.log(formData);
+
                         $(this).fadeOut(1500);
 
                         $.post({
