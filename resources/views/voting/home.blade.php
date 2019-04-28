@@ -125,12 +125,6 @@
         $(document).ready( function () {
             $(function () {
 
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
-
                 //when any form is submitted
                 $('form').each(function () {
 
@@ -144,11 +138,14 @@
 
                         $(this).fadeOut(1500);
 
-                        $.post({
-                            url: url,
+                        $.ajax({
+                            type: "POST",
+                            url: '/vote',
                             data: formData,
-                            success: function (response) {
-                                //Do something when the form is submitted
+                            headers: {
+                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                            },
+                            success: function() {
                                 new Noty({
                                     text: 'Vote Success!',
                                     type: 'success',
@@ -157,7 +154,7 @@
                                     closeWith: ['click', 'button']
                                 }).show();
                             }
-                        })
+                        });
 
                     })
                 })
