@@ -16,6 +16,12 @@ class CreateVotesTable extends Migration
         Schema::create('votes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->string('name');
+            $table->integer('icoya');
+            $table->integer('miip');
+            $table->integer('mce');
+            $table->integer('icoya');
+            $table->integer('ya');
         });
     }
 

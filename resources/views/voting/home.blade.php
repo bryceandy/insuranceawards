@@ -18,10 +18,16 @@
             @csrf
 
             <label for="award">
-                <input type="hidden" name="award" value="Young Achievers" readonly >
+                Insurance Company of the Year
+                <input type="hidden" name="award" value="icoya" readonly >
             </label>
-            <label for="name">
-                <input type="text" name="name" >
+            <label for="icoya">
+                <select name="name" id="icoya">
+                    <option value="tiba">Tanzania Insurance Brokers Association</option>
+                    <option value="tira">Tanzania Insurance Regulatory Authority</option>
+                    <option value="ati">Association of Tanzania Insurers</option>
+                    <option value="iit">I.I.T</option>
+                </select>
             </label>
 
             <button type="submit" name="submit1">Send</button>
@@ -32,13 +38,79 @@
             @csrf
 
             <label for="award">
-                <input type="hidden" name="award" value="Most Compliant" readonly >
+                Most Innovative Insurance Product
+                <input type="hidden" name="award" value="miip" readonly >
             </label>
-            <label for="name">
-                <input type="text" name="name" >
+            <label for="miip">
+                <select name="name" id="miip">
+                    <option value="tiba">Tanzania Insurance Brokers Association</option>
+                    <option value="tira">Tanzania Insurance Regulatory Authority</option>
+                    <option value="ati">Association of Tanzania Insurers</option>
+                    <option value="iit">I.I.T</option>
+                </select>
             </label>
 
             <button type="submit" name="submit2">Send</button>
+
+        </form>
+
+        <form action="#" method="post" id="two" style="padding: 10vh" >
+            @csrf
+
+            <label for="award">
+                Most Compliant Entity Award
+                <input type="hidden" name="award" value="mce" readonly >
+            </label>
+            <label for="mce">
+                <select name="name" id="mce">
+                    <option value="tiba">Tanzania Insurance Brokers Association</option>
+                    <option value="tira">Tanzania Insurance Regulatory Authority</option>
+                    <option value="ati">Association of Tanzania Insurers</option>
+                    <option value="iit">I.I.T</option>
+                </select>
+            </label>
+
+            <button type="submit" name="submit3">Send</button>
+
+        </form>
+
+        <form action="#" method="post" id="two" style="padding: 10vh" >
+            @csrf
+
+            <label for="award">
+                Marketing Initiative of the Year Award
+                <input type="hidden" name="award" value="mioya" readonly >
+            </label>
+            <label for="mioya">
+                <select name="name" id="mioya">
+                    <option value="tiba">Tanzania Insurance Brokers Association</option>
+                    <option value="tira">Tanzania Insurance Regulatory Authority</option>
+                    <option value="ati">Association of Tanzania Insurers</option>
+                    <option value="iit">I.I.T</option>
+                </select>
+            </label>
+
+            <button type="submit" name="submit4">Send</button>
+
+        </form>
+
+        <form action="#" method="post" id="two" style="padding: 10vh" >
+            @csrf
+
+            <label for="award">
+                Young Achievers' Award
+                <input type="hidden" name="award" value="ya" readonly >
+            </label>
+            <label for="ya">
+                <select name="name" id="ya">
+                    <option value="tiba">Tanzania Insurance Brokers Association</option>
+                    <option value="tira">Tanzania Insurance Regulatory Authority</option>
+                    <option value="ati">Association of Tanzania Insurers</option>
+                    <option value="iit">I.I.T</option>
+                </select>
+            </label>
+
+            <button type="submit" name="submit5">Send</button>
 
         </form>
 
