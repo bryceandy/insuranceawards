@@ -370,7 +370,9 @@ a{ text-decoration: none!important }
     }
 
     canvas{
-        margin-left: 15vw
+        margin-left: 15vw;
+        width: 60vw!important;
+        height: 70vh!important;
     }
     form{
         text-align: center;
