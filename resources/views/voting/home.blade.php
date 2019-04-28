@@ -130,6 +130,7 @@
 
                     let name = $(this).find("select[name='name']").val();
                     let award = $(this).find("input[name='award']").val();
+                    console.log('name: '+name+' and award: '+award);
                     let url ='/vote';
 
                     $.ajaxSetup({
