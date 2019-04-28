@@ -207,10 +207,19 @@
             return data;
         }
 
-        $('canvas').each(function () {
-            let id = $(this).attr("id");
+        let options = {
+            responsive: true,
+            legend: {
+                display: true,
+                labels: {
+                    fontColor: '#15ace4',
+                    fontSize: 18
+                }
+            }
+        };
 
-            let ctx = this.getContext('2d');
+
+            let ctx = document.getElementById('icoya').getContext('2d');
             let chart = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -218,22 +227,68 @@
                     datasets: [{
                         label: "Number of Votes",
                         backgroundColor: getRandomColorEach(12),
-                        data: {!! json_encode($ya) !!},
+                        data: {!! json_encode($icoya) !!},
                     }]
                 },
-                // Configuration options go here
-                options: {
-                    responsive: true,
-                    legend: {
-                        display: true,
-                        labels: {
-                            fontColor: '#15ace4',
-                            fontSize: 18
-                        }
-                    }
-                }
+                options: options
             });
-        })
+
+        let ctx = document.getElementById('miip').getContext('2d');
+        let chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: {!! json_encode($voteNames) !!},
+                datasets: [{
+                    label: "Number of Votes",
+                    backgroundColor: getRandomColorEach(12),
+                    data: {!! json_encode($miip) !!},
+                }]
+            },
+            options: options
+        });
+
+        let ctx = document.getElementById('mce').getContext('2d');
+        let chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: {!! json_encode($voteNames) !!},
+                datasets: [{
+                    label: "Number of Votes",
+                    backgroundColor: getRandomColorEach(12),
+                    data: {!! json_encode($mce) !!},
+                }]
+            },
+            options: options
+        });
+
+        let ctx = document.getElementById('mioya').getContext('2d');
+        let chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: {!! json_encode($voteNames) !!},
+                datasets: [{
+                    label: "Number of Votes",
+                    backgroundColor: getRandomColorEach(12),
+                    data: {!! json_encode($mioya) !!},
+                }]
+            },
+            options: options
+        });
+
+        let ctx = document.getElementById('ya').getContext('2d');
+        let chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: {!! json_encode($voteNames) !!},
+                datasets: [{
+                    label: "Number of Votes",
+                    backgroundColor: getRandomColorEach(12),
+                    data: {!! json_encode($ya) !!},
+                }]
+            },
+            options: options
+        });
+
 
     </script>
 
