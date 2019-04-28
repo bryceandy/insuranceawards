@@ -13,7 +13,7 @@ class VoteController extends Controller
         $voteNames = Vote::all()->pluck('name');
         $icoya = Vote::all()->pluck('icoya');
         $miip = Vote::all()->pluck('miip');
-        $mce = Vote::all()->pluck('name');
+        $mce = Vote::all()->pluck('mce');
         $mioya = Vote::all()->pluck('mioya');
         $ya = Vote::all()->pluck('ya');
 
