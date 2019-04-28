@@ -17,8 +17,8 @@ class VoteCasted implements ShouldBroadcast
     public $award, $votes;
     /**
      * Create a new event instance.
-     * @param string $name
      * @param string $award
+     * @param $votes
      * @return void
      */
     public function __construct($award, $votes)
