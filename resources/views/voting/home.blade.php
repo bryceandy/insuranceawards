@@ -137,10 +137,9 @@
                         $(this).fadeOut(1500);
 
                         $.ajax({
-                            headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
                             url: url,
                             type: 'post',
-                            data: formData,
+                            data: {"_token": $('meta[name="csrf-token"]').attr('content'), formData},
                             success: function (response) {
                                 //Do something when the form is submitted
                                 new Noty({
