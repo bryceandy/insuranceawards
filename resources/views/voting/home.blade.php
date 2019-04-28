@@ -132,14 +132,14 @@
                         e.preventDefault();
 
                         let url = e.target.action;
-                        let formData = $(this).serialize();
+                        let name = $(this).find("input[name='name']").val();
+                        let award = $(this).find("input[name='award']").val();
 
+                        console.log('name: '+name+'and award: '+award);
                         $(this).fadeOut(1500);
 
-                        $.post({
-                            url: url,
-                            data: formData,
-                            success: function() {
+                        $.post( url, {'name': name, 'award': award} )
+                            .done(function() {
                                 new Noty({
                                     text: 'Vote Success!',
                                     type: 'success',
@@ -147,7 +147,10 @@
                                     layout : 'topRight',
                                     closeWith: ['click', 'button']
                                 }).show();
-                            }
+                            })
+                            .error(function (err) {
+                                console.log(JSON.stringify(err))
+                            })
                         });
 
                     })
