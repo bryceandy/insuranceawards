@@ -14,17 +14,18 @@ class VoteCasted implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $award, $votes;
+    public $award, $votes, $names;
     /**
      * Create a new event instance.
      * @param string $award
      * @param $votes
      * @return void
      */
-    public function __construct($award, $votes)
+    public function __construct($award, $votes, $names)
     {
         $this->award = $award;
         $this->votes = $votes;
+        $this->names = $names;
     }
 
     /**

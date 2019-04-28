@@ -71,6 +71,7 @@ window.Echo.channel('vote')
         let chart = new Chart(element[index].getContext('2d'), {
             type: 'bar',
             data: {
+                labels: e.names,
                 datasets: [{
                     data: e.votes,
                     label: "Number of Votes",

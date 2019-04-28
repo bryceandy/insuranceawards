@@ -41,8 +41,9 @@ class VoteController extends Controller
             //instead update the existing
             Vote::where('name', $request->input('name'))->increment($request->input('award'));
             $updatedVotes = Vote::all()->pluck($request->input('award'));
+            $updatedNames = Vote::all()->pluck('name');
 
-            event(new VoteCasted($request->input('award'), $updatedVotes));
+            event(new VoteCasted($request->input('award'), $updatedVotes, $updatedNames));
         }
 
     }
