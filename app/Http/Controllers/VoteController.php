@@ -40,9 +40,9 @@ class VoteController extends Controller
         else{
             //instead update the existing
             Vote::where('name', $request->input('name'))->increment($request->input('award'));
-            $updatedVotes = Vote::all()->pluck($request->input('name'));
+            $updatedVotes = Vote::all()->pluck($request->input('award'));
 
-            event(new VoteCasted($request->input('name'), $updatedVotes));
+            event(new VoteCasted($request->input('award'), $updatedVotes));
         }
 
     }
