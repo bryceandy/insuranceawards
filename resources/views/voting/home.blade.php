@@ -218,8 +218,8 @@
             }
         };
 
-        let ctx = $("#icoya");
-        let chart = new Chart(ctx, {
+        let element = $('canvas');
+        let chart = new Chart(element[0].getContext('2d'), {
             type: 'bar',
             data: {
                 labels: {!! json_encode($voteNames) !!},
