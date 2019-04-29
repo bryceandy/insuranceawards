@@ -22,7 +22,7 @@ add('writable_dirs', []);
 
 // Hosts
 
-host('insuranceawards.or.tz')
+host('178.128.7.30')
     ->set('deploy_path', '~/var/www/laravel/insurance');
     
 // Tasks
