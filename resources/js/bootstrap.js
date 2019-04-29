@@ -84,8 +84,15 @@ window.Echo.channel('vote')
                     display: true,
                     labels: {
                         fontColor: '#15ace4',
-                        fontSize: 18
+                        fontSize: 22
                     }
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
                 }
             }
         });
