@@ -23,7 +23,9 @@ add('writable_dirs', []);
 // Hosts
 
 host('178.128.7.30')
-    ->set('deploy_path', '~/var/www/laravel/insurance');
+    ->user('deployer')
+    ->identityFile('~/.ssh/deployerkey')
+    ->set('deploy_path', '~/var/www/laravel');
     
 // Tasks
 
