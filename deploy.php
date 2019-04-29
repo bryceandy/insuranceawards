@@ -22,8 +22,8 @@ add('writable_dirs', []);
 
 // Hosts
 
-host('project.com')
-    ->set('deploy_path', '~/{{application}}');    
+host('insuranceawards.or.tz')
+    ->set('deploy_path', '~/var/www/laravel/insurance');
     
 // Tasks
 
@@ -36,5 +36,5 @@ after('deploy:failed', 'deploy:unlock');
 
 // Migrate database before symlink new release.
 
-before('deploy:symlink', 'artisan:migrate');
+//before('deploy:symlink', 'artisan:migrate');
 
