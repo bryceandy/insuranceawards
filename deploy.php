@@ -7,7 +7,7 @@ require 'recipe/laravel.php';
 set('application', 'Insurance Awards');
 
 // Project repository
-set('repository', 'insurance@github:bryceandy/insuranceawards.git');
+set('repository', 'git@github:bryceandy/insuranceawards.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true); 
