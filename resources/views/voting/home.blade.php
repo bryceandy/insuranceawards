@@ -192,16 +192,15 @@
             let mioya = {!! json_encode($mioya->toArray(), JSON_HEX_TAG) !!};
             let ya = {!! json_encode($ya->toArray(), JSON_HEX_TAG) !!};
 
-            console.log('length: '+icoya.length+' name-first: '+names[0]);
-
             //display votes
             for (let i = 0; i< names.length; i++){
 
                 $("#icoya ."+names[i]).html(""+icoya[i]);
-                $("#miip ."+names[i]).html(""+miip[i]);
-                $("#mce ."+names[i]).html(""+mce[i]);
-                $("#mioya ."+names[i]).html(""+mioya[i]);
-                $("#ya ."+names[i]).html(""+ya[i]);
+                console.log($(i+' '+"#icoya ."+names[i]).length)
+                // $("#miip ."+names[i]).html(""+miip[i]);
+                // $("#mce ."+names[i]).html(""+mce[i]);
+                // $("#mioya ."+names[i]).html(""+mioya[i]);
+                // $("#ya ."+names[i]).html(""+ya[i]);
             }
 
             $('form').each(function () {
