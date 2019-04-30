@@ -417,6 +417,10 @@ a{ text-decoration: none!important }
         margin-top: 0;
     }
 
+    &:last-of-type{
+        margin-bottom: 15vh;
+    }
+
     canvas{
         margin-left: 15vw;
         width: 60vw!important;
