@@ -411,7 +411,7 @@ a{ text-decoration: none!important }
     display: inline-block;
     width: 100vw;
     margin-bottom: 5vh;
-    height: 120vh;
+    height: 135vh;
 
     &:nth-of-type(1){
         margin-top: 0;
@@ -430,20 +430,29 @@ a{ text-decoration: none!important }
             display: block;
             padding: 10px;
             border: 1px solid;
-            width: max-content;
+            width: 60vw;
+            margin-left: 15vw;
+            text-align: left;
 
             &:nth-of-type(1){
                 color: $primary-color;
                 border: none;
                 padding: unset;
                 width: 100vw;
+                margin-left: unset;
+                text-align: unset;
             }
         }
         input[type="radio"]{
 
         }
         button{
-            float: right
+            background: $primary-color;
+            color: #001001;
+            border: none;
+            font-size: x-large;
+            width: 20vw;
+            padding: 8px
         }
     }
 }

@@ -17,7 +17,6 @@ class VoteController extends Controller
         $mioya = Vote::all()->pluck('mioya');
         $ya = Vote::all()->pluck('ya');
 
-
         return view('voting.home', compact('voteNames', 'icoya', 'miip', 'mce', 'mioya', 'ya' ));
     }
 
