@@ -62,7 +62,7 @@ window.Echo.channel('vote')
         //display votes
         for (let i = 0; i< (e.names).length; i++){
 
-            $("#"+e.award+ "."+e.names[i]).empty().append(e.votes[i])
+            $("#"+e.award+ "."+e.names[i]).empty().html(''+e.votes[i])
         }
 
     });
