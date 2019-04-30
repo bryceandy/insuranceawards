@@ -195,11 +195,11 @@
             //display votes
             for (let i = 0; i< names.length; i++){
 
-                $("#icoya span[class='"+names[i]+"'] ").html(""+i);
-                // $("#miip input[value='"+names[i]+"'] >").html(""+miip[i]);
-                // $("#mce input[value='"+names[i]+"'] >").html(""+mce[i]);
-                // $("#mioya input[value='"+names[i]+"'] >").html(""+mioya[i]);
-                // $("#ya input[value='"+names[i]+"'] >").html(""+ya[i]);
+                $("#icoya span[class='"+names[i]+"'] ").html(icoya[i]);
+                $("#miip span[class='"+names[i]+"'] ").html(miip[i]);
+                $("#mce span[class='"+names[i]+"'] ").html(mce[i]);
+                $("#mioya span[class='"+names[i]+"'] ").html(mioya[i]);
+                $("#ya span[class='"+names[i]+"'] ").html(ya[i]);
 
             }
 
