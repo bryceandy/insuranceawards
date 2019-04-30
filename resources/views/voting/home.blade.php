@@ -196,7 +196,7 @@
             for (let i = 0; i< names.length; i++){
 
                 console.log($("#icoya input[value='"+names[i]+"'] > input"));
-                $("#icoya input[value='"+names[i]+"'] >").html(""+icoya[i]);
+                $("#icoya input[value='"+names[i]+"'] > input").html("lame"+icoya[i]);
                 // $("#miip input[value='"+names[i]+"'] >").html(""+miip[i]);
                 // $("#mce input[value='"+names[i]+"'] >").html(""+mce[i]);
                 // $("#mioya input[value='"+names[i]+"'] >").html(""+mioya[i]);
