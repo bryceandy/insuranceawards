@@ -439,7 +439,7 @@ a{ text-decoration: none!important }
                 border: none;
                 padding: unset;
                 width: 100vw;
-                margin-left: unset;
+                margin-left: -5%;
                 text-align: unset;
             }
         }
@@ -452,7 +452,8 @@ a{ text-decoration: none!important }
             border: none;
             font-size: x-large;
             width: 20vw;
-            padding: 8px
+            padding: 8px;
+            margin-bottom: 20px;
         }
     }
 }
