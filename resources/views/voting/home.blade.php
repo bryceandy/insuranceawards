@@ -192,10 +192,10 @@
             let mioya = {!! json_encode($mioya->toArray(), JSON_HEX_TAG) !!};
             let ya = {!! json_encode($ya->toArray(), JSON_HEX_TAG) !!};
 
-            console.log($("#icoya ."+names[0]).length);
+            console.log($("#icoya label ."+names[0]).length);
             console.log($("#icoya ."+names[1]).length);
             console.log($("#icoya ."+names[3]).length);
-            console.log($("#icoya ."+names[4]).length);
+            console.log($("#icoya label ."+names[4]).length);
             //display votes
             for (let i = 0; i< names.length; i++){
 
