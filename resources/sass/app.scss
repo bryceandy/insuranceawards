@@ -411,7 +411,7 @@ a{ text-decoration: none!important }
     display: inline-block;
     width: 100vw;
     margin-bottom: 5vh;
-    max-height: 90vh;
+    height: max-content;
 
     &:nth-of-type(1){
         margin-top: 0;
@@ -426,10 +426,24 @@ a{ text-decoration: none!important }
         text-align: center;
         font-size: 1.2rem;
         label{
-            color: $primary-color
+            color: #001001;
+            display: block;
+            padding: 10px;
+            border: 1px solid;
+            width: max-content;
+
+            &:nth-of-type(1){
+                color: $primary-color;
+                border: none;
+                padding: unset;
+                width: 100vw;
+            }
         }
-        select{
-            outline: none;
+        input[type="radio"]{
+
+        }
+        button{
+            float: right
         }
     }
 }

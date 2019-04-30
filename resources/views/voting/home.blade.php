@@ -22,14 +22,26 @@
                 <label for="award">
                     Insurance Company of the Year
                     <input type="hidden" name="award" value="icoya" readonly >
+                </label> <br>
+
+                <label for="Choice1">
+                    <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
+                    Tanzania Insurance Brokers Association
                 </label>
-                <label for="icoya">
-                    <select name="name" id="icoya">
-                        <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
-                        <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
-                        <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
-                        <option value="I.I.T">I.I.T</option>
-                    </select>
+
+                <label for="Choice2">
+                    <input type="radio" id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
+                    Tanzania Insurance Regulatory Authority
+                </label>
+
+                <label for="Choice3">
+                    <input type="radio" id="Choice3" name="name" value="Association of Tanzania Insurers">
+                    Association of Tanzania Insurers
+                </label>
+
+                <label for="Choice4">
+                    <input type="radio" id="Choice4" name="name" value="I.I.T">
+                    I.I.T
                 </label>
 
                 <button type="submit" name="submit1">Vote</button>
@@ -45,14 +57,26 @@
                 <label for="award">
                     Most Innovative Insurance Product
                     <input type="hidden" name="award" value="miip" readonly >
+                </label> <br>
+
+                <label for="Choice1">
+                    <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
+                    Tanzania Insurance Brokers Association
                 </label>
-                <label for="miip">
-                    <select name="name" id="miip">
-                        <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
-                        <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
-                        <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
-                        <option value="I.I.T">I.I.T</option>
-                    </select>
+
+                <label for="Choice2">
+                    <input type="radio" id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
+                    Tanzania Insurance Regulatory Authority
+                </label>
+
+                <label for="Choice3">
+                    <input type="radio" id="Choice3" name="name" value="Association of Tanzania Insurers">
+                    Association of Tanzania Insurers
+                </label>
+
+                <label for="Choice4">
+                    <input type="radio" id="Choice4" name="name" value="I.I.T">
+                    I.I.T
                 </label>
 
                 <button type="submit" name="submit2">Vote</button>
@@ -69,14 +93,26 @@
                 <label for="award">
                     Most Compliant Entity Award
                     <input type="hidden" name="award" value="mce" readonly >
+                </label> <br>
+
+                <label for="Choice1">
+                    <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
+                    Tanzania Insurance Brokers Association
                 </label>
-                <label for="mce">
-                    <select name="name" id="mce">
-                        <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
-                        <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
-                        <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
-                        <option value="I.I.T">I.I.T</option>
-                    </select>
+
+                <label for="Choice2">
+                    <input type="radio" id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
+                    Tanzania Insurance Regulatory Authority
+                </label>
+
+                <label for="Choice3">
+                    <input type="radio" id="Choice3" name="name" value="Association of Tanzania Insurers">
+                    Association of Tanzania Insurers
+                </label>
+
+                <label for="Choice4">
+                    <input type="radio" id="Choice4" name="name" value="I.I.T">
+                    I.I.T
                 </label>
 
                 <button type="submit" name="submit3">Vote</button>
@@ -93,14 +129,26 @@
                 <label for="award">
                     Marketing Initiative of the Year Award
                     <input type="hidden" name="award" value="mioya" readonly >
+                </label><br>
+
+                <label for="Choice1">
+                    <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
+                    Tanzania Insurance Brokers Association
                 </label>
-                <label for="mioya">
-                    <select name="name" id="mioya">
-                        <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
-                        <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
-                        <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
-                        <option value="I.I.T">I.I.T</option>
-                    </select>
+
+                <label for="Choice2">
+                    <input type="radio" id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
+                    Tanzania Insurance Regulatory Authority
+                </label>
+
+                <label for="Choice3">
+                    <input type="radio" id="Choice3" name="name" value="Association of Tanzania Insurers">
+                    Association of Tanzania Insurers
+                </label>
+
+                <label for="Choice4">
+                    <input type="radio" id="Choice4" name="name" value="I.I.T">
+                    I.I.T
                 </label>
 
                 <button type="submit" name="submit4">Vote</button>
@@ -117,14 +165,26 @@
                 <label for="award">
                     Young Achievers' Award
                     <input type="hidden" name="award" value="ya" readonly >
+                </label> <br>
+
+                <label for="Choice1">
+                    <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
+                    Tanzania Insurance Brokers Association
                 </label>
-                <label for="ya">
-                    <select name="name" id="ya">
-                        <option value="Tanzania Insurance Brokers Association">Tanzania Insurance Brokers Association</option>
-                        <option value="Tanzania Insurance Regulatory Authority">Tanzania Insurance Regulatory Authority</option>
-                        <option value="Association of Tanzania Insurers">Association of Tanzania Insurers</option>
-                        <option value="I.I.T">I.I.T</option>
-                    </select>
+
+                <label for="Choice2">
+                    <input type="radio" id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
+                    Tanzania Insurance Regulatory Authority
+                </label>
+
+                <label for="Choice3">
+                    <input type="radio" id="Choice3" name="name" value="Association of Tanzania Insurers">
+                    Association of Tanzania Insurers
+                </label>
+
+                <label for="Choice4">
+                    <input type="radio" id="Choice4" name="name" value="I.I.T">
+                    I.I.T
                 </label>
 
                 <button type="submit" name="submit5">Vote</button>
@@ -147,7 +207,7 @@
                 $(this).submit(function (e) {
                     e.preventDefault();
 
-                    let name = $(this).find("select[name='name']").val();
+                    let name = $(this).find("input[name='name']:checked").val();
                     let award = $(this).find("input[name='award']").val();
                     let url ='/vote';
 
