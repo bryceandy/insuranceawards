@@ -405,37 +405,23 @@ a{ text-decoration: none!important }
 /*vote page*/
 #voteContent{
     background: #ffffff;
-}
-.vote-block{
-    padding: 5vw;
-    display: inline-block;
-    width: 100vw;
-    margin-bottom: 5vh;
-    height: 135vh;
 
-    &:nth-of-type(1){
-        margin-top: 0;
-    }
-
-    &:last-of-type{
-        margin-bottom: 15vh;
-    }
-
-    canvas{
-        margin-left: 15vw;
-        width: 60vw!important;
-        height: 70vh!important;
-    }
     form{
         text-align: center;
         font-size: 1.2rem;
+        display: inline-block;
+
+        &:last-of-type{
+            margin-bottom: 15vh;
+        }
+
         label{
             color: #001001;
             display: block;
             padding: 10px;
             border: 1px solid;
             width: 50vw;
-            margin-left: 20vw;
+            margin-left: 25vw;
             text-align: left;
 
             &:nth-of-type(1){
@@ -443,7 +429,7 @@ a{ text-decoration: none!important }
                 border: none;
                 padding: unset;
                 width: 100vw;
-                margin-left: -5%;
+                margin-left: unset;
                 text-align: unset;
             }
         }
@@ -459,5 +445,10 @@ a{ text-decoration: none!important }
             padding: 8px;
             margin-bottom: 10vh;
         }
+        span{
+            display: block;
+            float: right
+        }
     }
 }
+

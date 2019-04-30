@@ -59,43 +59,11 @@ window.Echo = new Echo({
 window.Echo.channel('vote')
     .listen('VoteCasted', (e) => {
 
-        //update data
-        let element = $('canvas'), index = 0;
+        //display votes
+        for (let i = 0; i< (e.names).length; i++){
 
-        if(e.award == 'icoya') {index = 0}
-        else if(e.award == 'miip') {index = 1}
-        else if(e.award == 'mce') {index = 2}
-        else if(e.award == 'mioya') {index = 3}
-        else if(e.award == 'ya') {index = 4}
-
-        let chart = new Chart(element[index].getContext('2d'), {
-            type: 'bar',
-            data: {
-                labels: e.names,
-                datasets: [{
-                    data: e.votes,
-                    label: "Number of Votes",
-                    backgroundColor: getRandomColorEach(12),
-                }]
-            },
-            options: {
-                responsive: true,
-                legend: {
-                    display: true,
-                    labels: {
-                        fontColor: '#15ace4',
-                        fontSize: 22
-                    }
-                },
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
-        });
+            $("#"+e.award+ "."+e.names[i]).empty().append(e.votes[i])
+        }
 
     });
 
