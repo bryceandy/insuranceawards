@@ -196,7 +196,7 @@
             for (let i = 0; i< names.length; i++){
 
                 $("#icoya ."+names[i]).html(""+icoya[i]);
-                console.log($(i+' '+"#icoya ."+names[i]).length)
+                console.log(i+' '+$("#icoya ."+names[i]).length)
                 // $("#miip ."+names[i]).html(""+miip[i]);
                 // $("#mce ."+names[i]).html(""+mce[i]);
                 // $("#mioya ."+names[i]).html(""+mioya[i]);
