@@ -195,7 +195,7 @@
             //display votes
             for (let i = 0; i< names.length; i++){
 
-                console.log($("#icoya span[class='"+names[i]+"'] ").html(""+i));
+                $("#icoya span[class='"+names[i]+"'] ").html(""+i);
                 // $("#miip input[value='"+names[i]+"'] >").html(""+miip[i]);
                 // $("#mce input[value='"+names[i]+"'] >").html(""+mce[i]);
                 // $("#mioya input[value='"+names[i]+"'] >").html(""+mioya[i]);
