@@ -192,6 +192,8 @@
             let mioya = {!! json_encode($mioya->toArray(), JSON_HEX_TAG) !!};
             let ya = {!! json_encode($ya->toArray(), JSON_HEX_TAG) !!};
 
+            console.log('icoya: '+icoya+' names: '+names);
+
             //display votes
             for (let i = 0; i< names.length; i++){
 
