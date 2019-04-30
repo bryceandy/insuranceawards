@@ -197,11 +197,11 @@
             //display votes
             for (let i = 0; i< names.length; i++){
 
-                $("#icoya ."+names[i]).html(''+icoya[i]);
-                $("#miip ."+names[i]).html(''+miip[i]);
-                $("#mce ."+names[i]).html(''+mce[i]);
-                $("#mioya ."+names[i]).html(''+mioya[i]);
-                $("#ya ."+names[i]).html(''+ya[i]);
+                $("#icoya ."+names[i]).html(""+icoya[i]);
+                $("#miip ."+names[i]).html(""+miip[i]);
+                $("#mce ."+names[i]).html(""+mce[i]);
+                $("#mioya ."+names[i]).html(""+mioya[i]);
+                $("#ya ."+names[i]).html(""+ya[i]);
             }
 
             $('form').each(function () {
