@@ -25,7 +25,7 @@ add('writable_dirs', []);
 host('178.128.7.30')
     ->user('deployer')
     ->identityFile('~/.ssh/deployerkey')
-    ->set('deploy_path', '~/var/www/laravel');
+    ->set('deploy_path', '~/var/www/html/laravel');
     
 // Tasks
 
