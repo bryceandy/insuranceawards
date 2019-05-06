@@ -425,7 +425,7 @@ a{ text-decoration: none!important }
             text-align: left;
 
             &:nth-of-type(1){
-                color: $primary-color;
+                color: green;
                 border: none;
                 padding: unset;
                 width: 100vw;
@@ -448,6 +448,54 @@ a{ text-decoration: none!important }
         span{
             display: block;
             float: right
+        }
+    }
+}
+/*end vote page*/
+
+/*judges page*/
+#judgesContent{
+    background: #fff;
+    display: grid;
+    grid-template-rows: 15vh auto;
+    grid-template-columns: 100vw;
+
+    #judgesHeader{
+        grid-area: 1/1/2/2;
+    }
+
+    #judges{
+        grid-area: 2/1/3/2;
+        height: min-content;
+        padding: 0 15vw 10vh 15vw;
+
+        .judge{
+            display: inline-block;
+            height: 40vh;
+            width: 20vh;
+            margin: 0 calc((70vw - 100vh)/ 2.75) 5vh 0;
+
+            img, .name, .title, .company{width: 20vh;}
+            img{
+                @include brad(50%);
+                height: 20vh;
+                display: block;
+            }
+            .name{
+                font-family: $font-family-sans-serif-normal;
+                font-size: 1.2rem;
+                color: #001001;
+            }
+            .title{
+                font-family: $font-family-sans-serif-normal;
+                font-size: 1.1rem;
+                color: $primary-color
+            }
+            .company{
+                font-family: $font-family-sans-serif-light;
+                color: grey;
+                font-size: small;
+            }
         }
     }
 }
