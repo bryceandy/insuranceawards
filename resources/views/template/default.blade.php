@@ -68,8 +68,11 @@
 </div>
 
 <script async src="{{'js/app.js'}}"></script>
+{{--ScrollMagic--}}
+<script src="{{'js/scrollMagic2-0-6.min.js'}}"></script>
 {{--GSAP--}}
-<script src="{{'js/Tweenmax.min.js'}}"></script>
+<script src="{{'js/Tweenmax2-1-3.min.js'}}"></script>
+<script src="{{'js/custom.js'}}"></script>
 {{--jquery--}}
 <script src="{{'js/jquery3-4-0.min.js'}}"></script>
 <script>
