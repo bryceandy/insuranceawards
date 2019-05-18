@@ -19,12 +19,12 @@ a{ text-decoration: none!important }
 /*default template*/
 #defaultContent{
     display: grid;
-    grid-template-rows: 16vh auto 63vh;
+    grid-template-rows: 22vh auto 63vh;
     grid-template-columns: 100vw;
 
     #top{
         grid-area: 1/1/2/2;
-        height: 16vh;
+        height: 22vh;
         width: 100vw;
         z-index: 2;
         position: fixed;
@@ -32,13 +32,18 @@ a{ text-decoration: none!important }
 
         .navigation{
             position: fixed;
-            right: 5%;
-            top: calc(8vh - 1rem);
+            padding-right: 5%;
+            top: 18vh;
+            right: 0;
+            width: 100vw;
+            padding-top: calc(3vh - .75rem);
+            background: #001001;
 
             a{
+                float: right;
                 display: inline-block;
                 color: $primary-color;
-                font-size: x-large;
+                font-size: 1.25rem;
                 padding-left: 3rem;
                 font-family: $font-family-sans-serif-normal;
             }
@@ -56,8 +61,8 @@ a{ text-decoration: none!important }
             img{
                 position: absolute;
                 left: 1%;
-                top: 1%;
-                height: 22vh;
+                top: -5%;
+                height: 20vh;
                 width: auto;
             }
         }
@@ -178,15 +183,15 @@ a{ text-decoration: none!important }
     grid-template-columns: 100vw;
 
     #landingMain{
-        background: #ffffff;
         grid-area: 1/1/2/2;
         z-index: 1;
         position: relative;
         p{
             color: #001001;
             position: absolute;
-            left: 5%;
+            left: 50%;
             top: 10%;
+            @include css3-prefix(transform, translateX(-50%));
             font-size: 3rem;
             font-family: $font-family-sans-serif-heavy;
             span{
@@ -197,32 +202,32 @@ a{ text-decoration: none!important }
                 color: $primary-color;
             }
         }
-        img{
-            position: absolute;
-            top: 0;
-            left: 50%;
-            height: 60vh;
-            width: auto;
-            display: block;
-        }
-        .voteNow{
-            position: absolute;
-            bottom: 5vw;
-            left: 30vw;
-            @include css3-prefix(transform, translateX(-75%));
-            background: #001001;
-            color: $primary-color;
-            font-family: $font-family-sans-serif-normal;
-            font-size: x-large;
-            padding: 5px 20px 5px;
-            border: 1px solid transparent;
-            cursor: pointer;
-            @include brad(0);
-            &:hover{
-                background: $primary-color;
-                color: #001001;
-            }
-        }
+        //img{
+        //    position: absolute;
+        //    top: 0;
+        //    left: 50%;
+        //    height: 60vh;
+        //    width: auto;
+        //    display: block;
+        //}
+        //.voteNow{
+        //    position: absolute;
+        //    bottom: 5vw;
+        //    left: 30vw;
+        //    @include css3-prefix(transform, translateX(-75%));
+        //    background: #001001;
+        //    color: $primary-color;
+        //    font-family: $font-family-sans-serif-normal;
+        //    font-size: x-large;
+        //    padding: 5px 20px 5px;
+        //    border: 1px solid transparent;
+        //    cursor: pointer;
+        //    @include brad(0);
+        //    &:hover{
+        //        background: $primary-color;
+        //        color: #001001;
+        //    }
+        //}
     }
 
     #whatWeDo{

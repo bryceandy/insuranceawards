@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{'css/app.min.css'}}">
     <link rel="stylesheet" href="{{'css/fonts.css'}}">
+    <link rel="stylesheet" href="{{'css/background.css'}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     @yield('stylesheets')
 
@@ -18,13 +19,17 @@
 
     <div id="top">
         <div class="navigation">
-            <a href="/vote">Vote</a>
-            <a href="/forms">Forms</a>
-            <a href="/judges">Judges</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            <i class="fas fa-times"></i>
             <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+            <a href="/contact">Contact</a>
+            <a href="/about">About</a>
+            <a href="/about">FAQs</a>
+            <a href="/about">Sponsorship</a>
+            <a href="/about">Sponsors</a>
+            <a href="/about">Shortlist</a>
+            <a href="/judges">Judges</a>
+            <a href="/forms">Forms</a>
+            <a href="/vote">Vote</a>
         </div>
 
         <a class="homeLink" href="/">
