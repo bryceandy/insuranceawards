@@ -68,12 +68,10 @@
 </div>
 
 <script async src="{{'js/app.js'}}"></script>
-
 {{--GSAP--}}
 <script src="{{'js/Tweenmax.min.js'}}"></script>
-
 {{--jquery--}}
-<script src="{{'js/jquery3-4-0.min.js'}}" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+<script src="{{'js/jquery3-4-0.min.js'}}"></script>
 <script>
     $(document).ready(function () {
         $('.fa-bars').click(function () {
