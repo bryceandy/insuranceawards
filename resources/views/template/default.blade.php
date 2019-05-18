@@ -21,15 +21,15 @@
         <div class="navigation">
             <i class="fas fa-bars"></i>
             <i class="fas fa-times"></i>
-            <a href="/contact">Contact</a>
-            <a href="/about">About</a>
+            <a href="/contact">CONTACT</a>
+            <a href="/about">ABOUT</a>
             <a href="/about">FAQs</a>
-            <a href="/about">Sponsorship</a>
-            <a href="/about">Sponsors</a>
-            <a href="/about">Shortlist</a>
-            <a href="/judges">Judges</a>
-            <a href="/forms">Forms</a>
-            <a href="/vote">Vote</a>
+            <a href="/sponsorship">SPONSORSHIP</a>
+            <a href="/sponsors">SPONSORS</a>
+            <a href="/shortlist">SHORTLIST</a>
+            <a href="/judges">COMMITTEE</a>
+            <a href="/forms">FORMS</a>
+            <a href="/vote">VOTE</a>
         </div>
 
         <a class="homeLink" href="/">
@@ -69,8 +69,11 @@
 
 <script async src="{{'js/app.js'}}"></script>
 
+{{--GSAP--}}
+<script src="{{'js/Tweenmax.min.js'}}"></script>
+
 {{--jquery--}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+<script src="{{'js/jquery3-4-0.min.js'}}" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 <script>
     $(document).ready(function () {
         $('.fa-bars').click(function () {

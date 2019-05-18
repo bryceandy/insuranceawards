@@ -22,10 +22,10 @@
             <p>Identifying, Recognising <br> and Rewarding <br>
                 Excellence in the Insurance Sector <br> in Tanzania
             </p>
-            <img src="{{'images/identify.svg'}}" alt="What we do">
-            <a class="ourJudges" href="/judges" >
-                Our Judges
-            </a>
+            {{--<img src="{{'images/identify.svg'}}" alt="What we do">--}}
+            {{--<a class="ourJudges" href="/judges" >--}}
+                {{--Our Judges--}}
+            {{--</a>--}}
         </div>
 
         <div id="howWeDoIt">
