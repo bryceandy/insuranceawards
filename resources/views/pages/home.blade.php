@@ -12,20 +12,12 @@
             <p class="text-center">Welcome to the <br> Tanzania Insurance Awards <br> 2019
                 <span>Rewarding Insurance Excellence in Tanzania</span>
             </p>
-            {{--<img src="{{'images/winners.svg'}}" alt="Award Winners">--}}
-            {{--<a class="voteNow" href="/vote">--}}
-                {{--Vote Now--}}
-            {{--</a>--}}
         </div>
 
         <div id="whatWeDo">
             <p>Identifying, Recognising <br> and Rewarding <br>
                 Excellence in the Insurance Sector <br> in Tanzania
             </p>
-            {{--<img src="{{'images/identify.svg'}}" alt="What we do">--}}
-            {{--<a class="ourJudges" href="/judges" >--}}
-                {{--Our Judges--}}
-            {{--</a>--}}
         </div>
 
         <div id="howWeDoIt">

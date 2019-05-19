@@ -19,22 +19,27 @@
 
     <div id="top">
         <div class="navigation">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-times"></i>
-            <a href="/contact">CONTACT</a>
-            <a href="/about">ABOUT</a>
-            <a href="/about">FAQs</a>
-            <a href="/sponsorship">SPONSORSHIP</a>
-            <a href="/sponsors">SPONSORS</a>
-            <a href="/shortlist">SHORTLIST</a>
-            <a href="/judges">COMMITTEE</a>
-            <a href="/forms">FORMS</a>
+            <a href="/"><img id="homeButton" src="{{'images/icons8-home.svg'}}" alt="Home"></a>
             <a href="/vote">VOTE</a>
+            <a href="/forms">FORMS</a>
+            <a href="/judges">COMMITTEE</a>
+            <a href="/shortlist">SHORTLIST</a>
+            <a href="/sponsors">SPONSORS</a>
+            <a href="/sponsorship">SPONSORSHIP</a>
+            <a href="/about">FAQs</a>
+            <a href="/about">ABOUT</a>
+            <a href="/contact">CONTACT</a>
+            <i class="fas fa-times"></i>
+            <i class="fas fa-bars"></i>
         </div>
 
         <a class="homeLink" href="/">
             <img src="{{'images/insurancelogo.png'}}" alt="Home">
         </a>
+
+        <div class="dateVenue">
+            27<sup>th</sup> September 2019
+        </div>
     </div>
 
     <div id="main">
