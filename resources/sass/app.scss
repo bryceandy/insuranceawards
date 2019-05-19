@@ -179,7 +179,17 @@ a{ text-decoration: none!important }
 }
 
 /*default page responsiveness*/
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1335px){
+    #defaultContent #top .navigation a{
+        font-size: 1rem
+    }
+}
+@media screen and (max-width: 1160px){
+    #defaultContent #top .navigation a{
+        font-size: .75rem
+    }
+}
+@media screen and (max-width: 1000px) {
     #defaultContent #top .navigation{
         a{
             display: none;
