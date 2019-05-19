@@ -53,13 +53,16 @@ a{ text-decoration: none!important }
                 width: 1.25rem;
                 height: 1.25rem
             }
-            .fa-times, .fa-bars{
+            .fa-times, .menuButton{
                 color: $primary-color;
                 display: none;
-                font-size: 3rem;
+                font-size: 1.5rem;
                 cursor: pointer;
             }
-
+            .menuButton{
+                margin-left: 50vw;
+                @include css3-prefix(transform, translateX(-50%))
+            }
         }
         .homeLink{
             display: block;
@@ -194,7 +197,7 @@ a{ text-decoration: none!important }
         a{
             display: none;
         }
-        .fa-bars{
+        .menuButton{
             display: block;
         }
         &.showMenu{
@@ -204,18 +207,20 @@ a{ text-decoration: none!important }
             width: 100vw;
             z-index: 1000;
             background: #001001;
+            padding: unset;
+            display: unset;
 
             a{
                 display: block;
                 text-align: center;
                 margin-left: -5%;
-                font-size: xx-large;
-                margin-bottom: 5%;
+                font-size: x-large;
+                margin-bottom: 1%;
                 &:nth-of-type(1){
-                    margin-top: 18vh;
+                    margin-top: 10vh;
                 }
             }
-            .fa-bars{
+            .menuButton{
                 display: none
             }
             .fa-times{

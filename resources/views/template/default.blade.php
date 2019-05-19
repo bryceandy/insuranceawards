@@ -30,7 +30,7 @@
             <a href="/about">ABOUT</a>
             <a href="/contact">CONTACT</a>
             <i class="fas fa-times"></i>
-            <i class="fas fa-bars"></i>
+            <span class="menuButton">Menu <i class="fas fa-bars"></i></span>
         </div>
 
         <a class="homeLink" href="/">
@@ -82,7 +82,7 @@
 <script src="{{'js/jquery3-4-0.min.js'}}"></script>
 <script>
     $(document).ready(function () {
-        $('.fa-bars').click(function () {
+        $('.menuButton').click(function () {
             $('.navigation').addClass('showMenu')
         });
         $('.fa-times').click(function () {
