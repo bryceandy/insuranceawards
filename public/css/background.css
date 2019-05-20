@@ -1,8 +1,8 @@
 /*background image styles*/
 
 #homeContent #landingMain{
-    background-image: url("../images/landing.jpg");
+    background: center / cover no-repeat url("../images/landing.jpg");
 }
 #homeContent #whatWeDo{
-    background-image: url("../images/landing2.jpg");
+    /*background: 50vw center / cover no-repeat url("../images/landing2.jpg");*/
 }

@@ -15,8 +15,9 @@
         </div>
 
         <div id="whatWeDo">
-            <p>Identifying, Recognising <br> and Rewarding <br>
-                Excellence in the Insurance Sector <br> in Tanzania
+
+            <p>We foster innovation and <br> encourage <br>
+                creativity in the insurance sector in <br> Tanzania
             </p>
         </div>
 

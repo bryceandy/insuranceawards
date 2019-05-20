@@ -69,7 +69,7 @@
 
         <div id="companyContacts">
             <p>Plot No. 954 | Katoke Road, Oysterbay P.O Box 105508 DSM</p>
-            <p>+255 783 918 566 | +255 686 075 075 | +255 717 725 176</p>
+            <p>+255 757 372363</p>
             <p>glowconsults@gmail.com</p>
         </div>
 
