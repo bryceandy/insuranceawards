@@ -24,7 +24,7 @@
         <div id="howWeDoIt">
             <h1>The Process</h1>
 
-            <img src="{{'images/outputlogodark.png'}}" alt="">
+            {{--<img src="{{'images/outputlogodark.png'}}" alt="">--}}
 
             <span class="one">
              Categories of awards shall be agreed upon by the select committee for
