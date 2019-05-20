@@ -19,7 +19,7 @@ a{ text-decoration: none!important }
 /*default template*/
 #defaultContent{
     display: grid;
-    grid-template-rows: 24vh auto 63vh;
+    grid-template-rows: 24vh auto auto;
     grid-template-columns: 100vw;
 
     #top{
@@ -41,13 +41,49 @@ a{ text-decoration: none!important }
             align-items: center;
             background: #001001;
 
-            a{
+            a:hover{
+                border-bottom: 4px solid;
+            }
+            .navlinks{
                 text-align: right;
                 display: inline-flex;
                 color: $primary-color;
                 font-size: 1.25rem;
                 margin-left: 3rem;
                 font-family: $font-family-sans-serif-normal;
+            }
+            #committee{
+                cursor: pointer;
+
+                .committeeBlock{
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: max-content;
+                    width: -moz-max-content;
+                    padding: 2vw;
+                    @include brad(6px);
+                    background: #001001;
+                    color: $primary-color;
+                    line-height: 2.5;
+
+                    a{
+                        display: block;
+                        text-align: left;
+                        color: $primary-color;
+                        &:hover{
+                            border-bottom: unset;
+                        }
+                    }
+                }
+                &.showBlock{
+                    position: relative;
+
+                    .committeeBlock{
+                        display: block;
+                    }
+                }
             }
             #homeButton{
                 width: 1.25rem;
@@ -120,81 +156,50 @@ a{ text-decoration: none!important }
     }
 
     #footer{
-        position: relative;
         grid-area: 3/1/4/2;
         background: #ffffff;
+        height: 70vh;
+        width: 100vw;
 
         svg{
-            position: absolute;
-            height: 66.67%;
-            width: 100%;
-            top: 0;
-            left: 0
+            height: 42vh;
+            width: 100vw;
+            margin-top: 0
         }
-        p{
-            &:nth-of-type(1){
-                position: absolute;
-                top: 1%;
-                left: 50%;
-                @include css3-prefix(transform, translateX(-50%));
-                color: #001001;
-                font-family: $font-family-sans-serif-heavy-italic;
-                font-size: xx-large;
-                text-align: center;
-            }
-            &:nth-of-type(2){
-                position: absolute;
-                bottom: 5%;
-                left: 50%;
-                @include css3-prefix(transform, translateX(-50%));
-                text-align: center;
-                color: #001001;
-                font-family: $font-family-sans-serif-light;
-                font-size: large;
-            }
-        }
-        .footer-links{
-            top: 72.5%;
-            position: absolute;
-            height: auto;
-            width: 40%;
-            left: 50%;
+        #footerMotto{
+            margin-top: -40vh;
+            margin-left: 50vw;
             @include css3-prefix(transform, translateX(-50%));
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-
-            div{
-                justify-self: center;
-                align-self: center;
-                &:nth-of-type(1){ grid-area: 1/1/2/2 }
-                &:nth-of-type(2){ grid-area: 1/2/2/3 }
-                &:nth-of-type(3){ grid-area: 1/3/2/4 }
-
-                a{
-                    font-size: large;
-                    font-family: $font-family-sans-serif-normal;
-                    color: #001001;
-                }
-            }
+            color: #001001;
+            font-family: $font-family-sans-serif-heavy-italic;
+            font-size: xx-large;
+            text-align: center;
+        }
+        #companyContacts{
+            margin-top: 32vh;
+            width: 100%;
+            text-align: center;
+            font-size: 1rem;
         }
     }
 }
 
 /*default page responsiveness*/
 @media screen and (max-width: 1335px){
-    #defaultContent #top .navigation a{
+    #defaultContent #top .navigation .navlinks{
         font-size: 1rem
     }
 }
 @media screen and (max-width: 1160px){
-    #defaultContent #top .navigation a{
+    #defaultContent #top .navigation .navlinks{
         font-size: .75rem
     }
 }
 @media screen and (max-width: 1000px) {
     #defaultContent #top .navigation{
-        a{
+        padding: .75rem;
+
+        .navlinks{
             display: none;
         }
         .menuButton{
@@ -210,15 +215,21 @@ a{ text-decoration: none!important }
             padding: unset;
             display: unset;
 
-            a{
+            .navlinks{
                 display: block;
                 text-align: center;
                 margin-left: -5%;
                 font-size: x-large;
-                margin-bottom: 1%;
-                &:nth-of-type(1){
-                    margin-top: 10vh;
-                }
+                margin-bottom: 4%;
+            }
+            #homeButton{
+                margin-top: 10vh
+            }
+            #committee .committeeBlock{
+                left: 60%;
+                line-height: 1.5;
+                border: 1px solid;
+                font-size: medium
             }
             .menuButton{
                 display: none
@@ -230,6 +241,125 @@ a{ text-decoration: none!important }
                 top: calc(8vh - 1rem)
             }
         }
+    }
+}
+@media screen and (max-width: 770px){
+    #defaultContent #top .navigation.showMenu .navlinks{
+        margin-left: -25%
+    }
+}
+@media screen and (max-width: 695px){
+    #defaultContent{
+        #footer{
+            #footerMotto{
+                font-size: x-large
+            }
+            #companyContacts{
+                margin-top: 30vh
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    #defaultContent #top{
+        .homeLink img{
+            height: 12vh;
+        }
+        .dateVenue{
+            font-size: medium;
+            float: unset;
+            right: unset;
+            top: 60%;
+            left: 50vw;
+            @include css3-prefix(transform, translateX(-120%));
+
+            &::after{
+                top: 0;
+                left: 105%;
+                width: .25rem;
+                height: 100%
+            }
+            &::before{
+                top: 0;
+                left: 110%;
+                width: max-content;
+                width: -moz-max-content;
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px){
+    #defaultContent {
+        #top .navigation{
+            padding: .25rem
+        }
+        #footer{
+            #footerMotto{
+                font-size: large;
+            }
+            #companyContacts{
+                margin-top: 35vh
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    #defaultContent #footer #companyContacts{
+        font-size: .8rem
+    }
+}
+@media screen and (max-width: 470px){
+    #defaultContent {
+        #top {
+            .navigation.showMenu .navlinks{
+                font-size: large
+            }
+            .dateVenue{
+                font-size: small;
+                &::before{
+                    font-size: small;
+                }
+            }
+        }
+
+        #footer{
+            height: 55vh;
+
+            svg{
+                height: 30vh;
+            }
+            #footerMotto{
+                margin-top: -30vh
+            }
+            #companyContacts{
+                margin-top: 25vh
+            }
+        }
+    }
+}
+@media screen and (max-width: 395px){
+    #defaultContent{
+        #top .dateVenue{
+            img{
+                display: none;
+            }
+            &::before{
+                font-size: .7rem
+            }
+        }
+        #footer #companyContacts{
+            font-size: .65rem
+        }
+    }
+}
+@media screen and (max-width: 378px){
+    #defaultContent #footer #footerMotto {
+        font-size: medium
+    }
+}
+@media screen and (max-width: 330px){
+    #defaultContent #footer #footerMotto{
+        font-size: .8rem
     }
 }
 
@@ -447,6 +577,166 @@ a{ text-decoration: none!important }
     }
 
 }
+/*Responsiveness for home page*/
+@media screen and (max-width: 1000px){
+    #homeContent{
+        grid-template-rows: 84vh 100vh 115vh 60vh 100vh;
+    }
+}
+@media screen and (max-width: 930px){
+    #homeContent{
+        grid-template-rows: 84vh 70vh 80vh 60vh 100vh;
+
+        #whatWeDo{
+            p{
+                font-size: 2rem
+            }
+        }
+        #howWeDoIt{
+            font-size: 1rem;
+
+            h1{
+                font-size: 2rem
+            }
+            img{
+                width: 15vw
+            }
+        }
+        #insurancePlayers{
+            h1{
+                font-size: 2rem
+            }
+        }
+        #dates {
+            h1{
+                font-size: 2rem
+            }
+            p{
+                font-size: 1.1rem;
+                span{
+                    font-size: 1.5rem
+                }
+            }
+            .moreInfo{
+                font-size: large
+            }
+        }
+    }
+}
+@media screen and (max-width: 770px){
+    #homeContent #landingMain p{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 695px){
+    #homeContent {
+        #landingMain p{
+            font-size: 2rem
+        }
+        #whatWeDo p{
+            font-size: 1.5rem
+        }
+    }
+}
+@media screen and (max-width: 615px){
+    #homeContent{
+        grid-template-rows: 84vh 70vh 80vh 60vh 85vh;
+
+        #dates{
+            h1{
+                font-size: 1.5rem
+            }
+            p{
+                font-size: .9rem;
+                span{
+                    font-size: 1rem
+                }
+            }
+            .moreInfo{
+                font-size: .9rem
+            }
+        }
+        #insurancePlayers h1{
+            font-size: 1.5rem
+        }
+    }
+}
+@media screen and (max-width: 575px){
+    #homeContent{
+        grid-template-rows: 84vh 70vh 210vw 45vh 85vh;
+
+        #landingMain{
+            p{
+                top: 20%;
+                font-size: 1.75rem;
+                span{
+                    font-size: 1.25rem
+                }
+            }
+        }
+
+        #howWeDoIt{
+            .one, .two, .three, .four{ left: 22vw; max-width: 55vw}
+            .one{top: 18%}
+            .two{ top: calc(18% + 35vw)}
+            .three{ top: 125vw}
+            .four{ top: 160vw; bottom: unset}
+
+            img{display: none}
+        }
+    }
+}
+@media screen and (max-width: 405px){
+    #homeContent{
+        #landingMain p{
+            top: 10%;
+            font-size: 1.5rem;
+
+            span{
+                font-size: 1.2rem
+            }
+        }
+        #whatWeDo p{
+            font-size: 1.3rem
+        }
+        #dates {
+            p{
+                top: 10vh;
+                span{
+                    margin-top: 10px
+                }
+            }
+            .moreInfo{
+                display: none
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    #homeContent {
+        #dates h1{
+            text-align: center;
+            width: 100vw;
+            font-size: 1.3rem;
+            top: 5vh
+        }
+        #howWeDoIt{
+            font-size: .75rem;
+
+            h1{
+                font-size: 1.5rem;
+                width: 100vw;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width: 330px){
+    #homeContent #dates p{
+        font-size: .7rem
+    }
+}
+
 /*end home page*/
 
 /*vote page*/

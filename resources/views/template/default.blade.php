@@ -19,16 +19,23 @@
 
     <div id="top">
         <div class="navigation">
-            <a href="/"><img id="homeButton" src="{{'images/icons8-home.svg'}}" alt="Home"></a>
-            <a href="/vote">VOTE</a>
-            <a href="/forms">FORMS</a>
-            <a href="/judges">COMMITTEE</a>
-            <a href="/shortlist">SHORTLIST</a>
-            <a href="/sponsors">SPONSORS</a>
-            <a href="/sponsorship">SPONSORSHIP</a>
-            <a href="/about">FAQs</a>
-            <a href="/about">ABOUT</a>
-            <a href="/contact">CONTACT</a>
+            <a href="/" class="navlinks"><img id="homeButton" src="{{'images/icons8-home.svg'}}" alt="Home"></a>
+            <a href="/vote" class="navlinks">VOTE</a>
+            <a href="/forms" class="navlinks">FORMS</a>
+            <div href="#" class="navlinks" id="committee">
+                COMMITTEE
+                <div class="committeeBlock">
+                    <a href="/steering">Steering Committee</a>
+                    <a href="/judges">Judges</a>
+                    <a href="/secretariat">Secretariat</a>
+                </div>
+            </div>
+            <a href="/shortlist" class="navlinks">SHORTLIST</a>
+            <a href="/sponsors" class="navlinks">SPONSORS</a>
+            <a href="/sponsorship" class="navlinks">SPONSORSHIP</a>
+            <a href="/faqs" class="navlinks">FAQs</a>
+            <a href="/about" class="navlinks">ABOUT</a>
+            <a href="/contact" class="navlinks">CONTACT</a>
             <i class="fas fa-times"></i>
             <span class="menuButton">Menu <i class="fas fa-bars"></i></span>
         </div>
@@ -58,14 +65,12 @@
             <path fill="#15ace4" d="M0,10 0,5 42.5,64 41,67 Z"></path>
         </svg>
 
-        <p>Rewarding Insurance Excellence <br> in Tanzania</p>
+        <p id="footerMotto">Rewarding Insurance Excellence <br> in Tanzania</p>
 
-        <p>Copyright &copy; Insurance Awards Tanzania 2019</p>
-
-        <div class="footer-links">
-            <div><a href="/vote">Vote</a></div>
-            <div><a href="/forms">Forms</a></div>
-            <div><a href="/contact">Contact</a></div>
+        <div id="companyContacts">
+            <p>Plot No. 954 | Katoke Road, Oysterbay P.O Box 105508 DSM</p>
+            <p>+255 783 918 566 | +255 686 075 075 | +255 717 725 176</p>
+            <p>glowconsults@gmail.com</p>
         </div>
 
     </div>
@@ -82,11 +87,23 @@
 <script src="{{'js/jquery3-4-0.min.js'}}"></script>
 <script>
     $(document).ready(function () {
+        //menu button navigation
         $('.menuButton').click(function () {
             $('.navigation').addClass('showMenu')
         });
         $('.fa-times').click(function () {
             $('.navigation').removeClass('showMenu')
+        });
+
+        //committee list
+        $('#committee').hover(function (e) {
+            e.preventDefault();
+            $(this).addClass('showBlock')
+
+        }, function () {
+            $(this).removeClass('showBlock')
+        }).click(function () {
+            $(this).toggleClass('showBlock')
         })
     })
 </script>
