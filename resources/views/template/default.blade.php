@@ -32,7 +32,6 @@
             </div>
             <a href="/shortlist" class="navlinks">SHORTLIST</a>
             <a href="/sponsors" class="navlinks">SPONSORS</a>
-            <a href="/sponsorship" class="navlinks">SPONSORSHIP</a>
             <a href="/faqs" class="navlinks">FAQs</a>
             <a href="/about" class="navlinks">ABOUT</a>
             <a href="/contact" class="navlinks">CONTACT</a>
