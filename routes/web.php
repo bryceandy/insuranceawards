@@ -22,13 +22,13 @@ Route::post('vote', 'VoteController@cast');
 
 /*Downloading forms*/
 Route::get('download/yaa-ideas-research-development',function(){
-    return Response::download('/YAA1.pdf','Young Achievers Award - Ideas_Research_Development');
+    return Response::download('YAA1.pdf','Young Achievers Award - Ideas_Research_Development');
 });
 Route::get('download/yaa-entrepreneurship',function(){
-    return Response::download('/YAA2.pdf','Young Achievers Award - Entrepreneurship');
+    return Response::download('YAA2.pdf','Young Achievers Award - Entrepreneurship');
 });
 Route::get('download/miip',function(){
-    return Response::download('/MIIP.pdf','Most Innovative Insurance Product');
+    return Response::download('MIIP.pdf','Most Innovative Insurance Product');
 });
 //Route::get('download/yaa-ideas-research-development',function(){
 //    return Response::download('/YAA1.pdf','Young Achievers Award - Ideas_Research_Development');
