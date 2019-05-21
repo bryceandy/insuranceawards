@@ -833,4 +833,14 @@ a{ text-decoration: none!important }
         }
     }
 }
+/*Responsiveness judges page*/
+@media screen and (max-width: 474px){
+    #judgesContent #judges .judge{
+        margin-left: calc(50vw - 7.5rem);
+
+        img{
+            @include css3-prefix(transform, scale(.8));
+        }
+    }
+}
 
