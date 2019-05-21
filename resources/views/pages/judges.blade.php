@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <div id="judgesContent">
+    <div id="judgesContent" style="margin-top: 10vh">
 
         <div id="judgesHeader">
             <h1 class="text-center">2019 Judges</h1>

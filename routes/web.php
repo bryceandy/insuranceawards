@@ -31,14 +31,14 @@ Route::get('download/miip',function(){
     return Response::download('MIIP.pdf','Most Innovative Insurance Product');
 });
 Route::get('download/insurance-brokerage-of-the-year',function(){
-    return Response::download('/IBOY.pdf','Insurance Brokerage of the Year');
+    return Response::download('IBOY.pdf','Insurance Brokerage of the Year');
 });
 Route::get('download/insurance-company-of-the-year',function(){
-    return Response::download('/ICOY.pdf','Insurance Company of the Year');
+    return Response::download('ICOY.pdf','Insurance Company of the Year');
 });
 Route::get('download/insurance-awareness-campaign-of-the-year',function(){
-    return Response::download('/IACOY.pdf','Insurance Awareness Campaign of the Year');
+    return Response::download('IACOY.pdf','Insurance Awareness Campaign of the Year');
 });
 Route::get('download/corporate-social-responsibility-award',function(){
-    return Response::download('/CSRA.pdf','Corporate Social Responsibility Award');
+    return Response::download('CSRA.pdf','Corporate Social Responsibility Award');
 });
