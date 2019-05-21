@@ -22,23 +22,23 @@ Route::post('vote', 'VoteController@cast');
 
 /*Downloading forms*/
 Route::get('download/yaa-ideas-research-development',function(){
-    return Response::download('YAA1.pdf','Young Achievers Award - Ideas_Research_Development');
+    return Response::download('YAA1.pdf','Young Achievers Award - Ideas_Research_Development.pdf');
 });
 Route::get('download/yaa-entrepreneurship',function(){
-    return Response::download('YAA2.pdf','Young Achievers Award - Entrepreneurship');
+    return Response::download('YAA2.pdf','Young Achievers Award - Entrepreneurship.pdf');
 });
 Route::get('download/miip',function(){
-    return Response::download('MIIP.pdf','Most Innovative Insurance Product');
+    return Response::download('MIIP.pdf','Most Innovative Insurance Product.pdf');
 });
 Route::get('download/insurance-brokerage-of-the-year',function(){
-    return Response::download('IBOY.pdf','Insurance Brokerage of the Year');
+    return Response::download('IBOY.pdf','Insurance Brokerage of the Year.pdf');
 });
 Route::get('download/insurance-company-of-the-year',function(){
-    return Response::download('ICOY.pdf','Insurance Company of the Year');
+    return Response::download('ICOY.pdf','Insurance Company of the Year.pdf');
 });
 Route::get('download/insurance-awareness-campaign-of-the-year',function(){
-    return Response::download('IACOY.pdf','Insurance Awareness Campaign of the Year');
+    return Response::download('IACOY.pdf','Insurance Awareness Campaign of the Year.pdf');
 });
 Route::get('download/corporate-social-responsibility-award',function(){
-    return Response::download('CSRA.pdf','Corporate Social Responsibility Award');
+    return Response::download('CSRA.pdf','Corporate Social Responsibility Award.pdf');
 });

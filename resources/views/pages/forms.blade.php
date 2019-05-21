@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <div id="formsContent" style="margin-top: 15vh; background: #fff; font-size: large; text-align: center">
+    <div id="formsContent" style="line-height: 3;padding-bottom: 10vh; padding-top: 15vh; background: #fff; font-size: large; text-align: center">
 
         <ul style="list-style-type: none">
             <li>
