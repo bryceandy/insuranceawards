@@ -13,7 +13,7 @@
 
 @section('content')
 
-    <div id="voteContent">
+    <div id="voteContent" style="margin-top: 15vh">
 
         <form action="/vote" method="post" id="icoya" >
             @csrf
