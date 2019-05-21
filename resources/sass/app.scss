@@ -426,32 +426,6 @@ a{ text-decoration: none!important }
             font-family: $font-family-sans-serif-heavy;
             z-index: 1
         }
-        img{
-            position: absolute;
-            top: 20vh;
-            height: 60vh;
-            width: auto;
-            display: block;
-            left: 0;
-        }
-        .ourJudges{
-            position: absolute;
-            bottom: 10vw;
-            right: 25vw;
-            @include css3-prefix(transform, translateX(25%));
-            background: #001001;
-            color: $primary-color;
-            font-family: $font-family-sans-serif-normal;
-            font-size: x-large;
-            padding: 5px 20px 5px;
-            border: 1px solid transparent;
-            cursor: pointer;
-            @include brad(0);
-            &:hover{
-                background: $primary-color;
-                color: #001001;
-            }
-        }
     }
 
     #howWeDoIt{
@@ -470,14 +444,6 @@ a{ text-decoration: none!important }
             font-size: 3rem;
             @include css3-prefix(transform, translateX(-50%))
         }
-        //img{
-        //    position: absolute;
-        //    top: 50%;
-        //    left: 50%;
-        //    width: 20vw;
-        //    height: auto;
-        //    @include css3-prefix(transform, translate(-50%, -50%));
-        //}
         .one, .two, .three, .four{
             display: block;
             position: absolute;
@@ -814,28 +780,36 @@ a{ text-decoration: none!important }
 #judgesContent{
     background: #fff;
     display: grid;
-    grid-template-rows: 15vh auto;
+    grid-template-rows: auto auto;
     grid-template-columns: 100vw;
+    padding-top: 10vh;
 
     #judgesHeader{
         grid-area: 1/1/2/2;
+        font-size: 2.5rem
     }
 
     #judges{
         grid-area: 2/1/3/2;
         height: min-content;
-        padding: 0 15vw 10vh 15vw;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+
 
         .judge{
             display: inline-block;
             height: 40vh;
-            width: 20vh;
-            margin: 0 calc((70vw - 100vh)/ 2.75) 5vh 0;
+            width: 15rem;
 
-            img, .name, .title, .company{width: 20vh;}
+            .name, .title, .company{width: 15rem;}
             img{
                 @include brad(50%);
-                height: 20vh;
+                height: 10rem;
+                width: 10rem;
+                padding: 5px;
+                border: 1px solid ;
+                margin-left: calc(2.5rem - 5px);
                 display: block;
             }
             .name{

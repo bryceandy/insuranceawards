@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <div id="judgesContent" style="padding-top: 10vh">
+    <div id="judgesContent">
 
         <div id="judgesHeader">
             <h1 class="text-center">2019 Judges</h1>
@@ -17,7 +17,7 @@
             <div class="judge">
                 <img src="{{'images/ilomo.png'}}" alt="Judge">
                 <div class="name text-center">Peter Ilomo</div>
-                <div class="title text-center">Former Chairperson and Board Member</div>
+                <div class="title text-center">Former Chair & Board Member</div>
                 <div class="company text-center">TIRA</div>
             </div>
 
@@ -30,14 +30,14 @@
 
             <div class="judge">
                 <img src="{{'images/katundu.png'}}" alt="Judge">
-                <div class="name text-center">Dr Jamal Adam Katundu</div>
+                <div class="name text-center">Dr Jamal Katundu</div>
                 <div class="title text-center">JC Secretary</div>
                 <div class="company text-center">Senior Lecturer and Researcher IFM</div>
             </div>
 
             <div class="judge">
                 <img src="{{'images/mshiu.png'}}" alt="Judge">
-                <div class="name text-center">Octavian Elimeny Mshiu</div>
+                <div class="name text-center">Octavian Mshiu</div>
                 <div class="title text-center">Acting President</div>
                 <div class="company text-center">Tanzania Chamber of Commerce Industries and Agriculture</div>
             </div>
