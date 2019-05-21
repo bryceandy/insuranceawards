@@ -68,9 +68,9 @@
         <p id="footerMotto">Rewarding Insurance Excellence <br> in Tanzania</p>
 
         <div id="companyContacts">
-            <p>Plot No. 954 | Katoke Road, Oysterbay P.O Box 105508 DSM</p>
-            <p>+255 757 372363</p>
-            <p>glowconsults@gmail.com</p>
+            <p><img src="{{'images/location.svg'}}" alt="">Plot No. 954 | Katoke Road, Oysterbay <img src="{{'images/mail.svg'}}" alt="">P.O Box 105508 DSM</p>
+            <p><img src="{{'images/telephone.svg'}}" alt="">+255 757 372363</p>
+            <p><img src="{{'images/globe.svg'}}" alt="">glowconsults@gmail.com</p>
         </div>
 
     </div>
