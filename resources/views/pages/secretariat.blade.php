@@ -15,39 +15,34 @@
         <div id="secretariatContainer">
 
             <div class="secretariat">
-                <img src="{{'images/saqware.jpeg'}}" alt="Judge">
-                <div class="name text-center">Baghayo Saqware</div>
-                <div class="title text-center">Commissioner</div>
+                <img src="{{'images/ikongo.png'}}" alt="Secretariat">
+                <div class="name text-center">Margaret Ikongo</div>
+                <div class="title text-center">Award Committee Chairperson</div>
+                <div class="company text-center"></div>
+            </div>
+
+            <div class="secretariat">
+                <img src="{{'images/angela.png'}}" alt="Secretariat">
+                <div class="name text-center">Lizzy Angela</div>
+                <div class="title text-center">Award Consultant</div>
+                <div class="company text-center"></div>
+            </div>
+
+            <div class="secretariat">
+                <img src="{{'images/oyuke.png'}}" alt="Secretariat">
+                <div class="name text-center">Phostine Oyuke</div>
+                <div class="title text-center">Communications Officer</div>
                 <div class="company text-center">TIRA</div>
             </div>
 
             <div class="secretariat">
-                <img src="{{'images/bugali.png'}}" alt="Judge">
-                <div class="name text-center">Bosco Bugali</div>
-                <div class="title text-center"></div>
+                <img src="{{'images/toshi.png'}}" alt="Secretariat">
+                <div class="name text-center">Bryan Toshi</div>
+                <div class="title text-center">Award Consultant</div>
                 <div class="company text-center"></div>
             </div>
 
-            <div class="secretariat">
-                <img src="{{'images/kilumbi.jpeg'}}" alt="Judge">
-                <div class="name text-center">Ernest Kilumbi</div>
-                <div class="title text-center"></div>
-                <div class="company text-center"></div>
-            </div>
 
-            <div class="secretariat">
-                <img src="{{'images/jaffer.jpeg'}}" alt="Judge">
-                <div class="name text-center">Mohammed Jaffer</div>
-                <div class="title text-center"></div>
-                <div class="company text-center"></div>
-            </div>
-
-            <div class="secretariat">
-                <img src="{{'images/brown.jpeg'}}" alt="Judge">
-                <div class="name text-center">Elizabeth Brown</div>
-                <div class="title text-center"></div>
-                <div class="company text-center"></div>
-            </div>
 
         </div>
 

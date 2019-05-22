@@ -15,35 +15,35 @@
         <div id="steeringContainer">
 
             <div class="steering">
-                <img src="{{'images/saqware.jpeg'}}" alt="Judge">
+                <img src="{{'images/saqware.jpeg'}}" alt="Steering">
                 <div class="name text-center">Baghayo Saqware</div>
                 <div class="title text-center">Commissioner</div>
                 <div class="company text-center">TIRA</div>
             </div>
 
             <div class="steering">
-                <img src="{{'images/bugali.png'}}" alt="Judge">
+                <img src="{{'images/bugali.png'}}" alt="Steering">
                 <div class="name text-center">Bosco Bugali</div>
                 <div class="title text-center"></div>
                 <div class="company text-center"></div>
             </div>
 
             <div class="steering">
-                <img src="{{'images/kilumbi.jpeg'}}" alt="Judge">
+                <img src="{{'images/kilumbi.jpeg'}}" alt="Steering">
                 <div class="name text-center">Ernest Kilumbi</div>
                 <div class="title text-center"></div>
                 <div class="company text-center"></div>
             </div>
 
             <div class="steering">
-                <img src="{{'images/jaffer.jpeg'}}" alt="Judge">
+                <img src="{{'images/jaffer.jpeg'}}" alt="Steering">
                 <div class="name text-center">Mohammed Jaffer</div>
                 <div class="title text-center"></div>
                 <div class="company text-center"></div>
             </div>
 
             <div class="steering">
-                <img src="{{'images/brown.jpeg'}}" alt="Judge">
+                <img src="{{'images/brown.jpeg'}}" alt="Steering">
                 <div class="name text-center">Elizabeth Brown</div>
                 <div class="title text-center"></div>
                 <div class="company text-center"></div>
