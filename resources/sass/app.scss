@@ -274,7 +274,8 @@ a{ text-decoration: none!important }
                 @include css3-prefix(transform, translateX(-50%));
                 line-height: 1.5;
                 border: 1px solid;
-                font-size: medium
+                font-size: medium;
+                padding: 4vw
             }
             .menuButton{
                 display: none
