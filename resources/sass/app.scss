@@ -276,6 +276,10 @@ a{ text-decoration: none!important }
                 border: 1px solid;
                 font-size: medium;
                 width: 65vw;
+
+                a{
+                    text-align: center;
+                }
             }
             .menuButton{
                 display: none
@@ -966,5 +970,26 @@ a{ text-decoration: none!important }
     }
 }
 /*Forms end*/
+
+/*sponsor page*/
+#sponsorContent{
+    background: #ffffff;
+    padding-bottom: 5vh;
+
+    h1{
+        padding: 5vw
+    }
+    .sponsors{
+        display: flex;
+        flex-wrap: wrap;
+
+        img{
+            height: 12rem;
+            width: auto;
+            margin-left: 20px;
+            max-width: 100vw
+        }
+    }
+}
 
 
