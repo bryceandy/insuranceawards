@@ -25,7 +25,7 @@
             <div href="#" class="navlinks" id="committee">
                 COMMITTEE
                 <div class="committeeBlock">
-                    <a href="/steering">Steering-Committee</a>
+                    <a href="/steering">Steering - Committee</a>
                     <a href="/judges">Judges</a>
                     <a href="/secretariat">Secretariat</a>
                 </div>
@@ -34,7 +34,7 @@
             <div href="#" class="navlinks" id="sponsor">
                 SPONSOR
                 <div class="sponsorBlock">
-                    <a href="/sponsors">Sponsors-2019</a>
+                    <a href="/sponsors">Sponsors - 2019</a>
                     <a href="/sponsorship">Sponsorship</a>
                 </div>
             </div>
