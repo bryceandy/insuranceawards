@@ -12,13 +12,21 @@ use \Illuminate\Support\Facades\Response;
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('about', 'HomeController@about');
-Route::get('contact', 'HomeController@contact');
-Route::get('forms', 'HomeController@forms');
-Route::get('judges', 'HomeController@judges');
 
 Route::get('vote', 'VoteController@index');
 Route::post('vote', 'VoteController@cast');
+
+Route::get('forms', 'HomeController@forms');
+
+/*committee*/
+Route::get('steering', 'HomeController@steering');
+Route::get('judges', 'HomeController@judges');
+Route::get('secretariat', 'HomeController@secretariat');
+
+Route::get('about', 'HomeController@about');
+Route::get('contact', 'HomeController@contact');
+
+
 
 /*Downloading forms*/
 Route::get('download/yaa-ideas-research-development',function(){
