@@ -64,6 +64,7 @@ a{ text-decoration: none!important }
                     width: -moz-max-content;
                     padding: 2vw;
                     @include brad(6px);
+                    @include css3-prefix(transform, translateX(-25%));
                     background: #001001;
                     color: $primary-color;
                     line-height: 2.5;
@@ -72,6 +73,7 @@ a{ text-decoration: none!important }
                         display: block;
                         text-align: left;
                         color: $primary-color;
+                        line-height: 2;
                         &:hover{
                             border-bottom: unset;
                         }
@@ -81,6 +83,41 @@ a{ text-decoration: none!important }
                     position: relative;
 
                     .committeeBlock{
+                        display: block;
+                    }
+                }
+            }
+            #sponsor{
+                cursor: pointer;
+
+                .sponsorBlock{
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: max-content;
+                    width: -moz-max-content;
+                    padding: 2vw;
+                    @include brad(6px);
+                    @include css3-prefix(transform, translateX(-25%));
+                    background: #001001;
+                    color: $primary-color;
+                    line-height: 2.5;
+
+                    a{
+                        display: block;
+                        text-align: left;
+                        color: $primary-color;
+                        line-height: 2.5;
+                        &:hover{
+                            border-bottom: unset;
+                        }
+                    }
+                }
+                &.showBlock{
+                    position: relative;
+
+                    .sponsorBlock{
                         display: block;
                     }
                 }
@@ -225,13 +262,14 @@ a{ text-decoration: none!important }
                 text-align: center;
                 margin-left: -5%;
                 font-size: x-large;
-                margin-bottom: 4%;
+                margin-bottom: 2.5vw;
             }
             #homeButton{
                 margin-top: 10vh
             }
-            #committee .committeeBlock{
-                left: 60%;
+            #committee .committeeBlock, #sponsor .sponsorBlock{
+                left: 52.5vw;
+                @include css3-prefix(transform, translateX(-50%));
                 line-height: 1.5;
                 border: 1px solid;
                 font-size: medium
@@ -248,11 +286,7 @@ a{ text-decoration: none!important }
         }
     }
 }
-@media screen and (max-width: 770px){
-    #defaultContent #top .navigation.showMenu .navlinks{
-        margin-left: -25%
-    }
-}
+
 @media screen and (max-width: 695px){
     #defaultContent{
         #footer{
@@ -732,6 +766,10 @@ a{ text-decoration: none!important }
 #voteContent{
     background: #ffffff;
 
+    h1{
+        padding: 5vh;
+        font-weight: 900;
+    }
     form{
         text-align: center;
         font-size: 1.2rem;
@@ -777,6 +815,24 @@ a{ text-decoration: none!important }
         }
     }
 }
+
+/*Vote page responsiveness*/
+@media screen and (max-width: 405px){
+    #voteContent {
+        form{
+            font-size: 1rem;
+
+            label{
+                width: 70vw;
+                margin-left: 15vw
+            }
+            button{
+                font-size: large
+            }
+        }
+    }
+}
+
 /*end vote page*/
 
 /*judges page*/
@@ -798,7 +854,7 @@ a{ text-decoration: none!important }
         width: 100vw;
         display: flex;
         flex-wrap: wrap;
-
+        margin-bottom: 5vh;
 
         .judge{
             display: inline-block;
@@ -811,7 +867,7 @@ a{ text-decoration: none!important }
                 height: 10rem;
                 width: 10rem;
                 padding: 5px;
-                border: 1px solid ;
+                border: 1px solid $primary-color;
                 margin-left: calc(2.5rem - 5px);
                 display: block;
             }

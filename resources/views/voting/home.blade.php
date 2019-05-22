@@ -2,9 +2,7 @@
 
 @section('stylesheets')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" />
-    <noscript>To use this site please enable javascript on your browser!</noscript>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 @endsection
 
 @section('title')
@@ -13,7 +11,9 @@
 
 @section('content')
 
-    <div id="voteContent" style="margin-top: 15vh">
+    <div id="voteContent">
+
+        <h1 class="text-center">Award Categories</h1>
 
         <form action="/vote" method="post" id="icoya" >
             @csrf
@@ -79,12 +79,12 @@
 
         </form>
 
-        <form action="/vote" method="post" id="mce" >
+        <form action="/vote" method="post" id="yaa1" >
             @csrf
 
             <label for="award">
-                Most Compliant Entity Award
-                <input type="hidden" name="award" value="mce" readonly >
+                Young Achievers' Award - Ideas/Research Development
+                <input type="hidden" name="award" value="yaa1" readonly >
             </label> <br>
 
             <label for="Choice1">
@@ -111,13 +111,13 @@
 
         </form>
 
-        <form action="/vote" method="post" id="mioya" >
+        <form action="/vote" method="post" id="yaa2" >
             @csrf
 
             <label for="award">
-                Marketing Initiative of the Year Award
-                <input type="hidden" name="award" value="mioya" readonly >
-            </label><br>
+                Young Achievers' Award - Entrepreneurship
+                <input type="hidden" name="award" value="yaa2" readonly >
+            </label> <br>
 
             <label for="Choice1">
                 <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
@@ -143,13 +143,13 @@
 
         </form>
 
-        <form action="/vote" method="post" id="ya" >
+        <form action="/vote" method="post" id="iboya" >
             @csrf
 
             <label for="award">
-                Young Achievers' Award
-                <input type="hidden" name="award" value="ya" readonly >
-            </label> <br>
+                Insurance Brokerage of the Year
+                <input type="hidden" name="award" value="iboya" readonly >
+            </label><br>
 
             <label for="Choice1">
                 <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
@@ -175,6 +175,70 @@
 
         </form>
 
+        <form action="/vote" method="post" id="iacoya" >
+            @csrf
+
+            <label for="award">
+                Insurance Awareness Campaign of the Year
+                <input type="hidden" name="award" value="iacoya" readonly >
+            </label><br>
+
+            <label for="Choice1">
+                <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
+                Tanzania Insurance Brokers Association <span class="Tanzania Insurance Brokers Association"></span>
+            </label>
+
+            <label for="Choice2">
+                <input type="radio" id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
+                Tanzania Insurance Regulatory Authority <span class="Tanzania Insurance Regulatory Authority"></span>
+            </label>
+
+            <label for="Choice3">
+                <input type="radio" id="Choice3" name="name" value="Association of Tanzania Insurers">
+                Association of Tanzania Insurers <span class="Association of Tanzania Insurers"></span>
+            </label>
+
+            <label for="Choice4">
+                <input type="radio" id="Choice4" name="name" value="I.I.T">
+                I.I.T <span class="I.I.T"></span>
+            </label>
+
+            <button type="submit" name="submit6">Vote</button>
+
+        </form>
+
+        <form action="/vote" method="post" id="csra" >
+            @csrf
+
+            <label for="award">
+                Corporate Social Responsibility Award
+                <input type="hidden" name="award" value="csra" readonly >
+            </label><br>
+
+            <label for="Choice1">
+                <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
+                Tanzania Insurance Brokers Association <span class="Tanzania Insurance Brokers Association"></span>
+            </label>
+
+            <label for="Choice2">
+                <input type="radio" id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
+                Tanzania Insurance Regulatory Authority <span class="Tanzania Insurance Regulatory Authority"></span>
+            </label>
+
+            <label for="Choice3">
+                <input type="radio" id="Choice3" name="name" value="Association of Tanzania Insurers">
+                Association of Tanzania Insurers <span class="Association of Tanzania Insurers"></span>
+            </label>
+
+            <label for="Choice4">
+                <input type="radio" id="Choice4" name="name" value="I.I.T">
+                I.I.T <span class="I.I.T"></span>
+            </label>
+
+            <button type="submit" name="submit7">Vote</button>
+
+        </form>
+
     </div>
 
 @endsection
@@ -188,18 +252,22 @@
             let names = {!! json_encode($voteNames->toArray(), JSON_HEX_TAG) !!};
             let icoya = {!! json_encode($icoya->toArray(), JSON_HEX_TAG) !!};
             let miip = {!! json_encode($miip->toArray(), JSON_HEX_TAG) !!};
-            let mce = {!! json_encode($mce->toArray(), JSON_HEX_TAG) !!};
-            let mioya = {!! json_encode($mioya->toArray(), JSON_HEX_TAG) !!};
-            let ya = {!! json_encode($ya->toArray(), JSON_HEX_TAG) !!};
+            let yaa1 = {!! json_encode($yaa1->toArray(), JSON_HEX_TAG) !!};
+            let yaa2 = {!! json_encode($yaa2->toArray(), JSON_HEX_TAG) !!};
+            let iboya = {!! json_encode($iboya->toArray(), JSON_HEX_TAG) !!};
+            let iacoya = {!! json_encode($iacoya->toArray(), JSON_HEX_TAG) !!};
+            let csra = {!! json_encode($csra->toArray(), JSON_HEX_TAG) !!};
 
             //display votes
             for (let i = 0; i< names.length; i++){
 
                 $("#icoya span[class='"+names[i]+"'] ").html(icoya[i]);
+                $("#iacoya span[class='"+names[i]+"'] ").html(iacoya[i]);
+                $("#csra span[class='"+names[i]+"'] ").html(csra[i]);
                 $("#miip span[class='"+names[i]+"'] ").html(miip[i]);
-                $("#mce span[class='"+names[i]+"'] ").html(mce[i]);
-                $("#mioya span[class='"+names[i]+"'] ").html(mioya[i]);
-                $("#ya span[class='"+names[i]+"'] ").html(ya[i]);
+                $("#yaa2 span[class='"+names[i]+"'] ").html(yaa2[i]);
+                $("#iboya span[class='"+names[i]+"'] ").html(iboya[i]);
+                $("#yaa1 span[class='"+names[i]+"'] ").html(yaa1[i]);
 
             }
 
@@ -247,115 +315,6 @@
 
         });
     </script>
-
-    {{--chartJs--}}
-    {{--<script type="text/javascript" async>--}}
-
-        {{--function getRandomColor() {--}}
-            {{--let letters = '0123456789ABCDEF'.split('');--}}
-            {{--let color = '#';--}}
-            {{--for (let i = 0; i < 6; i++) {--}}
-                {{--color += letters[Math.floor(Math.random() * 16)];--}}
-            {{--}--}}
-            {{--return color;--}}
-        {{--}--}}
-        {{--function getRandomColorEach(count) {--}}
-            {{--let data =[];--}}
-            {{--for (let i = 0; i < count; i++) {--}}
-                {{--data.push(getRandomColor());--}}
-            {{--}--}}
-            {{--return data;--}}
-        {{--}--}}
-
-        {{--let options = {--}}
-            {{--responsive: true,--}}
-            {{--legend: {--}}
-                {{--display: true,--}}
-                {{--labels: {--}}
-                    {{--fontColor: '#15ace4',--}}
-                    {{--fontSize: 22--}}
-                {{--}--}}
-            {{--},--}}
-            {{--scales: {--}}
-                {{--yAxes: [{--}}
-                    {{--ticks: {--}}
-                        {{--beginAtZero: true--}}
-                    {{--}--}}
-                {{--}]--}}
-            {{--}--}}
-        {{--};--}}
-
-        {{--let element = $('canvas');--}}
-        {{--let chart = new Chart(element[0].getContext('2d'), {--}}
-            {{--type: 'bar',--}}
-            {{--data: {--}}
-                {{--labels: {!! json_encode($voteNames) !!},--}}
-                {{--datasets: [{--}}
-                    {{--label: "Number of Votes",--}}
-                    {{--backgroundColor: getRandomColorEach(12),--}}
-                    {{--data: {!! json_encode($icoya) !!},--}}
-                {{--}]--}}
-            {{--},--}}
-            {{--options: options--}}
-        {{--});--}}
-
-
-        {{--let chart2 = new Chart(element[1].getContext('2d'), {--}}
-            {{--type: 'bar',--}}
-            {{--data: {--}}
-                {{--labels: {!! json_encode($voteNames) !!},--}}
-                {{--datasets: [{--}}
-                    {{--label: "Number of Votes",--}}
-                    {{--backgroundColor: getRandomColorEach(12),--}}
-                    {{--data: {!! json_encode($miip) !!},--}}
-                {{--}]--}}
-            {{--},--}}
-            {{--options: options--}}
-        {{--});--}}
-
-
-        {{--let chart3 = new Chart(element[2].getContext('2d'), {--}}
-            {{--type: 'bar',--}}
-            {{--data: {--}}
-                {{--labels: {!! json_encode($voteNames) !!},--}}
-                {{--datasets: [{--}}
-                    {{--label: "Number of Votes",--}}
-                    {{--backgroundColor: getRandomColorEach(12),--}}
-                    {{--data: {!! json_encode($mce) !!},--}}
-                {{--}]--}}
-            {{--},--}}
-            {{--options: options--}}
-        {{--});--}}
-
-
-        {{--let chart4 = new Chart(element[3].getContext('2d'), {--}}
-            {{--type: 'bar',--}}
-            {{--data: {--}}
-                {{--labels: {!! json_encode($voteNames) !!},--}}
-                {{--datasets: [{--}}
-                    {{--label: "Number of Votes",--}}
-                    {{--backgroundColor: getRandomColorEach(12),--}}
-                    {{--data: {!! json_encode($mioya) !!},--}}
-                {{--}]--}}
-            {{--},--}}
-            {{--options: options--}}
-        {{--});--}}
-
-
-        {{--let chart5 = new Chart(element[4].getContext('2d'), {--}}
-            {{--type: 'bar',--}}
-            {{--data: {--}}
-                {{--labels: {!! json_encode($voteNames) !!},--}}
-                {{--datasets: [{--}}
-                    {{--label: "Number of Votes",--}}
-                    {{--backgroundColor: getRandomColorEach(12),--}}
-                    {{--data: {!! json_encode($ya) !!},--}}
-                {{--}]--}}
-            {{--},--}}
-            {{--options: options--}}
-        {{--});--}}
-
-    {{--</script>--}}
 
 @endsection
 
