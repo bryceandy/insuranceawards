@@ -31,6 +31,26 @@ class HomeController extends Controller
         return view('pages.secretariat');
     }
 
+    public function shortlist(){
+        //display the shortlist page
+        return view('pages.shortlist');
+    }
+
+    public function sponsor(){
+        //display the sponsor page
+        return view('pages.sponsor');
+    }
+
+    public function sponsorship(){
+        //display the sponsorship page
+        return view('pages.sponsorship');
+    }
+
+    public function faqs(){
+        //display the faqs page
+        return view('pages.faqs');
+    }
+
     public function about(){
         //display the about page
         return view('pages.about');

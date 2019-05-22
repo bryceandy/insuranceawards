@@ -34,7 +34,7 @@
             <div href="#" class="navlinks" id="sponsor">
                 SPONSOR
                 <div class="sponsorBlock">
-                    <a href="/sponsors">Sponsors - 2019</a>
+                    <a href="/sponsor">Sponsors - 2019</a>
                     <a href="/sponsorship">Sponsorship</a>
                 </div>
             </div>
