@@ -15,59 +15,38 @@
         <div id="steeringContainer">
 
             <div class="steering">
-                <img src="{{'images/ilomo.png'}}" alt="Judge">
-                <div class="name text-center">Peter Ilomo</div>
-                <div class="title text-center">Former Chair & Board Member</div>
+                <img src="{{'images/saqware.jpeg'}}" alt="Judge">
+                <div class="name text-center">Baghayo Saqware</div>
+                <div class="title text-center">Commissioner</div>
                 <div class="company text-center">TIRA</div>
             </div>
 
             <div class="steering">
-                <img src="{{'images/kakusa.png'}}" alt="Judge">
-                <div class="name text-center">Rajab Kakusa</div>
-                <div class="title text-center">JC Vice-Chairperson</div>
-                <div class="company text-center">CEO at TAN-RE</div>
+                <img src="{{'images/bugali.png'}}" alt="Judge">
+                <div class="name text-center">Bosco Bugali</div>
+                <div class="title text-center"></div>
+                <div class="company text-center"></div>
             </div>
 
             <div class="steering">
-                <img src="{{'images/katundu.png'}}" alt="Judge">
-                <div class="name text-center">Dr Jamal Katundu</div>
-                <div class="title text-center">JC Secretary</div>
-                <div class="company text-center">Senior Lecturer and Researcher IFM</div>
+                <img src="{{'images/kilumbi.jpeg'}}" alt="Judge">
+                <div class="name text-center">Ernest Kilumbi</div>
+                <div class="title text-center"></div>
+                <div class="company text-center"></div>
             </div>
 
             <div class="steering">
-                <img src="{{'images/mshiu.png'}}" alt="Judge">
-                <div class="name text-center">Octavian Mshiu</div>
-                <div class="title text-center">Acting President</div>
-                <div class="company text-center">Tanzania Chamber of Commerce Industries and Agriculture</div>
+                <img src="{{'images/jaffer.jpeg'}}" alt="Judge">
+                <div class="name text-center">Mohammed Jaffer</div>
+                <div class="title text-center"></div>
+                <div class="company text-center"></div>
             </div>
 
             <div class="steering">
-                <img src="{{'images/ulanga.png'}}" alt="Judge">
-                <div class="name text-center">John Ulanga</div>
-                <div class="title text-center">Country Director</div>
-                <div class="company text-center">TradeMark East Africa in Tanzania</div>
-            </div>
-
-            <div class="steering">
-                <img src="{{'images/msusa.png'}}" alt="Judge">
-                <div class="name text-center">Neema Msusa</div>
-                <div class="title text-center">Partner</div>
-                <div class="company text-center">Ernst & Young Tanzania</div>
-            </div>
-
-            <div class="steering">
-                <img src="{{'images/rughani.png'}}" alt="Judge">
-                <div class="name text-center">Sanjay Rughani</div>
-                <div class="title text-center">CEO</div>
-                <div class="company text-center">Standard Chatered Bank</div>
-            </div>
-
-            <div class="steering">
-                <img src="{{'images/accaro.png'}}" alt="Judge">
-                <div class="name text-center">Louis Accaro</div>
-                <div class="title text-center">Director of Membership Services</div>
-                <div class="company text-center">Tanzania Private Sector Foundation</div>
+                <img src="{{'images/brown.jpeg'}}" alt="Judge">
+                <div class="name text-center">Elizabeth Brown</div>
+                <div class="title text-center"></div>
+                <div class="company text-center"></div>
             </div>
 
         </div>
