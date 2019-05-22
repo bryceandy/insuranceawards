@@ -13,6 +13,7 @@ use \Illuminate\Support\Facades\Response;
 
 Route::get('/', 'HomeController@index');
 
+/*voting*/
 Route::get('vote', 'VoteController@index');
 Route::post('vote', 'VoteController@cast');
 
@@ -22,6 +23,12 @@ Route::get('forms', 'HomeController@forms');
 Route::get('steering', 'HomeController@steering');
 Route::get('judges', 'HomeController@judges');
 Route::get('secretariat', 'HomeController@secretariat');
+
+Route::get('shortlist', 'HomeController@shortlist');
+
+/*sponsor*/
+Route::get('sponsor', 'HomeController@sponsor');
+Route::get('sponsorship', 'HomeController@sponsorship');
 
 Route::get('about', 'HomeController@about');
 Route::get('contact', 'HomeController@contact');
