@@ -837,20 +837,20 @@ a{ text-decoration: none!important }
 
 /*end vote page*/
 
-/*judges page*/
-#judgesContent{
+/*judges and steering page*/
+#judgesContent, #steeringContent{
     background: #fff;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 100vw;
     padding-top: 10vh;
 
-    #judgesHeader{
+    #judgesHeader, #steeringHeader{
         grid-area: 1/1/2/2;
         font-size: 2.5rem
     }
 
-    #judges{
+    #judges, #steeringContainer{
         grid-area: 2/1/3/2;
         height: min-content;
         width: 100vw;
@@ -858,7 +858,7 @@ a{ text-decoration: none!important }
         flex-wrap: wrap;
         margin-bottom: 5vh;
 
-        .judge{
+        .judge, .steering{
             display: inline-block;
             height: 40vh;
             width: 15rem;
@@ -891,9 +891,9 @@ a{ text-decoration: none!important }
         }
     }
 }
-/*Responsiveness judges page*/
+/*Responsiveness judges and steering page*/
 @media screen and (max-width: 474px){
-    #judgesContent #judges .judge{
+    #judgesContent #judges .judge, #steeringContent #steeringContent .steering{
         margin-left: calc(50vw - 7.5rem);
 
         img{
@@ -901,7 +901,7 @@ a{ text-decoration: none!important }
         }
     }
 }
-/*End judges page*/
+/*End judges and steering page*/
 
 /*forms page*/
 #formsContent{
@@ -964,3 +964,6 @@ a{ text-decoration: none!important }
         }
     }
 }
+/*Forms end*/
+
+
