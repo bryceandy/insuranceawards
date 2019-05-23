@@ -19,27 +19,28 @@
 
     <div id="top">
         <div class="navigation">
-            <a href="/" class="navlinks"><img id="homeButton" src="{{'images/icons8-home.svg'}}" alt="Home"></a>
-            <a href="/vote" class="navlinks">VOTE</a>
-            <a href="/forms" class="navlinks">FORMS</a>
+            <a href="/" class="navlinks" id="homeLink"><img id="homeButton" src="{{'images/icons8-home.svg'}}" alt="Home"></a>
+            <a href="/vote" class="navlinks" id="voteLink">VOTE</a>
+            <a href="/forms" class="navlinks" id="formsLink">FORMS</a>
             <div href="#" class="navlinks" id="committee">
                 COMMITTEE
                 <div class="committeeBlock">
-                    <a href="/steering">Steering - Committee</a>
-                    <a href="/judges">Judges</a>
-                    <a href="/secretariat">Secretariat</a>
+                    <a href="/steering" id="steeringLink">Steering - Committee</a>
+                    <a href="/judges" id="judgesLink">Judges</a>
+                    <a href="/secretariat" id="secretariatLink">Secretariat</a>
                 </div>
             </div>
-            <a href="/shortlist" class="navlinks">SHORTLIST</a>
+            <a href="/shortlist" class="navlinks" id="shortlistLink">SHORTLIST</a>
             <div href="#" class="navlinks" id="sponsor">
                 SPONSOR
                 <div class="sponsorBlock">
-                    <a href="/sponsor">Sponsors - 2019</a>
-                    <a href="/sponsorship">Sponsorship</a>
+                    <a href="/sponsor" id="sponsorsLink">Sponsors - 2019</a>
+                    <a href="/sponsorship" id="sponsorshipLink">Sponsorship</a>
                 </div>
             </div>
-            <a href="/faqs" class="navlinks">FAQs</a>
-            <a href="/about" class="navlinks">ABOUT</a>
+            <a href="/faqs" class="navlinks" id="faqsLink">FAQs</a>
+            <a href="/about" class="navlinks" id="aboutLink">ABOUT</a>
+            <a href="/contact" class="navlinks" id="contactLink">CONTACT</a>
             <i class="fas fa-times"></i>
             <span class="menuButton">Menu <i class="fas fa-bars"></i></span>
         </div>
@@ -82,44 +83,15 @@
 </div>
 
 <script async src="{{'js/app.js'}}"></script>
-{{--ScrollMagic--}}
-<script src="{{'js/scrollMagic2-0-6.min.js'}}"></script>
-{{--GSAP--}}
-<script src="{{'js/Tweenmax2-1-3.min.js'}}"></script>
-<script src="{{'js/custom.js'}}"></script>
+
 {{--jquery--}}
 <script src="{{'js/jquery3-4-0.min.js'}}"></script>
-<script>
-    $(document).ready(function () {
-        //menu button navigation
-        $('.menuButton').click(function () {
-            $('.navigation').addClass('showMenu')
-        });
-        $('.fa-times').click(function () {
-            $('.navigation').removeClass('showMenu')
-        });
+{{--GSAP--}}
+<script src="{{'js/Tweenmax2-1-3.min.js'}}"></script>
+{{--ScrollMagic--}}
+<script src="{{'js/scrollMagic2-0-6.min.js'}}"></script>
 
-        //committee list
-        $('#committee').hover(function () {
-            $(this).addClass('showBlock')
-
-        }, function () {
-            $(this).removeClass('showBlock')
-        }).click(function () {
-            $(this).toggleClass('showBlock')
-        });
-
-        //committee list
-        $('#sponsor').hover(function () {
-            $(this).addClass('showBlock')
-
-        }, function () {
-            $(this).removeClass('showBlock')
-        }).click(function () {
-            $(this).toggleClass('showBlock')
-        });
-    })
-</script>
+<script src="{{'js/custom.js'}}"></script>
 
 @yield('scripts')
 

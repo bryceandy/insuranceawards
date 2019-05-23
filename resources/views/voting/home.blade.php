@@ -316,5 +316,15 @@
         });
     </script>
 
+  <script type="text/javascript">
+
+      $(document).ready(function () {
+
+          $('#voteLink').addClass('activePage')
+      })
+
+  </script>
+@endsection
+
 @endsection
 

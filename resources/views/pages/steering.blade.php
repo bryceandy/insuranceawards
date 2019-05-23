@@ -55,4 +55,15 @@
 
 @endsection
 
+@section('scripts')
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('#committee').addClass('activePage')
+        })
+
+    </script>
+@endsection
+
 

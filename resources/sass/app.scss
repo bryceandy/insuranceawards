@@ -36,7 +36,7 @@ a{ text-decoration: none!important }
             height: auto;
             padding: 1rem;
             right: 0;
-            width: 100vw;
+            width: 100%;
             display: flex;
             align-items: center;
             background: #001001;
@@ -51,6 +51,10 @@ a{ text-decoration: none!important }
                 font-size: 1.25rem;
                 margin-left: 3rem;
                 font-family: $font-family-sans-serif-normal;
+
+                &.activePage{
+                    border-bottom: 4px solid;
+                }
             }
             #committee{
                 cursor: pointer;
@@ -73,7 +77,7 @@ a{ text-decoration: none!important }
                         display: block;
                         text-align: left;
                         color: $primary-color;
-                        line-height: 2;
+                        line-height: 2.5;
                         &:hover{
                             border-bottom: unset;
                         }
@@ -124,7 +128,8 @@ a{ text-decoration: none!important }
             }
             #homeButton{
                 width: 1.25rem;
-                height: 1.25rem
+                height: 1.25rem;
+                margin-bottom: 4px
             }
             .fa-times, .menuButton{
                 color: $primary-color;
@@ -540,6 +545,7 @@ a{ text-decoration: none!important }
         position: relative;
         grid-area: 5/1/6/2;
         background: #ffffff;
+        padding-bottom: 5vw;
 
         h1{
             top: 10vh;
@@ -819,20 +825,20 @@ a{ text-decoration: none!important }
 
 /*end vote page*/
 
-/*judges, secretariat and steering page*/
-#judgesContent, #steeringContent, #secretariatContent{
+/*judges and steering page*/
+#judgesContent, #steeringContent{
     background: #fff;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 100vw;
     padding-top: 10vh;
 
-    #judgesHeader, #steeringHeader, #secretariatHeader{
+    #judgesHeader, #steeringHeader{
         grid-area: 1/1/2/2;
         font-size: 2.5rem
     }
 
-    #judges, #steeringContainer, #secretariatContainer{
+    #judges, #steeringContainer{
         grid-area: 2/1/3/2;
         height: min-content;
         width: 100vw;
@@ -841,7 +847,7 @@ a{ text-decoration: none!important }
         margin-bottom: 5vh;
         justify-content: center;
 
-        .judge, .steering, .secretariat{
+        .judge, .steering{
             display: inline-block;
             height: 40vh;
             width: 15rem;
@@ -874,16 +880,20 @@ a{ text-decoration: none!important }
         }
     }
 }
-/*Responsiveness judges, secretariat and steering page*/
+/*Responsiveness judges and steering page*/
 @media screen and (max-width: 474px){
-    #judgesContent #judges .judge, #steeringContent #steeringContainer .steering, #secretariatContent #secretariatContainer .secretariat{
+    #judgesContent #judges .judge, #steeringContent #steeringContainer .steering{
 
         img{
             @include css3-prefix(transform, scale(.8));
         }
     }
 }
-/*End judges, secretariat and steering page*/
+/*End judges and steering page*/
+
+/*secretariat page*/
+
+/*end secretariat page*/
 
 /*forms page*/
 #formsContent{
@@ -968,5 +978,52 @@ a{ text-decoration: none!important }
         }
     }
 }
+/*end sponsor page*/
 
+/*contact page*/
+#contactContent{
+    background: #ffffff;
+    padding: 5vw;
+
+    h4{
+        color: $primary-color;
+        font-weight: bolder;
+    }
+    .contactContainer{
+        margin-top: 5vw;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .contact{
+            display: inline-block;
+            height: 40vh;
+            width: 15rem;
+
+            .name, .title, .company{width: 15rem; font-family: $font-family-sans-serif-normal;}
+            img{
+                @include brad(50%);
+                height: 10rem;
+                width: 10rem;
+                padding: 5px;
+                border: 1px solid $primary-color;
+                margin-left: calc(2.5rem - 5px);
+                display: block;
+            }
+            .name{
+                font-size: 1.2rem;
+                color: #001001;
+            }
+            .title{
+                font-size: 1.1rem;
+                color: $primary-color
+            }
+            .company{
+                color: #001001;
+                font-size: small;
+            }
+        }
+    }
+}
 

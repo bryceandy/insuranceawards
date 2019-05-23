@@ -13,4 +13,15 @@
 
 @endsection
 
+@section('scripts')
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('#faqsLink').addClass('activePage')
+        })
+
+    </script>
+@endsection
+
 

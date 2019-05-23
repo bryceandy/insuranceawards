@@ -32,7 +32,7 @@ Route::get('sponsorship', 'HomeController@sponsorship');
 
 Route::get('faqs', 'HomeController@faqs');
 Route::get('about', 'HomeController@about');
-
+Route::get('contact', 'HomeController@contact');
 
 
 /*Downloading forms*/
