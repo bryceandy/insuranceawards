@@ -9,7 +9,7 @@
     <div id="contactContent">
 
         <h1 class="text-center">Contact Us</h1>
-        <h4 class="text-center">If you have any queries regarding the British Insurance Awards, please contact the relevant person below:</h4>
+        <h4 class="text-center">If you have any queries regarding the Insurance Awards, please contact the relevant person below:</h4>
 
         <div class="contactContainer">
 
