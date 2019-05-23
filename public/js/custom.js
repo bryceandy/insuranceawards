@@ -10,6 +10,16 @@ new ScrollMagic.Scene({
     .setPin('.navigation')
     .addTo(controller);
 
+//another scene
+new ScrollMagic.Scene({
+    triggerElement: '#landingMain p',
+    triggerHook: 'onEnter',
+    reverse: false
+})
+    .setTween(TweenMax.to())
+    .addTo(controller);
+
+
 //jquery
 $(document).ready(function () {
     //menu button navigation
