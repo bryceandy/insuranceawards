@@ -4,7 +4,6 @@
     <list default="true" id="095a5a16-62b8-4ada-a5e1-3855b2f1c33f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="1018" column="31" selection-start-line="1018" selection-start-column="31" selection-end-line="1018" selection-end-column="31" />
+            <state relative-caret-position="97">
+              <caret line="882" column="32" selection-start-line="882" selection-start-column="32" selection-end-line="882" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -482,12 +481,12 @@
       <workItem from="1558514888449" duration="21863000" />
       <workItem from="1558597657718" duration="292000" />
       <workItem from="1558598718498" duration="11678000" />
-      <workItem from="1558616424494" duration="419000" />
+      <workItem from="1558616424494" duration="750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246613000" />
+    <option name="totallyTimeSpent" value="246944000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1440" height="815" extended-state="0" />
@@ -827,8 +826,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="1018" column="31" selection-start-line="1018" selection-start-column="31" selection-end-line="1018" selection-end-column="31" />
+        <state relative-caret-position="97">
+          <caret line="882" column="32" selection-start-line="882" selection-start-column="32" selection-end-line="882" selection-end-column="32" />
         </state>
       </provider>
     </entry>

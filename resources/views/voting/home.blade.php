@@ -326,5 +326,3 @@
   </script>
 @endsection
 
-@endsection
-
