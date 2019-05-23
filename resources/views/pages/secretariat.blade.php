@@ -8,43 +8,18 @@
 
     <div id="secretariatContent">
 
-        <div id="secretariatHeader">
-            <h1 class="text-center">Secretariat</h1>
-        </div>
+        <h1 class="text-center">Secretariat</h1>
+        <img src="{{'images/glow.png'}}" alt="Glow Consulting Services" id="glow">
 
-        <div id="secretariatContainer">
+        <h4 class="text-center">GLOW CONSULTING SERVICES</h4>
+        <p class="text-center">
+            "Changing the face of business communication."
+        </p>
 
-            <div class="secretariat">
-                <img src="{{'images/ikongo.png'}}" alt="Secretariat">
-                <div class="name text-center">Margaret Ikongo</div>
-                <div class="title text-center">Award Committee Chairperson</div>
-                <div class="company text-center"></div>
-            </div>
-
-            <div class="secretariat">
-                <img src="{{'images/angela.png'}}" alt="Secretariat">
-                <div class="name text-center">Lizzy Angela</div>
-                <div class="title text-center">Award Consultant</div>
-                <div class="company text-center"></div>
-            </div>
-
-            <div class="secretariat">
-                <img src="{{'images/oyuke.png'}}" alt="Secretariat">
-                <div class="name text-center">Phostine Oyuke</div>
-                <div class="title text-center">Communications Officer</div>
-                <div class="company text-center">TIRA</div>
-            </div>
-
-            <div class="secretariat">
-                <img src="{{'images/toshi.png'}}" alt="Secretariat">
-                <div class="name text-center">Bryan Toshi</div>
-                <div class="title text-center">Award Consultant</div>
-                <div class="company text-center"></div>
-            </div>
-
-
-
-        </div>
+        <p class="text-center" style="color: #15ace4">Plot No. 954 | Katoke Road, Oysterbay | P.O Box 105508 DSM <br>
+            +255 757 372363 <br>
+            glowconsults@gmail.com <br>
+        </p>
 
     </div>
 

@@ -11,9 +11,9 @@
         <h1 class="text-center">Our Sponsors</h1>
 
         <div class="sponsors">
+            <img src="{{'images/tira.png'}}" alt="TIRA">
             <img src="{{'images/zepre.png'}}" alt="ZEP-RE">
             <img src="{{'images/tanre.png'}}" alt="TAN-RE">
-            <img src="{{'images/tira.png'}}" alt="TIRA">
         </div>
     </div>
 
