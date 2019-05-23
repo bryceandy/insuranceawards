@@ -71,10 +71,6 @@
                 <b>3<sup>rd</sup> August 2019</b>
             </p>
 
-            <button class="moreInfo">
-                <a href="/contact">More Info</a>
-            </button>
-
         </div>
 
     </div>

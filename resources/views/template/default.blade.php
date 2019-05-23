@@ -40,7 +40,6 @@
             </div>
             <a href="/faqs" class="navlinks">FAQs</a>
             <a href="/about" class="navlinks">ABOUT</a>
-            <a href="/contact" class="navlinks">CONTACT</a>
             <i class="fas fa-times"></i>
             <span class="menuButton">Menu <i class="fas fa-bars"></i></span>
         </div>

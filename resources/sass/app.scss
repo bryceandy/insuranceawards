@@ -577,22 +577,7 @@ a{ text-decoration: none!important }
                 }
             }
         }
-        .moreInfo{
-            position: absolute;
-            bottom: 15vh;
-            right: 25vw;
-            font-family: $font-family-sans-serif-normal;
-            font-size: x-large;
-            @include css3-prefix(transform, translateX(50%));
-            background: #001001;
-            border: 1px solid transparent;
-            padding: 5px 20px 5px;
-            a{ color: #ffffff}
-            &:hover {
-                background: #ffffff;
-                a{ color: #001001 }
-            }
-        }
+
     }
 
 }
@@ -636,9 +621,7 @@ a{ text-decoration: none!important }
                     font-size: 1.5rem
                 }
             }
-            .moreInfo{
-                font-size: large
-            }
+
         }
     }
 }
@@ -671,9 +654,7 @@ a{ text-decoration: none!important }
                     font-size: 1rem
                 }
             }
-            .moreInfo{
-                font-size: .9rem
-            }
+
         }
         #insurancePlayers h1{
             font-size: 1.5rem
@@ -724,9 +705,7 @@ a{ text-decoration: none!important }
                     margin-top: 10px
                 }
             }
-            .moreInfo{
-                display: none
-            }
+
         }
     }
 }

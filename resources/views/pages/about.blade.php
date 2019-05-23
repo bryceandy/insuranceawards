@@ -9,7 +9,6 @@
     <div id="aboutContent">
 
 
-
     </div>
 
 @endsection
