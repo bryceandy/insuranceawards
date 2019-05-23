@@ -880,9 +880,9 @@ a{ text-decoration: none!important }
         }
     }
 }
-/*Responsiveness judges and steering page*/
+/*Responsiveness judges, contact and steering page*/
 @media screen and (max-width: 474px){
-    #judgesContent #judges .judge, #steeringContent #steeringContainer .steering{
+    #judgesContent #judges .judge, #steeringContent #steeringContainer .steering, #contactContent .contactContainer .contact{
 
         img{
             @include css3-prefix(transform, scale(.8));
