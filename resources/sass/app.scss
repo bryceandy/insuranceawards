@@ -60,8 +60,7 @@ a{ text-decoration: none!important }
                     position: absolute;
                     top: 100%;
                     left: 0;
-                    width: max-content;
-                    width: -moz-max-content;
+                    width: auto;
                     padding: 2vw;
                     @include brad(6px);
                     @include css3-prefix(transform, translateX(-25%));
@@ -96,8 +95,7 @@ a{ text-decoration: none!important }
                     position: absolute;
                     top: 100%;
                     left: 0;
-                    width: max-content;
-                    width: -moz-max-content;
+                    width: auto;
                     padding: 2vw;
                     @include brad(6px);
                     @include css3-prefix(transform, translateX(-25%));
@@ -275,7 +273,7 @@ a{ text-decoration: none!important }
                 line-height: 1.5;
                 border: 1px solid;
                 font-size: medium;
-                width: 65vw;
+                width: 60vw;
 
                 a{
                     text-align: center;
@@ -841,6 +839,7 @@ a{ text-decoration: none!important }
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 5vh;
+        justify-content: center;
 
         .judge, .steering, .secretariat{
             display: inline-block;
@@ -878,7 +877,6 @@ a{ text-decoration: none!important }
 /*Responsiveness judges, secretariat and steering page*/
 @media screen and (max-width: 474px){
     #judgesContent #judges .judge, #steeringContent #steeringContainer .steering, #secretariatContent #secretariatContainer .secretariat{
-        margin-left: calc(50vw - 7.5rem);
 
         img{
             @include css3-prefix(transform, scale(.8));
