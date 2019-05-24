@@ -414,14 +414,53 @@ a{ text-decoration: none!important }
         font-size: .8rem
     }
 }
+/*iPad */
+@media screen and (aspect-ratio: 3/4) and (min-height: 1020px){
+    #defaultContent {
+        grid-template-rows: 22vh auto auto;
+
+        #top{
+            height: 22vh;
+
+            .homeLink img{
+                height: 16vh
+            }
+            .navigation{
+                padding: 1rem;
+                top: 16vh;
+            }
+        }
+        #footer{
+            height: 60vh;
+            #companyContacts{
+                font-size: .85rem;
+                margin-top: 28vh
+            }
+        }
+    }
+}
 /*iPad-Pro */
 @media screen and (min-aspect-ratio: 3/4) and (min-height: 1330px){
     #defaultContent {
-        #top .navigation{
-            padding: 1.9rem
+        grid-template-rows: 20vh auto auto;
+
+        #top{
+            height: 20vh;
+
+            .homeLink img{
+                height: 16vh
+            }
+            .navigation{
+                padding: 1rem;
+                top: 16vh
+            }
         }
         #footer{
-            height: 55vh
+            height: 55vh;
+            #companyContacts{
+                font-size: .85rem;
+                margin-top: 30vh
+            }
         }
     }
 
@@ -431,7 +470,7 @@ a{ text-decoration: none!important }
 /*home page*/
 #homeContent{
     display: grid;
-    grid-template-rows: 84vh 100vh 115vh 80vh 100vh ;
+    grid-template-rows: 84vh 100vh 80vh 100vh ;
     grid-template-columns: 100vw;
 
     #landingMain{
@@ -446,7 +485,7 @@ a{ text-decoration: none!important }
             @include css3-prefix(transform, translateX(-50%));
             font-size: 3rem;
             font-family: $font-family-sans-serif-heavy;
-            span{
+            span:nth-of-type(2){
                 display: block;
                 font-size: 1.75rem;
                 font-family: $font-family-sans-serif-normal;
@@ -460,64 +499,53 @@ a{ text-decoration: none!important }
     #whatWeDo{
         grid-area: 2/1/3/2;
         position: relative;
-        //background: linear-gradient(90deg, #FFF 50%, $primary-color 50%);
+        background: #ffffff;
 
-        p{
-            color: #001001;
-            text-align: center;
+        .whatwedo{
+            color: $primary-color;
+            text-align: left;
             position: absolute;
             top: 50%;
-            right: 50%;
-            @include css3-prefix(transform, translate(50%, -50%));
+            left: 5%;
+            width: 40%;
+            @include css3-prefix(transform, translateY(-50%));
             font-size: 2.5rem;
             font-family: $font-family-sans-serif-heavy;
             z-index: 1
         }
-    }
-
-    #howWeDoIt{
-        position: relative;
-        grid-area: 3/1/4/2;
-        padding: 5%;
-        font-size: 1.5rem;
-        background-color: $primary-color2;
-
-        h1{
-            color: $primary-color;
+        .theProcess{
+            background: $primary-color2;
             position: absolute;
-            top: 10%;
+            top: 0;
             left: 50%;
-            font-family: $font-family-sans-serif-heavy;
-            font-size: 3rem;
-            @include css3-prefix(transform, translateX(-50%))
-        }
-        .one, .two, .three, .four{
-            display: block;
-            position: absolute;
-            text-align: center;
-            max-width: 35vw;
-        }
-        .one{
-            top: 20%;
-            left: 5%;
-        }
-        .two{
-            top: 20%;
-            right: 5%;
-        }
-        .three{
-            bottom: 20%;
-            left: 5%;
-        }
-        .four{
-            bottom: 15%;
-            right: 5%;
+            width: 50%;
+            height: 100%;
+            padding-top: 18%;
+
+            h1{
+                color: #001001;
+                position: absolute;
+                left: 50%;
+                top: 5%;
+                font-family: $font-family-sans-serif-heavy;
+                font-size: 3rem;
+                z-index: 1;
+                white-space: nowrap;
+                @include css3-prefix(transform, translateX(-50%))
+            }
+            .one, .two, .three, .four{
+                display: inline-block;
+                text-align: left;
+                max-width: 40vw;
+                margin-left: 5vw;
+                margin-bottom: 5vh;
+            }
         }
     }
 
     #insurancePlayers{
         position: relative;
-        grid-area: 4/1/5/2;
+        grid-area: 3/1/4/2;
         background: #ffffff;
         h1{
             color: #001001;
@@ -543,14 +571,14 @@ a{ text-decoration: none!important }
 
     #dates{
         position: relative;
-        grid-area: 5/1/6/2;
+        grid-area: 4/1/5/2;
         background: #ffffff;
         padding-bottom: 5vw;
 
         h1{
             top: 10vh;
-            left: 50%;
-            @include css3-prefix(transform, translateX(-50%));
+            text-align: left;
+            left: 15vw;
             position: absolute;
             color: #001001;
             font-family: $font-family-sans-serif-heavy;
@@ -563,23 +591,25 @@ a{ text-decoration: none!important }
             font-size: 1.3rem;
             color: #001001;
             font-family: $font-family-sans-serif-normal;
-            text-align: center;
+            text-align: left;
             max-width: 70%;
-            span{
+            span {
+                &:nth-of-type(1){
                 color: #001001;
                 font-family: $font-family-sans-serif-heavy;
                 display: block;
                 font-size: 2rem;
                 text-align: left;
-            }
-            b{
-                font-family: $font-family-sans-serif-heavy;
+                }
+
                 &:nth-of-type(2), &:nth-of-type(3){
+                    font-family: $font-family-sans-serif-light;
                     text-align: left;
                     display: block;
                     line-height: 0
                 }
             }
+
         }
 
     }
@@ -588,26 +618,16 @@ a{ text-decoration: none!important }
 /*Responsiveness for home page*/
 @media screen and (max-width: 1000px){
     #homeContent{
-        grid-template-rows: 84vh 100vh 115vh 60vh 100vh;
+        grid-template-rows: 84vh 100vh 60vh 100vh;
     }
 }
 @media screen and (max-width: 930px){
     #homeContent{
-        grid-template-rows: 84vh 70vh 80vh 60vh 100vh;
+        grid-template-rows: 84vh 100vh 60vh 100vh;
 
         #whatWeDo{
-            p{
+            .whatwedo, .theProcess h1{
                 font-size: 2rem
-            }
-        }
-        #howWeDoIt{
-            font-size: 1rem;
-
-            h1{
-                font-size: 2rem
-            }
-            img{
-                width: 15vw
             }
         }
         #insurancePlayers{
@@ -629,9 +649,26 @@ a{ text-decoration: none!important }
         }
     }
 }
+@media screen and (min-width: 865px){
+    #homeContent #whatWeDo .theProcess{
+        .four, .three, .two, .one{
+            font-size: large
+        }
+    }
+}
 @media screen and (max-width: 770px){
     #homeContent #landingMain p{
         font-size: 2.5rem;
+    }
+}
+@media screen and (max-height: 735px){
+    #homeContent{
+        #whatWeDo{
+            .theProcess{
+                .one, .two, .three, .four{}
+                font-size: x-small!important;
+            }
+        }
     }
 }
 @media screen and (max-width: 695px){
@@ -639,14 +676,16 @@ a{ text-decoration: none!important }
         #landingMain p{
             font-size: 2rem
         }
-        #whatWeDo p{
-            font-size: 1.5rem
+        #whatWeDo{
+            .whatwedo, .theProcess h1{
+                font-size: 1.5rem
+            }
         }
     }
 }
 @media screen and (max-width: 615px){
     #homeContent{
-        grid-template-rows: 84vh 70vh 80vh 60vh 85vh;
+        grid-template-rows: 84vh 100vh 60vh 85vh;
 
         #dates{
             h1{
@@ -655,7 +694,7 @@ a{ text-decoration: none!important }
             p{
                 font-size: .9rem;
                 span{
-                    font-size: 1rem
+                    font-size: 1rem!important;
                 }
             }
 
@@ -667,7 +706,7 @@ a{ text-decoration: none!important }
 }
 @media screen and (max-width: 575px){
     #homeContent{
-        grid-template-rows: 84vh 70vh 210vw 45vh 85vh;
+        grid-template-rows: 84vh 100vh 45vh 85vh;
 
         #landingMain{
             p{
@@ -678,14 +717,11 @@ a{ text-decoration: none!important }
                 }
             }
         }
-
-        #howWeDoIt{
-            .one, .two, .three, .four{ left: 22vw; max-width: 55vw}
-            .one{top: 18%}
-            .two{ top: calc(18% + 35vw)}
-            .three{ top: 125vw}
-            .four{ top: 160vw; bottom: unset}
-
+        #whatWeDo{
+            .theProcess{
+                .one, .two, .three, .four{}
+                font-size: small
+            }
         }
     }
 }
@@ -699,8 +735,10 @@ a{ text-decoration: none!important }
                 font-size: 1.2rem
             }
         }
-        #whatWeDo p{
-            font-size: 1.3rem
+        #whatWeDo{
+            .whatwedo, .theProcess h1{
+                font-size: 1.3rem
+            }
         }
         #dates {
             p{
@@ -716,19 +754,9 @@ a{ text-decoration: none!important }
 @media screen and (max-width: 400px){
     #homeContent {
         #dates h1{
-            text-align: center;
             width: 100vw;
             font-size: 1.3rem;
             top: 5vh
-        }
-        #howWeDoIt{
-            font-size: .75rem;
-
-            h1{
-                font-size: 1.5rem;
-                width: 100vw;
-                text-align: center;
-            }
         }
     }
 }
@@ -740,13 +768,21 @@ a{ text-decoration: none!important }
 /*iPad */
 @media screen and (aspect-ratio: 3/4) and (min-height: 1020px){
     #homeContent {
-        grid-template-rows: 84vh 70vh 60vh 60vh 100vh;
+        grid-template-rows: 84vh 90vh 45vh 70vh;
+        #whatWeDo .theProcess{
+            padding-top: 20%;
+            font-size: large
+        }
     }
 }
 /*iPad-Pro */
 @media screen and (min-aspect-ratio: 3/4) and (min-height: 1330px){
     #homeContent {
-        grid-template-rows: 64vh 60vh 90vh 40vh 70vh
+        grid-template-rows: 64vh 85vh 40vh 70vh;
+        #whatWeDo .theProcess{
+            padding-top: 25%;
+            font-size: large
+        }
     }
 }
 

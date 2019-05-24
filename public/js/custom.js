@@ -12,11 +12,37 @@ new ScrollMagic.Scene({
 
 //another scene
 new ScrollMagic.Scene({
-    triggerElement: '#landingMain p',
+    triggerElement: '#landingMain',
     triggerHook: 'onEnter',
+})
+    .setTween(TweenMax.from('#landingMain p', .6, {x: 1, autoAlpha: 0.0, ease: Power0.easeIn}))
+    .addTo(controller);
+
+//another scene
+new ScrollMagic.Scene({
+    triggerElement: '.navigation',
+    triggerHook: 'onLeave',
+    duration: window.innerHeight * .3
+})
+    .setPin('#landingMain p' )
+    .setTween(TweenMax.to('#landingMain p #theme', .1, {autoAlpha: 0.0}))
+    .addTo(controller);
+
+//another scene
+new ScrollMagic.Scene({
+    triggerElement: '#whatWeDo',
+    triggerHook: 'onCenter',
     reverse: false
 })
-    .setTween(TweenMax.to())
+    .setTween(TweenMax.staggerFrom('.theProcess span', .5, {x: 10, autoAlpha: 0.0}, .5))
+    .addTo(controller);
+
+new ScrollMagic.Scene({
+    triggerElement: '#insurancePlayers',
+    triggerHook: 'onCenter',
+    reverse: false
+})
+    .setTween(TweenMax.from('#insurancePlayers img', .4, {y: 5, autoAlpha: 0.0}))
     .addTo(controller);
 
 
