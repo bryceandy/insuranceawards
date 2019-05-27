@@ -957,19 +957,53 @@ a{ text-decoration: none!important }
 /*Forms end*/
 
 /*Form Content*/
-#formsContent{
+#formContent{
     background: #ffffff;
-    position: relative;
-    padding: 5%;
+    padding-top: 10vh;
 
     form{
-        @include css3-prefix(box-shadow, 0 3px 3px rgba(0,0, 0, 0.4));
+        @include css3-prefix(box-shadow, 0 3px rgba(0,0, 0, 0.4));
         width: 80vw;
         height: 60vh;
-        position: absolute;
-        top: 15vh;
+        position: relative;
+        top: 0;
         left: 10vw;
-        border: 1px solid;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid;
+        font-family: Tahoma Serif;
+
+        #formHeader{
+            color: #ffffff;
+            background: $primary-color;
+            width: 100%;
+            height: auto;
+            padding-top: 2.5%;
+            border: 1px solid #001001;
+
+            p{
+                margin-bottom: unset;
+            }
+        }
+        .nameInput{
+            margin-top: 10px;
+            display: inline-block;
+            width: calc(50% - 2px);
+            padding: 10px;
+            text-align: right;
+            border: 1px solid #001001;
+
+            &:nth-of-type(1){
+                color: #ffffff;
+                background: $primary-color;
+                margin-bottom: unset;
+            }
+            &#nameInput{
+                color: #001001;
+                outline: none;
+            }
+        }
     }
 }
 

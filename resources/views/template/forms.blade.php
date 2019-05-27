@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{'../css/app.min.css'}}">
     <link rel="stylesheet" href="{{'../css/fonts.css'}}">
     <link rel="stylesheet" href="{{'../css/background.css'}}">
-    <link rel="stylesheet" href="{{'../css/fontawesome5.8.1.css'}}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     @yield('stylesheets')
 
     <title>@yield('title')</title>

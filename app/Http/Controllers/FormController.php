@@ -15,6 +15,6 @@ class FormController extends Controller
         //display the form
         $titleName = ucwords(str_replace('-', ' ', $name));
 
-        return view('forms.'.$name, compact($titleName));
+        return view('forms.'.$name, compact('titleName'));
     }
 }
