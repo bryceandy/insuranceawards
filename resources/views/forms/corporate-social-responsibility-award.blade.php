@@ -1,4 +1,4 @@
-@extends('template.default')
+@extends('template.forms')
 
 @section('title')
     The Tanzania Insurance Awards 2019 - {{$titleName}} Form

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="{{'css/app.min.css'}}">
-    <link rel="stylesheet" href="{{'css/fonts.css'}}">
-    <link rel="stylesheet" href="{{'css/background.css'}}">
-    <link rel="stylesheet" href="{{'css/fontawesome5.8.1.css'}}">
+    <link rel="stylesheet" href="{{'../css/app.min.css'}}">
+    <link rel="stylesheet" href="{{'../css/fonts.css'}}">
+    <link rel="stylesheet" href="{{'../css/background.css'}}">
+    <link rel="stylesheet" href="{{'../css/fontawesome5.8.1.css'}}">
     @yield('stylesheets')
 
     <title>@yield('title')</title>
@@ -19,7 +19,7 @@
 
     <div id="top">
         <div class="navigation">
-            <a href="/" class="navlinks" id="homeLink"><img id="homeButton" src="{{'images/icons8-home.svg'}}" alt="Home"></a>
+            <a href="/" class="navlinks" id="homeLink"><img id="homeButton" src="{{'../images/icons8-home.svg'}}" alt="Home"></a>
             <a href="/vote" class="navlinks" id="voteLink">VOTE</a>
             <a href="/forms" class="navlinks" id="formsLink">FORMS</a>
             <div href="#" class="navlinks" id="committee">
@@ -46,11 +46,11 @@
         </div>
 
         <a class="homeLink" href="/">
-            <img src="{{'images/insurancelogo.png'}}" alt="Home">
+            <img src="{{'../images/insurancelogo.png'}}" alt="Home">
         </a>
 
         <div class="dateVenue">
-            <img src="{{'images/icons8-calendar.svg'}}" alt="Home">&nbsp;27<sup>th</sup> September 2019
+            <img src="{{'../images/icons8-calendar.svg'}}" alt="Home">&nbsp;27<sup>th</sup> September 2019
         </div>
     </div>
 
@@ -73,27 +73,27 @@
         </svg>
 
         <div id="companyContacts">
-            <p><img src="{{'images/location.svg'}}" alt="">Plot No. 954 | Katoke Road, Oysterbay <img src="{{'images/mail.svg'}}" alt="">P.O Box 105508 DSM</p>
-            <p><img src="{{'images/telephone.svg'}}" alt="">+255 757 372363</p>
-            <p><img src="{{'images/globe.svg'}}" alt="">glowconsults@gmail.com</p>
+            <p><img src="{{'../images/location.svg'}}" alt="">Plot No. 954 | Katoke Road, Oysterbay <img src="{{'../images/mail.svg'}}" alt="">P.O Box 105508 DSM</p>
+            <p><img src="{{'../images/telephone.svg'}}" alt="">+255 757 372363</p>
+            <p><img src="{{'../images/globe.svg'}}" alt="">glowconsults@gmail.com</p>
         </div>
 
     </div>
 
 </div>
 
-<script async src="{{'js/app.js'}}"></script>
+<script async src="{{'../js/app.js'}}"></script>
 
 {{--jquery--}}
-<script src="{{'js/jquery3-4-0.min.js'}}"></script>
+<script src="{{'../js/jquery3-4-0.min.js'}}"></script>
 {{--GSAP--}}
-<script src="{{'js/Tweenmax2-1-3.min.js'}}"></script>
+<script src="{{'../js/Tweenmax2-1-3.min.js'}}"></script>
 {{--ScrollMagic--}}
-<script src="{{'js/scrollMagic2-0-6.min.js'}}"></script>
+<script src="{{'../js/scrollMagic2-0-6.min.js'}}"></script>
 {{--ScrollMagic-GSAP-animation--}}
-<script src="{{'js/scrollMagic-plugin-gsap-animation.js'}}"></script>
+<script src="{{'../js/scrollMagic-plugin-gsap-animation.js'}}"></script>
 
-<script src="{{'js/custom.js'}}"></script>
+<script src="{{'../js/custom.js'}}"></script>
 
 @yield('scripts')
 
