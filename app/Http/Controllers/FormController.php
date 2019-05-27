@@ -13,6 +13,8 @@ class FormController extends Controller
 
     public function viewForm($name){
         //display the form
-        return $name;
+        $titleName = ucfirst(str_replace('-', ' ', $name));
+
+        return view('forms.'.$name, compact($titleName));
     }
 }

@@ -956,6 +956,23 @@ a{ text-decoration: none!important }
 }
 /*Forms end*/
 
+/*Form Content*/
+#formsContent{
+    background: #ffffff;
+    position: relative;
+    padding: 5%;
+
+    form{
+        @include css3-prefix(box-shadow, 0 3px 3px rgba(0,0, 0, 0.4));
+        width: 80vw;
+        height: 60vh;
+        position: absolute;
+        top: 15vh;
+        left: 10vw;
+        border: 1px solid;
+    }
+}
+
 /*sponsor page*/
 #sponsorContent{
     background: #ffffff;
