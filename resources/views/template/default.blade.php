@@ -68,9 +68,9 @@
             <path fill="#15ace4" d="M0,100 0,95 100,20 100,100 Z"></path>
             <path fill="green" d="M0,75 0,10 40,65 11.75,86.3 Z" ></path>
             <path fill="#15ace4" d="M0,10 0,5 42.5,64 41,67 Z"></path>
+            <text x="40" y="10" class="svgText">Rewarding Insurance Excellence</text>
+            <text x="60" y="18" class="svgText">in Tanzania</text>
         </svg>
-
-        <p id="footerMotto"><i>Rewarding Insurance Excellence <br> in Tanzania</i></p>
 
         <div id="companyContacts">
             <p><img src="{{'images/location.svg'}}" alt="">Plot No. 954 | Katoke Road, Oysterbay <img src="{{'images/mail.svg'}}" alt="">P.O Box 105508 DSM</p>

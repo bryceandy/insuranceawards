@@ -1,5 +1,4 @@
 <?php
-use \Illuminate\Support\Facades\Response;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +16,9 @@ Route::get('/', 'HomeController@index');
 Route::get('vote', 'VoteController@index');
 Route::post('vote', 'VoteController@cast');
 
-Route::get('forms', 'HomeController@forms');
+/*Forms*/
+Route::get('forms', 'FormController@index');
+Route::get('forms/{name}', 'FormController@viewForm');
 
 /*committee*/
 Route::get('steering', 'HomeController@steering');
@@ -34,26 +35,3 @@ Route::get('faqs', 'HomeController@faqs');
 Route::get('about', 'HomeController@about');
 Route::get('contact', 'HomeController@contact');
 
-
-/*Downloading forms*/
-Route::get('download/yaa-ideas-research-development',function(){
-    return Response::download('YAA1.pdf','Young Achievers Award - Ideas_Research_Development.pdf');
-});
-Route::get('download/yaa-entrepreneurship',function(){
-    return Response::download('YAA2.pdf','Young Achievers Award - Entrepreneurship.pdf');
-});
-Route::get('download/miip',function(){
-    return Response::download('MIIP.pdf','Most Innovative Insurance Product.pdf');
-});
-Route::get('download/insurance-brokerage-of-the-year',function(){
-    return Response::download('IBOY.pdf','Insurance Brokerage of the Year.pdf');
-});
-Route::get('download/insurance-company-of-the-year',function(){
-    return Response::download('ICOY.pdf','Insurance Company of the Year.pdf');
-});
-Route::get('download/insurance-awareness-campaign-of-the-year',function(){
-    return Response::download('IACOY.pdf','Insurance Awareness Campaign of the Year.pdf');
-});
-Route::get('download/corporate-social-responsibility-award',function(){
-    return Response::download('CSRA.pdf','Corporate Social Responsibility Award.pdf');
-});

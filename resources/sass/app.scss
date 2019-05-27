@@ -200,25 +200,23 @@ a{ text-decoration: none!important }
     #footer{
         grid-area: 3/1/4/2;
         background: #ffffff;
-        height: 70vh;
         width: 100vw;
 
         svg{
             height: 42vh;
             width: 100vw;
-            margin-top: 0
-        }
-        #footerMotto{
-            margin-top: -40vh;
-            margin-left: 50vw;
-            @include css3-prefix(transform, translateX(-50%));
-            color: #001001;
-            font-family: $font-family-sans-serif-heavy-italic;
-            font-size: xx-large;
-            text-align: center;
+            margin-top: 0;
+
+            .svgText{
+                color: #001001;
+                font-family: $font-family-sans-serif-heavy-italic;
+                font-size: .25rem;
+                text-align: center;
+                @include css3-prefix(transform,scale(.7,2))
+            }
         }
         #companyContacts{
-            margin-top: 32vh;
+            margin-top: 5vh;
             width: 100%;
             text-align: center;
             font-size: 1rem;
@@ -297,18 +295,7 @@ a{ text-decoration: none!important }
     }
 }
 
-@media screen and (max-width: 695px){
-    #defaultContent{
-        #footer{
-            #footerMotto{
-                font-size: x-large
-            }
-            #companyContacts{
-                margin-top: 30vh
-            }
-        }
-    }
-}
+
 @media screen and (max-width: 600px){
     #defaultContent #top{
         .homeLink img{
@@ -342,14 +329,6 @@ a{ text-decoration: none!important }
         #top .navigation{
             padding: .25rem
         }
-        #footer{
-            #footerMotto{
-                font-size: large;
-            }
-            #companyContacts{
-                margin-top: 35vh
-            }
-        }
     }
 }
 @media screen and (max-width: 500px){
@@ -372,16 +351,9 @@ a{ text-decoration: none!important }
         }
 
         #footer{
-            height: 55vh;
 
             svg{
                 height: 30vh;
-            }
-            #footerMotto{
-                margin-top: -30vh
-            }
-            #companyContacts{
-                margin-top: 25vh
             }
             img{
                 display: none
@@ -404,16 +376,6 @@ a{ text-decoration: none!important }
         }
     }
 }
-@media screen and (max-width: 378px){
-    #defaultContent #footer #footerMotto {
-        font-size: medium
-    }
-}
-@media screen and (max-width: 330px){
-    #defaultContent #footer #footerMotto{
-        font-size: .8rem
-    }
-}
 /*iPad */
 @media screen and (aspect-ratio: 3/4) and (min-height: 1020px){
     #defaultContent {
@@ -428,13 +390,6 @@ a{ text-decoration: none!important }
             .navigation{
                 padding: 1rem;
                 top: 16vh;
-            }
-        }
-        #footer{
-            height: 60vh;
-            #companyContacts{
-                font-size: .85rem;
-                margin-top: 28vh
             }
         }
     }
@@ -453,13 +408,6 @@ a{ text-decoration: none!important }
             .navigation{
                 padding: 1rem;
                 top: 16vh
-            }
-        }
-        #footer{
-            height: 55vh;
-            #companyContacts{
-                font-size: .85rem;
-                margin-top: 30vh
             }
         }
     }
@@ -671,6 +619,11 @@ a{ text-decoration: none!important }
         }
     }
 }
+@media screen and (max-height: 730px) and (min-height: 600px){
+    #homeContent #whatWeDo .theProcess{
+        padding-top: 28%
+    }
+}
 @media screen and (max-width: 695px){
     #homeContent {
         #landingMain p{
@@ -685,7 +638,7 @@ a{ text-decoration: none!important }
 }
 @media screen and (max-width: 615px){
     #homeContent{
-        grid-template-rows: 84vh 100vh 60vh 85vh;
+        grid-template-rows: 84vh 100vh 60vh 100vh;
 
         #dates{
             h1{
@@ -706,7 +659,7 @@ a{ text-decoration: none!important }
 }
 @media screen and (max-width: 575px){
     #homeContent{
-        grid-template-rows: 84vh 100vh 45vh 85vh;
+        grid-template-rows: 84vh 100vh 45vh 100vh;
 
         #landingMain{
             p{
@@ -834,6 +787,7 @@ a{ text-decoration: none!important }
             width: 20vw;
             padding: 8px;
             margin-bottom: 10vh;
+            @include css3-prefix(box-shadow, 0 0 4px rgba(0, 0, 0, .5))
         }
         span{
             display: block;
@@ -947,7 +901,7 @@ a{ text-decoration: none!important }
 
 /*forms page*/
 #formsContent{
-    line-height: 2.5;
+    line-height: 2;
     padding: 0 15vw 10vh;
     background: #ffffff;
     font-size: large;
@@ -965,22 +919,16 @@ a{ text-decoration: none!important }
             width: 70vw;
             padding: 1.25vw;
             border: 1px solid;
-            margin-bottom: 1vw;
-
+            margin-bottom: 3vw;
+            @include css3-prefix(box-shadow, 0 3px 3px rgba(0,0, 0, 0.4));
             a{
-                float: right
+                text-decoration: none;
+                color: $primary-color
             }
         }
     }
 }
 /*forms responsiveness*/
-@media screen and (max-width: 895px){
-    #formsContent {
-        ul li{
-            display: flex
-        }
-    }
-}
 @media screen and (max-width: 550px){
     #formsContent {
         font-size: medium;

@@ -11,11 +11,6 @@ class HomeController extends Controller
         return view('pages.home');
     }
 
-    public function forms(){
-        //display the aboutpage
-        return view('pages.forms');
-    }
-
     public function steering(){
         //display the steering page
         return view('pages.steering');
