@@ -1,16 +1,13 @@
-@extends('template.forms')
+@extends('template.nomination')
 
 @section('title')
-    The Tanzania Insurance Awards 2019 - {{$titleName}} Form
+    The Tanzania Insurance Awards 2019 - {{$titleName}} Nomination
 @endsection
 
 @section('content')
 
-    <div id="formContent">
+    <div id="nominationContent">
 
-        <form action="#">
-
-        </form>
 
     </div>
 
@@ -21,7 +18,7 @@
 
         $(document).ready(function () {
 
-            $('#formsLink').addClass('activePage')
+            $('#nominationLink').addClass('activePage')
         })
 
     </script>

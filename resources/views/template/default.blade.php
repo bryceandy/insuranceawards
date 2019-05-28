@@ -21,7 +21,13 @@
         <div class="navigation">
             <a href="/" class="navlinks" id="homeLink"><img id="homeButton" src="{{'images/icons8-home.svg'}}" alt="Home"></a>
             <a href="/vote" class="navlinks" id="voteLink">VOTE</a>
-            <a href="/forms" class="navlinks" id="formsLink">FORMS</a>
+            <div href="#" class="navlinks" id="nominationLink">
+                NOMINATION
+                <div class="nominationBlock">
+                    <a href="/nomination-categories">Categories</a>
+                    <a href="/application-form">Application Form</a>
+                </div>
+            </div>
             <div href="#" class="navlinks" id="committee">
                 COMMITTEE
                 <div class="committeeBlock">

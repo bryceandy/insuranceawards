@@ -16,9 +16,10 @@ Route::get('/', 'HomeController@index');
 Route::get('vote', 'VoteController@index');
 Route::post('vote', 'VoteController@cast');
 
-/*Forms*/
-Route::get('forms', 'FormController@index');
-Route::get('forms/{name}', 'FormController@viewForm');
+/*nomination*/
+Route::get('application-form', 'NominationController@viewApplication');
+Route::get('nomination-categories', 'NominationController@categories');
+Route::get('nomination-categories/{name}', 'NominationController@viewCategory');
 
 /*committee*/
 Route::get('steering', 'HomeController@steering');

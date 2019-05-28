@@ -56,6 +56,41 @@ a{ text-decoration: none!important }
                     border-bottom: 4px solid;
                 }
             }
+            #nominationLink{
+                cursor: pointer;
+
+                .nominationBlock{
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: auto;
+                    padding: 2vw;
+                    @include brad(6px);
+                    @include css3-prefix(transform, translateX(-25%));
+                    background: #001001;
+                    color: $primary-color;
+                    line-height: 2.5;
+
+                    a{
+                        white-space: nowrap;
+                        display: block;
+                        text-align: left;
+                        color: $primary-color;
+                        line-height: 2.5;
+                        &:hover{
+                            border-bottom: unset;
+                        }
+                    }
+                }
+                &.showBlock{
+                    position: relative;
+
+                    .nominationBlock{
+                        display: block;
+                    }
+                }
+            }
             #committee{
                 cursor: pointer;
 
@@ -899,8 +934,8 @@ a{ text-decoration: none!important }
 }
 /*end secretariat page*/
 
-/*forms page*/
-#formsContent{
+/*categories page*/
+#categoriesContent{
     line-height: 2;
     padding: 0 15vw 10vh;
     background: #ffffff;
@@ -930,7 +965,7 @@ a{ text-decoration: none!important }
 }
 /*forms responsiveness*/
 @media screen and (max-width: 550px){
-    #formsContent {
+    #categoriesContent {
         font-size: medium;
 
         h1{
@@ -939,12 +974,12 @@ a{ text-decoration: none!important }
     }
 }
 @media screen and (max-width: 485px){
-    #formsContent {
+    #categoriesContent {
         font-size: small;
     }
 }
 @media screen and (max-width: 395px){
-    #formsContent {
+    #categoriesContent {
 
         h1{
             font-size: 1.25rem
@@ -954,57 +989,13 @@ a{ text-decoration: none!important }
         }
     }
 }
-/*Forms end*/
+/*Categories end*/
 
-/*Form Content*/
-#formContent{
+/*nomination Content*/
+#nominationContent{
     background: #ffffff;
     padding-top: 10vh;
 
-    form{
-        @include css3-prefix(box-shadow, 0 3px rgba(0,0, 0, 0.4));
-        width: 80vw;
-        height: 60vh;
-        position: relative;
-        top: 0;
-        left: 10vw;
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-        border-bottom: 1px solid;
-        font-family: Tahoma Serif;
-
-        #formHeader{
-            color: #ffffff;
-            background: $primary-color;
-            width: 100%;
-            height: auto;
-            padding-top: 2.5%;
-            border: 1px solid #001001;
-
-            p{
-                margin-bottom: unset;
-            }
-        }
-        .nameInput{
-            margin-top: 10px;
-            display: inline-block;
-            width: calc(50% - 2px);
-            padding: 10px;
-            text-align: right;
-            border: 1px solid #001001;
-
-            &:nth-of-type(1){
-                color: #ffffff;
-                background: $primary-color;
-                margin-bottom: unset;
-            }
-            &#nameInput{
-                color: #001001;
-                outline: none;
-            }
-        }
-    }
 }
 
 /*sponsor page*/
