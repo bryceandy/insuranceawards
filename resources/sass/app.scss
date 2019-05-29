@@ -244,21 +244,53 @@ a{ text-decoration: none!important }
 
             .svgText{
                 color: #001001;
-                font-family: $font-family-sans-serif-heavy-italic;
+                font-family: $font-family-sans-serif-heavy;
                 font-size: .25rem;
                 text-align: center;
                 @include css3-prefix(transform,scale(.7,2))
             }
         }
         #companyContacts{
-            margin-top: 5vh;
+            background: #001001;
             width: 100%;
             text-align: center;
             font-size: 1rem;
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 5vh;
 
-            img{
-                height: 2rem;
-                width: 2rem
+            .logo{
+                height: auto;
+                max-height: 20vw;
+                display: block;
+                width: 25vw
+            }
+            .contactInfo{
+                width: 60vw;
+                display: block;
+                font-size: small;
+                text-align: left;
+                color: darkgrey;
+                font-family: $font-family-sans-serif-light;
+                align-self: center;
+            }
+        }
+        #socialFooter{
+            background: #001001;
+            width: 100%;
+            margin-top: 0;
+            padding-bottom: 5vh;
+
+            a{
+                text-decoration: none;
+                margin-right: 5vw;
+                float: right;
+                color: darkgrey;
+                font-size: 1rem
+
+                //&:nth-of-type(1){color: #4267b2}
+                //&:nth-of-type(2){color: #cd426c}
+                //&:nth-of-type(3){color: #1da1f2}
             }
         }
     }
@@ -305,7 +337,7 @@ a{ text-decoration: none!important }
             #homeButton{
                 margin-top: 10vh
             }
-            #committee .committeeBlock, #sponsor .sponsorBlock{
+            #committee .committeeBlock, #sponsor .sponsorBlock, #nominationLink .nominationBlock{
                 left: 52.5vw;
                 @include css3-prefix(transform, translateX(-50%));
                 line-height: 1.5;
@@ -330,7 +362,21 @@ a{ text-decoration: none!important }
     }
 }
 
+@media screen and (max-width: 775px){
+    #defaultContent #footer {
+        #companyContacts{
+            flex-wrap: wrap;
 
+            .logo{
+                margin: 2vh 0
+            }
+
+        }
+        #socialFooter a{
+            font-size: .6rem
+        }
+    }
+}
 @media screen and (max-width: 600px){
     #defaultContent #top{
         .homeLink img{
@@ -364,6 +410,9 @@ a{ text-decoration: none!important }
         #top .navigation{
             padding: .25rem
         }
+        #footer #companyContacts .contactInfo{
+            font-size: x-small;
+        }
     }
 }
 @media screen and (max-width: 500px){
@@ -390,7 +439,7 @@ a{ text-decoration: none!important }
             svg{
                 height: 30vh;
             }
-            img{
+            .imgIcons{
                 display: none
             }
         }

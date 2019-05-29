@@ -79,9 +79,31 @@
         </svg>
 
         <div id="companyContacts">
-            <p><img src="{{'images/location.svg'}}" alt="">Plot No. 954 | Katoke Road, Oysterbay <img src="{{'images/mail.svg'}}" alt="">P.O Box 105508 DSM</p>
-            <p><img src="{{'images/telephone.svg'}}" alt="">+255 757 372363</p>
-            <p><img src="{{'images/globe.svg'}}" alt="">glowconsults@gmail.com</p>
+            <img src="{{'images/tira2.png'}}" class="logo" alt="TIRA">
+            <div class="contactInfo">
+                LAPF Building, 5th floor, <br>
+                Plot No. 4/5, Makole street,
+                P. O. Box 2987, Dodoma.<br>
+                Tel: +255(026)2321180 <br>
+                Email: coi@tira.go.tz <br>
+                Website: www.tira.go.tz <br>
+            </div>
+            <img src="{{'images/iit2.png'}}" class="logo" alt="IIT">
+            <div class="contactInfo">
+                3rd Floor,Maktaba Complex Building,<br>
+                Along Bibi Titi Mohammed Road<br>
+                P.O.BOX 4977,Dar es Salaam. <br>
+                +255 215 0702<br>
+                info@iit.co.tz
+            </div>
+        </div>
+
+        <div id="socialFooter">
+            <hr style="border-top-color: darkgrey; width: 90%; margin-top: -1rem">
+            <a href="/" style="float: left; margin-left: 5vw">&copy; Insurance Awards 2019</a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
 
     </div>

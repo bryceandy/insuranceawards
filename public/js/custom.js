@@ -42,7 +42,7 @@ new ScrollMagic.Scene({
     triggerHook: 'onCenter',
     reverse: false
 })
-    .setTween(TweenMax.from('#insurancePlayers img', .4, {y: 5, autoAlpha: 0.0}))
+    .setTween(TweenMax.from('#insurancePlayers img', 1, {y: 10, autoAlpha: 0.0, ease: Power2.easeInOut}, .5))
     .addTo(controller);
 
 
@@ -56,6 +56,16 @@ $(document).ready(function () {
         $('.navigation').removeClass('showMenu')
     });
 
+    //nomination list
+    $('#nominationLink').hover(function () {
+        $(this).addClass('showBlock')
+
+    }, function () {
+        $(this).removeClass('showBlock')
+    }).click(function () {
+        $(this).toggleClass('showBlock')
+    });
+
     //committee list
     $('#committee').hover(function () {
         $(this).addClass('showBlock')
@@ -66,7 +76,7 @@ $(document).ready(function () {
         $(this).toggleClass('showBlock')
     });
 
-    //committee list
+    //sponsor list
     $('#sponsor').hover(function () {
         $(this).addClass('showBlock')
 
