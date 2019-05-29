@@ -15,7 +15,7 @@
 
         <h1 class="text-center">Votes for all Award Categories</h1>
 
-        <p class="text-left" style="padding-left: 5vw">
+        <p class="text-left" style="padding-left: 5vw; padding-right: 5vw">
             <b style="color: #15ace4">Voting:</b> <br>
             The voting period has not begun. The actual nominees will be listed below as soon as the shortlist is available
             <br> <br>
