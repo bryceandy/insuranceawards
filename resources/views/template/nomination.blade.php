@@ -21,13 +21,13 @@
         <div class="navigation">
             <a href="/" class="navlinks" id="homeLink"><img id="homeButton" src="{{'../images/icons8-home.svg'}}" alt="Home"></a>
             <a href="/vote" class="navlinks" id="voteLink">VOTE</a>
-            <a href="#" class="navlinks" id="nominationLink">
+            <div href="#" class="navlinks" id="nominationLink">
                 NOMINATION
                 <div class="nominationBlock">
                     <a href="/nomination-categories">Categories</a>
                     <a href="/application-form">Application Form</a>
                 </div>
-            </a>
+            </div>
             <div href="#" class="navlinks" id="committee">
                 COMMITTEE
                 <div class="committeeBlock">
@@ -79,7 +79,7 @@
         </svg>
 
         <div id="companyContacts">
-            <img src="{{'images/tira2.png'}}" class="logo" alt="TIRA">
+            <img src="{{'../images/tira2.png'}}" class="logo" alt="TIRA">
             <div class="contactInfo">
                 LAPF Building, 5th floor, <br>
                 Plot No. 4/5, Makole street,
@@ -88,19 +88,19 @@
                 Email: coi@tira.go.tz <br>
                 Website: www.tira.go.tz <br>
             </div>
-            <img src="{{'images/iit2.png'}}" class="logo" alt="IIT">
+            <img src="{{'../images/iit2.png'}}" class="logo" alt="IIT">
             <div class="contactInfo">
                 3rd Floor,Maktaba Complex Building,<br>
                 Along Bibi Titi Mohammed Road<br>
                 P.O.BOX 4977,Dar es Salaam. <br>
-                +255 215 0702<br>
-                info@iit.co.tz
+                Phone: +255 215 0702<br>
+                Email: info@iit.co.tz
             </div>
         </div>
 
         <div id="socialFooter">
             <hr style="border-top-color: darkgrey; width: 90%; margin-top: -1rem">
-            <a href="/" style="float: left; margin-left: 5vw">&copy; Insurance Awards 2019</a>
+            <a href="/" style="float: left; margin-left: 5vw">Tanzania Insurance Awards 2019</a>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>

@@ -14,13 +14,6 @@
         <div class="contactContainer">
 
             <div class="contact">
-                <img src="{{'images/ikongo.png'}}" alt="contact">
-                <div class="name text-center">Margaret Ikongo</div>
-                <div class="title text-center">Award Committee Chairperson</div>
-                <div class="company text-center">+255 784 210 530 <br> mikongo2002@yahoo.co.uk</div>
-            </div>
-
-            <div class="contact">
                 <img src="{{'images/angela.png'}}" alt="contact">
                 <div class="name text-center">Lizzy Angela</div>
                 <div class="title text-center">Award Consultant</div>

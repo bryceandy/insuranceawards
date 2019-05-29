@@ -230,6 +230,7 @@ a{ text-decoration: none!important }
 
     #main{
         grid-area: 2/1/3/2;
+        background: #fff;
     }
 
     #footer{
@@ -261,9 +262,9 @@ a{ text-decoration: none!important }
 
             .logo{
                 height: auto;
-                max-height: 20vw;
+                max-height: 120px;
                 display: block;
-                width: 25vw
+                width: 150px
             }
             .contactInfo{
                 width: 60vw;
@@ -273,6 +274,7 @@ a{ text-decoration: none!important }
                 color: darkgrey;
                 font-family: $font-family-sans-serif-light;
                 align-self: center;
+                padding-left: 5vh
             }
         }
         #socialFooter{
@@ -286,11 +288,12 @@ a{ text-decoration: none!important }
                 margin-right: 5vw;
                 float: right;
                 color: darkgrey;
-                font-size: 1rem
+                font-size: 1rem;
 
-                //&:nth-of-type(1){color: #4267b2}
-                //&:nth-of-type(2){color: #cd426c}
-                //&:nth-of-type(3){color: #1da1f2}
+                &:nth-of-type(1){font-family: $font-family-sans-serif-light}
+                //&:nth-of-type(2){color: #4267b2}
+                //&:nth-of-type(3){color: #cd426c}
+                //&:nth-of-type(4){color: #1da1f2}
             }
         }
     }
@@ -364,6 +367,9 @@ a{ text-decoration: none!important }
 
 @media screen and (max-width: 775px){
     #defaultContent #footer {
+        svg{
+            height: 22vh
+        }
         #companyContacts{
             flex-wrap: wrap;
 
@@ -403,6 +409,9 @@ a{ text-decoration: none!important }
                 width: -moz-max-content;
             }
         }
+        #footer #companyContacts .contactInfo{
+            padding-left: unset
+        }
     }
 }
 @media screen and (max-width: 575px){
@@ -434,15 +443,11 @@ a{ text-decoration: none!important }
             }
         }
 
-        #footer{
-
-            svg{
-                height: 30vh;
-            }
-            .imgIcons{
-                display: none
-            }
-        }
+    }
+}
+@media screen and (max-width: 425px){
+    #defaultContent #footer svg{
+        height: 15vh
     }
 }
 @media screen and (max-width: 395px){
@@ -458,6 +463,11 @@ a{ text-decoration: none!important }
         #footer #companyContacts{
             font-size: .65rem
         }
+    }
+}
+@media screen and (max-width: 362px){
+    #defaultContent #footer svg{
+        height: 12vh
     }
 }
 /*iPad */
@@ -493,6 +503,9 @@ a{ text-decoration: none!important }
                 padding: 1rem;
                 top: 16vh
             }
+        }
+        #footer svg{
+            height: 25vh
         }
     }
 
@@ -991,25 +1004,33 @@ a{ text-decoration: none!important }
     font-size: large;
     text-align: left;
 
-    h1{
-        padding: 5vw
+    h1, h3{
+        padding: 5vw 3vw 1vw 0;
+        color: darkgrey;
     }
-
-    ul{
-        list-style-type: none;
+    .cats{
+        margin-top: 2.5vh;
         padding: 0;
-
-        li{
+        a{
+            text-decoration: none;
+            color: $primary-color;
+            @include css3-prefix(box-shadow, 0 3px 3px rgba(0,0, 0, 0.4));
             width: 70vw;
             padding: 1.25vw;
             border: 1px solid;
             margin-bottom: 3vw;
-            @include css3-prefix(box-shadow, 0 3px 3px rgba(0,0, 0, 0.4));
-            a{
-                text-decoration: none;
-                color: $primary-color
+            text-align: center;
+            display: block;
+
+            &:hover{
+                background: #001001;
+                border: 1px solid #001001;
+                color: #fff
             }
         }
+    }
+    b{
+        font-family: "AvantHeavy", sans-serif;
     }
 }
 /*forms responsiveness*/
@@ -1043,9 +1064,17 @@ a{ text-decoration: none!important }
 /*nomination Content*/
 #nominationContent{
     background: #ffffff;
-    padding-top: 10vh;
+    padding: 10vh 5% 5% 5%;
+    text-align: left;
+    border: 1px solid;
+    margin: 5%;
+    @include css3-prefix(box-shadow, 0 4px 4px rgba(0,0, 0, 0.4));
 
+    b{
+        color: $primary-color
+    }
 }
+/*end nomination content*/
 
 /*sponsor page*/
 #sponsorContent{

@@ -93,14 +93,14 @@
                 3rd Floor,Maktaba Complex Building,<br>
                 Along Bibi Titi Mohammed Road<br>
                 P.O.BOX 4977,Dar es Salaam. <br>
-                +255 215 0702<br>
-                info@iit.co.tz
+                Phone: +255 215 0702<br>
+                Email: info@iit.co.tz
             </div>
         </div>
 
         <div id="socialFooter">
             <hr style="border-top-color: darkgrey; width: 90%; margin-top: -1rem">
-            <a href="/" style="float: left; margin-left: 5vw">&copy; Insurance Awards 2019</a>
+            <a href="/" style="float: left; margin-left: 5vw">Tanzania Insurance Awards 2019</a>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>

@@ -37,12 +37,22 @@ new ScrollMagic.Scene({
     .setTween(TweenMax.staggerFrom('.theProcess span', .5, {x: 10, autoAlpha: 0.0}, .5))
     .addTo(controller);
 
+//another scene
 new ScrollMagic.Scene({
     triggerElement: '#insurancePlayers',
     triggerHook: 'onCenter',
     reverse: false
 })
     .setTween(TweenMax.from('#insurancePlayers img', 1, {y: 10, autoAlpha: 0.0, ease: Power2.easeInOut}, .5))
+    .addTo(controller);
+
+//another scene
+new ScrollMagic.Scene({
+    triggerElement: '#categoriesContent .cats',
+    triggerHook: 'onEnter',
+    reverse: false
+})
+    .setTween(TweenMax.staggerFrom('.cats a', .3, {x: 10, autoAlpha: 0.0}, .5))
     .addTo(controller);
 
 
