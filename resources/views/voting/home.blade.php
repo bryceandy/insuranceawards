@@ -21,7 +21,8 @@
             <br> <br>
 
             <b style="color: #15ace4">How to vote:</b> <br>
-            For every category, click on the radio-button on the left side of the company's name and then click the <b>VOTE</b> button below it. You are advised not to vote for your own company.
+            For every category, click on the radio-button on the left side of the company's name and then click the <b>VOTE</b> button below it.
+            <br> You are advised not to vote for your own company.
             <br> <br>
         </p>
 

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="095a5a16-62b8-4ada-a5e1-3855b2f1c33f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/voting/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/voting/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,11 +44,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/voting/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="19" column="73" selection-start-line="19" selection-start-column="73" selection-end-line="19" selection-end-column="73" />
+            <state relative-caret-position="82">
+              <caret line="23" column="123" selection-start-line="23" selection-start-column="123" selection-end-line="23" selection-end-column="123" />
               <folding>
                 <element signature="e#477#502#0#HTML" expanded="true" />
                 <element signature="e#493#515#0#HTML" expanded="true" />
+                <element signature="e#733#755#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -449,18 +450,17 @@
       <workItem from="1558635169067" duration="2300000" />
       <workItem from="1558640065315" duration="15109000" />
       <workItem from="1558943710049" duration="13326000" />
-      <workItem from="1546302266483" duration="27452000" />
+      <workItem from="1546302266483" duration="28555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305131000" />
+    <option name="totallyTimeSpent" value="306234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="815" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49830508" visible="true" weight="0.25608012" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49830508" visible="true" weight="0.25608012" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.5016949" side_tool="true" weight="0.18597998" />
@@ -475,7 +475,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.41759777" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.1980198" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.6294201" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -820,11 +820,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/voting/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="19" column="73" selection-start-line="19" selection-start-column="73" selection-end-line="19" selection-end-column="73" />
+        <state relative-caret-position="82">
+          <caret line="23" column="123" selection-start-line="23" selection-start-column="123" selection-end-line="23" selection-end-column="123" />
           <folding>
             <element signature="e#477#502#0#HTML" expanded="true" />
             <element signature="e#493#515#0#HTML" expanded="true" />
+            <element signature="e#733#755#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
