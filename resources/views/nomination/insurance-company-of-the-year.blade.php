@@ -16,7 +16,7 @@
 
             The firms shortlisted for this award will be expected to do a short presentation to the Tanzania insurance Award judges. At this presentation, they will be able to fully explain their commitment to meeting customer demands; a broad strategic vision; track record of innovation and growth/ profitability.<br><br>
 
-            <b>The Judges will ensure:</b> <br> <br>
+            <b>The Judges will:</b> <br> <br>
 
             a) These awards will be largely voted by insurance consumers. <br>
             b) Entities that shall have satisfactory met regulatory requirement stand the higher chance <br>

@@ -120,6 +120,8 @@
 <script src="{{'js/scrollMagic2-0-6.min.js'}}"></script>
 {{--ScrollMagic-GSAP-animation--}}
 <script src="{{'js/scrollMagic-plugin-gsap-animation.js'}}"></script>
+{{--GSAP scrollTo--}}
+<script src="{{'js/gsap-scrollTo.min.js'}}"></script>
 
 <script src="{{'js/custom.js'}}"></script>
 

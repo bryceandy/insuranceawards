@@ -1006,7 +1006,11 @@ a{ text-decoration: none!important }
 
     h1, h3{
         padding: 5vw 3vw 1vw 0;
-        color: darkgrey;
+        color: $primary-color;
+    }
+    .methodologyLink{
+        cursor: pointer;
+        color: $primary-color
     }
     .cats{
         margin-top: 2.5vh;

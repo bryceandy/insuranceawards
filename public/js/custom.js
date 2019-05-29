@@ -55,9 +55,14 @@ new ScrollMagic.Scene({
     .setTween(TweenMax.staggerFrom('.cats a', .3, {x: 10, autoAlpha: 0.0}, .5))
     .addTo(controller);
 
-
 //jquery
 $(document).ready(function () {
+
+    //scrolling to div
+    $('.methodologyLink').click(function () {
+        TweenMax.to(window, 2, {scrollTo:"#methodology"})
+    });
+
     //menu button navigation
     $('.menuButton').click(function () {
         $('.navigation').addClass('showMenu')

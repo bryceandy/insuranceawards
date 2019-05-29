@@ -11,7 +11,7 @@
         <h1>Nomination Categories</h1>
         <p>
             The following are guidelines on how every award category will be nominated and which groups are
-            eligible to participate in a specific award. <a href="#methodologyLink">See the methodology</a>
+            eligible to participate in a specific award. <span class="methodologyLink">See the methodology</span>
         </p>
 
         <div class="cats">
@@ -25,7 +25,7 @@
 
         </div>
 
-        <h3 id="methodologyLink">Nomination Methodology</h3>
+        <h3 id="methodology">Nomination Methodology</h3>
         <p>
             All nominations will close on a particular date and hour. A six stage process detailed below shall then commence to identify the final winners.
         </p>
