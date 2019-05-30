@@ -100,7 +100,7 @@
         </div>
 
         <div id="socialFooter">
-            <hr style="border-top-color: darkgrey; width: 90%; margin-top: -1rem">
+            <hr style="border-top-color: darkgrey; width: 90%; margin-top: -1rem; padding-bottom: 1rem">
             <a href="/" style="float: left; margin-left: 5vw">Tanzania Insurance Awards 2019</a>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>

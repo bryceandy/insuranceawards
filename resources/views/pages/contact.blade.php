@@ -14,6 +14,13 @@
         <div class="contactContainer">
 
             <div class="contact">
+                <img src="{{'images/watson.png'}}" alt="contact">
+                <div class="name text-center">Watson Simkoko</div>
+                <div class="title text-center">Award Consultant</div>
+                <div class="company text-center">+255 687 288 866 </div>
+            </div>
+
+            <div class="contact">
                 <img src="{{'images/angela.png'}}" alt="contact">
                 <div class="name text-center">Lizzy Angela</div>
                 <div class="title text-center">Award Consultant</div>
