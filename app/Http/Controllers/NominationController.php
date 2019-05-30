@@ -16,12 +16,19 @@ class NominationController extends Controller
     public function apply(Request $request) {
         //validate user input
 
+        $file = $request->file('attachment');
         //process form application
         $application = [
             'firstname' => $request->firstname,
             'lastname' => $request->lastname,
             'email' => $request->email,
-            'file' => $request->file
+            'phone' => $request->phone,
+            'nominee' => $request->nominee,
+            'category' => $request->category,
+            'description' => $request->description,
+            'file' => $file->getRealPath(),
+            'filename' => $file->getClientOriginalName(),
+            'filemime' => $file->getMimeType()
         ];
 
         //send email

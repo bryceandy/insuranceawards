@@ -34,8 +34,16 @@ class ApplicationSent extends Mailable
             ->with([
                 'fname' => $app->firstname,
                 'lname' => $app->lastname,
-                'email' => $app->email
+                'email' => $app->email,
+                'phone' => $app->phone,
+                'nominee' => $app->nominee,
+                'description' => $app->description,
+                'category' => $app->category
+            ])
+            ->subject('Application Received')
+            ->attach($app->file, [
+                'as' => $app->filename,
+                'mime' => $app->filemime
             ]);
-//            ->attach(public_path() . '/' .$app->file);
     }
 }

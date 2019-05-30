@@ -1,87 +1,129 @@
-@extends('template.default')
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        #applicationContent{
+            width: 100vw;
+            height: max-content;
+            background: #fff;
+            padding: 5vh 5% 5%;
+            text-align: left;
+            border: 1px solid;
+            margin: 5%;
+        }
+        form{
+            -webkit-box-shadow: 3px 3px 3px 3px rgba(0,0, 0, 0.4);
+            -moz-box-shadow: 3px 3px 3px 3px rgba(0,0, 0, 0.4);
+            box-shadow: 3px 3px 3px 3px rgba(0,0, 0, 0.4);
+            height: max-content;
+            width: 100%;
+            padding-bottom: 5vh;
+        }
+        img{
+            width: 10rem;
+            height: auto;
+            display: block;
+            margin-left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+        h1{
+            padding-bottom: 6vh
+        }
+        label{
+            display: block;
+            margin-bottom: 2rem
+        }
+        input{
+            border-right: 0;
+            border-left: 0;
+            border-top: 0;
+            border-bottom: 1px solid #001001;
+            width: 30vw;
+            text-align: center;
+            outline: none;
+            color: #15ace4
+        }
+        textarea{
+            border: thin solid #001001;
+            color: #15ace4;
+            padding: 10px;
+        }
+        @media screen and (max-width: 745px){
+            label{
+                display: block
+            }
+        }
+        @media screen and (max-width: 666px){
+            textarea{
+                width: 80vw
+            }
+            label{
+                max-width: 80vw;
+            }
+            h1{
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
 
-@section('title')
-    The Tanzania Insurance Awards 2019 - Application for Nomination
-@endsection
+<div id="applicationContent">
 
-@section('stylesheets')
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
-@endsection
+    <form action="#" method="POST">
 
-@section('content')
+        <img src="{{'images/insurancelogo.png'}}" alt="logo">
+        <h1 class="text-center">Award Application Form</h1>
 
-    <div id="applicationContent">
+        <label for="fname">
+            First name
+            <input type="text" name="firstname" id="fname" value="{{$fname}}" readonly>
+        </label>
 
-        <form action="/apply" method="POST">
-            @csrf
-            <img src="{{'images/insurancelogo.png'}}" alt="logo">
-            <h1 class="text-center">Award Application Form</h1>
+        <label for="lname">
+            Last name
+            <input type="text" name="lastname" id="lname" value="{{$lname}}" readonly>
+        </label>
 
-            <label for="fname">
-                First name
-                <input type="text" name="firstname" id="fname" required>
-            </label>
+        <label for="email">
+            Email
+            <input type="email" name="email" id="email" value="{{$email}}" readonly>
+        </label>
 
-            <label for="lname">
-                Last name
-                <input type="text" name="lastname" id="lname" required>
-            </label>
+        <label for="phone">
+            Phone number
+            <input type="text" id="phone" name="phone" value="{{$phone}}" readonly>
+        </label>
 
-            <label for="email">
-                Email
-                <input type="email" name="email" id="email">
-            </label>
+        <label for="nom">
+            Name of the Nominee
+            <input type="text" name="nominee" id="nom" value="{{$nominee}}" readonly>
+        </label>
 
-            <label for="phone">
-                Phone number
-                <input type="text" id="phone" name="phone">
-            </label>
+        <label for="cat">
+            Contesting for &nbsp;
+            <input type="text" name="category" id="cat" value="{{$category}}" readonly>
+        </label>
 
-            <label for="nom">
-                Name of the Nominee
-                <input type="text" name="nominee" id="nom" required>
-            </label>
+        <label for="description">
+            About the nominee &nbsp;
+            <textarea name="description" id="description" cols="60" rows="5" required>
+                    {{$description}}
+                </textarea>
+        </label>
 
-            <label for="cat">
-                Contesting for &nbsp;
-                <select name="category" id="cat" required>
-                    <option value="Insurance Company of the Year">Insurance Company of the Year</option>
-                    <option value="Most Innovative Insurance Product">Most Innovative Insurance Product</option>
-                    <option value="Young Achievers' Award - Ideas/Research, Development">Young Achievers' Award - Ideas/Research, Development</option>
-                    <option value="Young Achievers' Award - Entrepreneurship">Young Achievers' Award - Entrepreneurship</option>
-                    <option value="Insurance Brokerage of the Year">Insurance Brokerage of the Year</option>
-                    <option value="Insurance Awareness Campaign of the Year">Insurance Awareness Campaign of the Year</option>
-                    <option value="Corporate Social Responsibility Award">Corporate Social Responsibility Award</option>
-                </select>
-            </label>
+    </form>
+</div>
 
-            <label for="description">
-                About the nominee &nbsp;
-                <textarea name="description" id="description" cols="60" rows="5" required></textarea>
-            </label>
-
-            <label for="file">
-                Supporting attachment (optional)
-                <input type="file" name="file" id="file">
-            </label>
-
-            <button>SUBMIT</button>
-
-        </form>
-    </div>
-
-@endsection
-
-@section('scripts')
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-
-            $('#nominationLink').addClass('activePage')
-        })
-
-    </script>
-@endsection
+</body>
+</html>
 
 

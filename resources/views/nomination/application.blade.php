@@ -37,7 +37,7 @@
 
     <div id="applicationContent">
 
-        <form action="/apply" method="POST">
+        <form action="/apply" method="POST" enctype="multipart/form-data">
             @csrf
             <img src="{{'images/insurancelogo.png'}}" alt="logo">
             <h1 class="text-center">Award Application Form</h1>
@@ -54,12 +54,12 @@
 
             <label for="email">
                 Email
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
             </label>
 
             <label for="phone">
                 Phone number
-                <input type="text" id="phone" name="phone">
+                <input type="text" id="phone" name="phone" required>
             </label>
 
             <label for="nom">
@@ -85,9 +85,9 @@
                 <textarea name="description" id="description" cols="60" rows="5" required></textarea>
             </label>
 
-            <label for="file">
-                Supporting attachment (optional)
-                <input type="file" name="file" id="file">
+            <label for="attachment">
+                Supporting attachment
+                <input type="file" name="attachment" id="attachment" required>
             </label>
 
             <button>SUBMIT</button>
