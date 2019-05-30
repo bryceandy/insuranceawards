@@ -17,12 +17,8 @@
                 text: '{{session('mailfail')}}',
                 type: 'error',
                 theme: 'relax',
-                layout : 'bottomRight',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight', // Animate.css class names
-                    close: 'animated bounceOutRight'
-                }
+                layout : 'topRight',
+                closeWith: ['click', 'button']
             }).show();
         </script>
     @endif
@@ -33,12 +29,8 @@
                 text: '{{session('mailsuccess')}}',
                 type: 'success',
                 theme: 'relax',
-                layout : 'bottomRight',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight',
-                    close: 'animated bounceOutRight'
-                }
+                layout : 'topRight',
+                closeWith: ['click', 'button']
             }).show();
         </script>
     @endif

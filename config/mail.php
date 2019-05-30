@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.eu.mailgun.org'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'postmaster@sandbox84b1947ad5444d43a23d2b7357988717.mailgun.org'),
+        'address' => env('MAIL_FROM_ADDRESS', 'hello@insuranceawards.or.tz'),
         'name' => env('MAIL_FROM_NAME', 'Insurance Awards'),
     ],
 

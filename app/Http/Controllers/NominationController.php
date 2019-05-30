@@ -25,11 +25,14 @@ class NominationController extends Controller
         ];
 
         //send email
-        $mail = Mail::to('bryceandy@rocketmail.com')->send(new ApplicationSent($application));
-        if($mail){
+        try{
+            Mail::to('bryceandy@rocketmail.com')->send(new ApplicationSent($application));
             return back()->with(['mailsuccess'=> 'Your application was sent successfully!']);
+
+        }catch (\Exception $e){
+            return back()->with(['mailfail'=> 'Your application could not be sent, please try again later!'. $e]);
         }
-        return back()->with(['mailfail'=> 'Your application could not be sent, please try again later!']);
+
     }
 
     public function categories(){

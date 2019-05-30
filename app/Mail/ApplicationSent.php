@@ -29,12 +29,13 @@ class ApplicationSent extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name')
+        $app = (object) $this->application;
+        return $this->view('mails.application')
             ->with([
-                'fname' => $this->application->firstname,
-                'lname' => $this->application->lastname,
-                'email' => $this->application->email
-            ])
-            ->attach($this->application->file);
+                'fname' => $app->firstname,
+                'lname' => $app->lastname,
+                'email' => $app->email
+            ]);
+//            ->attach(public_path() . '/' .$app->file);
     }
 }
