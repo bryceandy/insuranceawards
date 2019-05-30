@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="095a5a16-62b8-4ada-a5e1-3855b2f1c33f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="095a5a16-62b8-4ada-a5e1-3855b2f1c33f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,16 +30,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="1011" column="24" lean-forward="true" selection-start-line="1011" selection-start-column="24" selection-end-line="1011" selection-end-column="24" />
+            <state relative-caret-position="22">
+              <caret line="275" column="34" lean-forward="true" selection-start-line="275" selection-start-column="34" selection-end-line="275" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/voting/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -160,7 +158,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/NominationController.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/contact.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/nomination/categories.blade.php" />
-        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/public/js/custom.js" />
         <option value="$PROJECT_DIR$/resources/views/template/default.blade.php" />
         <option value="$PROJECT_DIR$/public/js/gsap-scrollTo.min.js" />
@@ -173,6 +170,7 @@
         <option value="$PROJECT_DIR$/resources/views/nomination/most-innovative-insurance-product.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/nomination/corporate-social-responsibility-award.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/voting/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
       </list>
     </option>
   </component>
@@ -465,12 +463,12 @@
       <workItem from="1558635169067" duration="2300000" />
       <workItem from="1558640065315" duration="15109000" />
       <workItem from="1558943710049" duration="13326000" />
-      <workItem from="1546302266483" duration="29587000" />
+      <workItem from="1546302266483" duration="29829000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307266000" />
+    <option name="totallyTimeSpent" value="307508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="815" extended-state="0" />
@@ -490,7 +488,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.41759777" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.32107496" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.8274399" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -812,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="1011" column="24" lean-forward="true" selection-start-line="1011" selection-start-column="24" selection-end-line="1011" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -842,6 +833,13 @@
             <element signature="e#493#515#0#HTML" expanded="true" />
             <element signature="e#733#755#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="275" column="34" lean-forward="true" selection-start-line="275" selection-start-column="34" selection-end-line="275" selection-end-column="34" />
         </state>
       </provider>
     </entry>
