@@ -69,11 +69,11 @@
     <div id="footer">
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path fill="black" d="M0,95 0,80 9,88 Z"></path>
-            <path fill="#ffeb3b" d="M0,80 0,75 14.5,88.35 11.5,91 Z"></path>
-            <path fill="#15ace4" d="M0,100 0,95 100,20 100,100 Z"></path>
-            <path fill="green" d="M0,75 0,10 40,65 11.75,86.3 Z" ></path>
-            <path fill="#15ace4" d="M0,10 0,5 42.5,64 41,67 Z"></path>
+            {{--<path fill="black" d="M0,95 0,80 9,88 Z"></path>--}}
+            {{--<path fill="#ffeb3b" d="M0,80 0,75 14.5,88.35 11.5,91 Z"></path>--}}
+            {{--<path fill="#15ace4" d="M0,100 0,95 100,20 100,100 Z"></path>--}}
+            {{--<path fill="green" d="M0,75 0,10 40,65 11.75,86.3 Z" ></path>--}}
+            {{--<path fill="#15ace4" d="M0,10 0,5 42.5,64 41,67 Z"></path>--}}
             <text x="40" y="10" class="svgText">Rewarding Insurance Excellence</text>
             <text x="60" y="18" class="svgText">in Tanzania</text>
         </svg>
