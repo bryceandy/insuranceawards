@@ -239,7 +239,7 @@ a{ text-decoration: none!important }
         width: 100vw;
 
         svg{
-            height: 21vh;
+            height: 42vh;
             width: 100vw;
             margin-top: 0;
 
@@ -248,7 +248,7 @@ a{ text-decoration: none!important }
                 font-family: $font-family-sans-serif-heavy;
                 font-size: .25rem;
                 text-align: center;
-                @include css3-prefix(transform,scale(.7,4))
+                @include css3-prefix(transform,scale(.7,2))
             }
         }
         #companyContacts{
@@ -368,7 +368,7 @@ a{ text-decoration: none!important }
 @media screen and (max-width: 775px){
     #defaultContent #footer {
         svg{
-            height: 11vh
+            height: 22vh
         }
         #companyContacts{
             flex-wrap: wrap;
@@ -447,7 +447,7 @@ a{ text-decoration: none!important }
 }
 @media screen and (max-width: 425px){
     #defaultContent #footer svg{
-        height: 8vh
+        height: 15vh
     }
 }
 @media screen and (max-width: 395px){
@@ -467,7 +467,7 @@ a{ text-decoration: none!important }
 }
 @media screen and (max-width: 362px){
     #defaultContent #footer svg{
-        height: 6vh
+        height: 12vh
     }
 }
 /*iPad */
@@ -505,7 +505,7 @@ a{ text-decoration: none!important }
             }
         }
         #footer svg{
-            height: 12.5vh
+            height: 25vh
         }
     }
 
