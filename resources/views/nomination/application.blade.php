@@ -6,9 +6,12 @@
 
 @section('content')
 
-    <div id="faqsContent" style="padding: 5vw; background: #ffffff">
+    <div id="applicationContent">
 
-        <img src="{{'images/comingsoon.png'}}" alt="Comming Soon" style="width:90vw; height: auto; display: block">
+        <form action="/apply">
+            @csrf
+            <h1 class="text-center">Application Form</h1>
+        </form>
     </div>
 
 @endsection
