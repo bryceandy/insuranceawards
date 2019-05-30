@@ -79,7 +79,7 @@
         </svg>
 
         <div id="companyContacts">
-            <img src="{{'../images/tira2.png'}}" class="logo" alt="TIRA">
+            <img src="{{'../images/tira.png'}}" class="logo" alt="TIRA">
             <div class="contactInfo">
                 LAPF Building, 5th floor, <br>
                 Plot No. 4/5, Makole street,
@@ -88,7 +88,7 @@
                 Email: coi@tira.go.tz <br>
                 Website: www.tira.go.tz <br>
             </div>
-            <img src="{{'../images/iit2.png'}}" class="logo" alt="IIT">
+            <img src="{{'../images/iit.png'}}" class="logo" alt="IIT">
             <div class="contactInfo">
                 3rd Floor,Maktaba Complex Building,<br>
                 Along Bibi Titi Mohammed Road<br>

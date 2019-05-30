@@ -252,7 +252,7 @@ a{ text-decoration: none!important }
             }
         }
         #companyContacts{
-            background: #001001;
+            background: #fff;
             width: 100%;
             text-align: center;
             font-size: 1rem;
@@ -264,21 +264,21 @@ a{ text-decoration: none!important }
                 height: auto;
                 max-height: 120px;
                 display: block;
-                width: 150px
+                width: 160px
             }
             .contactInfo{
                 width: 60vw;
                 display: block;
                 font-size: small;
                 text-align: left;
-                color: #fff;
-                font-family: $font-family-sans-serif-light;
+                color: darkgrey;
+                font-family: $font-family-sans-serif-normal;
                 align-self: center;
                 padding-left: 5vw
             }
         }
         #socialFooter{
-            background: #001001;
+            background: #fff;
             width: 100%;
             margin-top: 0;
             padding-bottom: 5vh;
@@ -290,7 +290,7 @@ a{ text-decoration: none!important }
                 color: darkgrey;
                 font-size: 1rem;
 
-                &:nth-of-type(1){font-family: $font-family-sans-serif-light}
+                &:nth-of-type(1){font-family: $font-family-sans-serif-normal}
                 //&:nth-of-type(2){color: #4267b2}
                 //&:nth-of-type(3){color: #cd426c}
                 //&:nth-of-type(4){color: #1da1f2}
