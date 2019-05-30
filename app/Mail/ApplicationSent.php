@@ -30,7 +30,7 @@ class ApplicationSent extends Mailable
     public function build()
     {
         $app = (object) $this->application;
-        return $this->view('mails.application')
+        return $this->markdown('mails.application')
             ->with([
                 'fname' => $app->firstname,
                 'lname' => $app->lastname,
