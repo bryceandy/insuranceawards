@@ -62,7 +62,7 @@ a img {
     border-radius: 0;
 }
 #cat{
-    width: 90vw
+    width: 90vw!important;
 }
 #form textarea{
     border: thin solid #001001;
