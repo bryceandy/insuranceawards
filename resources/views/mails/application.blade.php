@@ -6,39 +6,39 @@
 
 <label for="fname">
     First name
-<input type="text" name="firstname" id="fname" value="{{$fname}}" readonly>
-</label>
+<input value="{{$fname}}" readonly>
+</label> <br> <br> <br>
 
 <label for="lname">
     Last name
-<input type="text" name="lastname" id="lname" value="{{$lname}}" readonly>
-</label>
+<input value="{{$lname}}" readonly>
+</label> <br> <br> <br>
 
 <label for="email">
     Email
-<input type="email" name="email" id="email" value="{{$email}}" readonly>
-</label>
+<input value="{{$email}}" readonly>
+</label> <br> <br> <br>
 
 <label for="phone">
     Phone number
-<input type="text" id="phone" name="phone" value="{{$phone}}" readonly>
-</label>
+<input value="{{$phone}}" readonly>
+</label> <br> <br> <br>
 
 <label for="nom">
     Name of the Nominee
-<input type="text" name="nominee" id="nom" value="{{$nominee}}" readonly>
-</label>
+<input value="{{$nominee}}" readonly>
+</label> <br> <br> <br>
 
 <label for="cat">
     Contesting for &nbsp;
-<input type="text" name="category" id="cat" value="{{$category}}" readonly>
-</label>
+<input id="#cat" value="{{$category}}" readonly>
+</label> <br> <br> <br>
 
 <label for="description">
     About the nominee &nbsp;
 <textarea name="description" id="description" cols="60" rows="5" readonly>
         {{$description}}
-</textarea>
+</textarea> <br>
 </label>
 
 </div>
