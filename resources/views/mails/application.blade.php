@@ -11,38 +11,6 @@
 
 @section('content')
 
-    @if(session()->has('mailfail'))
-        <script>
-            new Noty({
-                text: '{{session('mailfail')}}',
-                type: 'error',
-                theme: 'relax',
-                layout : 'bottomRight',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight', // Animate.css class names
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
-    @if(session()->has('mailsuccess'))
-        <script>
-            new Noty({
-                text: '{{session('mailsuccess')}}',
-                type: 'success',
-                theme: 'relax',
-                layout : 'bottomRight',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight',
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
     <div id="applicationContent">
 
         <form action="/apply" method="POST">

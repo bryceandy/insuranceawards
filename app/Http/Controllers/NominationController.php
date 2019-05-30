@@ -13,11 +13,23 @@ class NominationController extends Controller
         return view('nomination.application');
     }
 
-    public function apply():void {
+    public function apply(Request $request) {
+        //validate user input
+
         //process form application
+        $application = [
+            'firstname' => $request->firstname,
+            'lastname' => $request->lastname,
+            'email' => $request->email,
+            'file' => $request->file
+        ];
 
-
-        Mail::to('bryceandy@rocketmail.com')->send(new ApplicationSent());
+        //send email
+        $mail = Mail::to('bryceandy@rocketmail.com')->send(new ApplicationSent($application));
+        if($mail){
+            return back()->with(['mailsuccess'=> 'Your application was sent successfully!']);
+        }
+        return back()->with(['mailfail'=> 'Your application could not be sent, please try again later!']);
     }
 
     public function categories(){
