@@ -18,6 +18,7 @@ Route::post('vote', 'VoteController@cast');
 
 /*nomination*/
 Route::get('application-form', 'NominationController@viewApplication');
+Route::post('apply', 'NominationController@apply');
 Route::get('nomination-categories', 'NominationController@categories');
 Route::get('nomination-categories/{name}', 'NominationController@viewCategory');
 

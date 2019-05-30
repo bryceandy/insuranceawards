@@ -13,14 +13,24 @@
             <img src="{{'images/insurancelogo.png'}}" alt="logo">
             <h1 class="text-center">Award Application Form</h1>
 
-            <label for="fname" class="name">
+            <label for="fname">
                 First name
                 <input type="text" name="firstname" id="fname" required>
             </label>
 
-            <label for="lname" class="name">
+            <label for="lname">
                 Last name
                 <input type="text" name="lastname" id="lname" required>
+            </label>
+
+            <label for="email">
+                Email
+                <input type="email" name="email" id="email">
+            </label>
+
+            <label for="phone">
+                Phone number
+                <input type="text" id="phone" name="phone">
             </label>
 
             <label for="nom">
