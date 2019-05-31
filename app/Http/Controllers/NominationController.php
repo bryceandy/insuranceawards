@@ -40,13 +40,13 @@ class NominationController extends Controller
             ];
         }
         //send email
-        //          Mail::to('glowconsults@gmail.com')->send(new ApplicationSent($application));
-        $mail = Mail::to('bryceandy@rocketmail.com')->send(new ApplicationSent($application));
-
-        if($mail){
+        //return Mail::to('bryceandy@rocketmail.com')->send(new ApplicationSent($application));
+        try{
+//          Mail::to('glowconsults@gmail.com')->send(new ApplicationSent($application));
+            Mail::to('bryceandy@rocketmail.com')->send(new ApplicationSent($application));
             return back()->with(['mailsuccess'=> 'Your application was sent successfully!']);
-        }
-        else{
+
+        }catch (\Exception $e){
             return back()->with(['mailfail'=> 'Your application could not be sent, please try again later!']);
         }
 
