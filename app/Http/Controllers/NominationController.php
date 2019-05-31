@@ -31,9 +31,13 @@ class NominationController extends Controller
             'filemime' => $file->getMimeType()
         ];
 
+        if($request->link){
+            $application += ['link' => $request->link];
+        }
         //send email
         try{
-            Mail::to('glowconsults@gmail.com')->send(new ApplicationSent($application));
+              Mail::to('glowconsults@gmail.com')->send(new ApplicationSent($application));
+//            Mail::to('bryceandy@rocketmail.com')->send(new ApplicationSent($application));
             return back()->with(['mailsuccess'=> 'Your application was sent successfully!']);
 
         }catch (\Exception $e){

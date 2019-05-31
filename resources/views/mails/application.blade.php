@@ -37,9 +37,14 @@
 <label for="description">
     About the nominee &nbsp;
 <textarea name="description" id="description" cols="60" rows="5" readonly>
-        {{$description}}
-</textarea> <br>
-</label>
+    {{$description}}
+</textarea>
+</label> <br> <br>
+
+<label for="link">
+    Link
+<input id="#link" value="{{$link}}" readonly>
+</label> <br>
 
 </div>
 

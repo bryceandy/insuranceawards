@@ -39,8 +39,7 @@
 
         <form action="/apply" method="POST" enctype="multipart/form-data">
             @csrf
-            <img src="{{'images/insurancelogo.png'}}" alt="logo">
-            <h1 class="text-center">Award Application Form</h1>
+            <h1>Award Application Form</h1>
 
             <label for="fname">
                 First name
@@ -85,9 +84,14 @@
                 <textarea name="description" id="description" cols="60" rows="5" required></textarea>
             </label>
 
-            <label for="attachment">
-                Supporting attachment
+            <label for="attachment" style="width: 80vw">
+                File attachment <span style="color: red">(Supported formats: JPEG, pdf)</span>
                 <input type="file" name="attachment" id="attachment" required>
+            </label>
+
+            <label for="link">
+                Link (optional)
+                <input type="url" name="link" id="link">
             </label>
 
             <button>SUBMIT</button>

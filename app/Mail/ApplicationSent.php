@@ -30,6 +30,12 @@ class ApplicationSent extends Mailable
     public function build()
     {
         $app = (object) $this->application;
+        if($app->link){
+            $link = $app->link;
+        }
+        else{
+            $link = '';
+        }
         return $this->markdown('mails.application')
             ->with([
                 'fname' => $app->firstname,
@@ -38,7 +44,8 @@ class ApplicationSent extends Mailable
                 'phone' => $app->phone,
                 'nominee' => $app->nominee,
                 'description' => $app->description,
-                'category' => $app->category
+                'category' => $app->category,
+                'link' => $link
             ])
             ->subject('Application Received')
             ->attach($app->file, [
