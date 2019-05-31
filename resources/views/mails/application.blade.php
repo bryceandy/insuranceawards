@@ -1,52 +1,50 @@
 @component('mail::message')
 
-<div id="form">
+<h1 style="text-align: center; font-size: large; color: #15ace4">Award Application Form</h1> <br> <br>
 
-<h1 class="text-center">Award Application Form</h1> <br> <br> <br>
+<span>First name</span> <br>
+@component('mail::panel')
+    {{$fname}}
+@endcomponent<br>
 
-<label for="fname">
-    First name
-<input value="{{$fname}}" readonly>
-</label> <br> <br>
+<span>Last name</span> <br>
+@component('mail::panel')
+    {{$lname}}
+@endcomponent<br>
 
-<label for="lname">
-    Last name
-<input value="{{$lname}}" readonly>
-</label> <br> <br>
+<span>Email</span> <br>
+@component('mail::panel')
+    {{$email}}
+@endcomponent<br>
 
-<label for="email">
-    Email
-<input value="{{$email}}" readonly>
-</label> <br> <br>
+<span>Phone number</span> <br>
+@component('mail::panel')
+    {{$phone}}
+@endcomponent<br>
 
-<label for="phone">
-    Phone number
-<input value="{{$phone}}" readonly>
-</label> <br> <br>
+<span>Name of the nominee</span> <br>
+@component('mail::panel')
+    {{$nominee}}
+@endcomponent<br>
 
-<label for="nom">
-    Name of the Nominee
-<input value="{{$nominee}}" readonly>
-</label> <br> <br>
+<span>Selected category</span> <br>
+@component('mail::panel')
+    {{$category}}
+@endcomponent<br>
 
-<label for="cat">
-    Contesting for &nbsp;
-<input id="#cat" value="{{$category}}" readonly>
-</label> <br> <br>
-
-<label for="description">
-    About the nominee &nbsp;
-<textarea name="description" id="description" cols="60" rows="5" readonly>
+<span>About the nominee</span> <br>
+@component('mail::promotion')
     {{$description}}
-</textarea>
-</label> <br> <br>
+@endcomponent<br>
 
-<label for="link">
-    Link
-<input id="#link" value="{{$link}}" readonly>
-</label> <br>
+@if($link)
 
-</div>
+<span>Link</span> <br>
+@component('mail::panel')
+    {{$link}}
+@endcomponent<br>
+
+@endif
 
 @endcomponent
 

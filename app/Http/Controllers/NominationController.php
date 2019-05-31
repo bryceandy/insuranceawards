@@ -16,7 +16,6 @@ class NominationController extends Controller
     public function apply(Request $request) {
         //validate user input
 
-        $file = $request->file('attachment');
         //process form application
         $application = [
             'firstname' => $request->firstname,
@@ -26,18 +25,25 @@ class NominationController extends Controller
             'nominee' => $request->nominee,
             'category' => $request->category,
             'description' => $request->description,
-            'file' => $file->getRealPath(),
-            'filename' => $file->getClientOriginalName(),
-            'filemime' => $file->getMimeType()
+
         ];
 
-        if($request->link){
+        if($request->link !== ''){
             $application += ['link' => $request->link];
         }
+        if($request->hasFile('attachment') ){
+            $file = $request->file('attachment');
+            $application += [
+                'file' => $file->getRealPath(),
+                'filename' => $file->getClientOriginalName(),
+                'filemime' => $file->getMimeType()
+            ];
+        }
         //send email
+        //return Mail::to('bryceandy@rocketmail.com')->send(new ApplicationSent($application));
         try{
-              Mail::to('glowconsults@gmail.com')->send(new ApplicationSent($application));
-//            Mail::to('bryceandy@rocketmail.com')->send(new ApplicationSent($application));
+//          Mail::to('glowconsults@gmail.com')->send(new ApplicationSent($application));
+            Mail::to('bryceandy@rocketmail.com')->send(new ApplicationSent($application));
             return back()->with(['mailsuccess'=> 'Your application was sent successfully!']);
 
         }catch (\Exception $e){

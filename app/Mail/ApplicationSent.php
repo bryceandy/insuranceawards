@@ -30,11 +30,32 @@ class ApplicationSent extends Mailable
     public function build()
     {
         $app = (object) $this->application;
+        //check if a link was set
         if($app->link){
             $link = $app->link;
         }
         else{
-            $link = '';
+            $link = null;
+        }
+        //check if a file was set
+
+        if(isset($app->file)){
+            return $this->markdown('mails.application')
+                ->with([
+                    'fname' => $app->firstname,
+                    'lname' => $app->lastname,
+                    'email' => $app->email,
+                    'phone' => $app->phone,
+                    'nominee' => $app->nominee,
+                    'description' => $app->description,
+                    'category' => $app->category,
+                    'link' => $link
+                ])
+                ->subject('Application Received')
+                ->attach($app->file, [
+                    'as' => $app->filename,
+                    'mime' => $app->filemime
+                ]);
         }
         return $this->markdown('mails.application')
             ->with([
@@ -47,10 +68,8 @@ class ApplicationSent extends Mailable
                 'category' => $app->category,
                 'link' => $link
             ])
-            ->subject('Application Received')
-            ->attach($app->file, [
-                'as' => $app->filename,
-                'mime' => $app->filemime
-            ]);
+            ->subject('Application Received');
+
+
     }
 }

@@ -25,7 +25,7 @@
                 NOMINATION
                 <div class="nominationBlock">
                     <a href="/nomination-categories">Categories</a>
-                    <a href="/application-form">Application Form</a>
+                    <a href="/application-form">Application Forms</a>
                 </div>
             </div>
             <div href="#" class="navlinks" id="committee">

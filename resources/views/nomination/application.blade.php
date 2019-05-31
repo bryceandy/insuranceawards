@@ -32,6 +32,13 @@
                 layout : 'topRight',
                 closeWith: ['click', 'button']
             }).show();
+            new Noty({
+                text: 'Apply for another category ?',
+                type: 'info',
+                theme: 'relax',
+                layout : 'topRight',
+                closeWith: ['click', 'button']
+            }).show();
         </script>
     @endif
 
@@ -61,14 +68,10 @@
                 <input type="text" id="phone" name="phone" required>
             </label>
 
-            <label for="nom">
-                Name of the Nominee
-                <input type="text" name="nominee" id="nom" required>
-            </label>
-
             <label for="cat">
-                Contesting for &nbsp;
-                <select name="category" id="cat" required>
+                Click to select the award category &nbsp;
+                <select name="category" id="cat">
+                    <option value=""></option>
                     <option value="Insurance Company of the Year">Insurance Company of the Year</option>
                     <option value="Most Innovative Insurance Product">Most Innovative Insurance Product</option>
                     <option value="Young Achievers' Award - Ideas/Research, Development">Young Achievers' Award - Ideas/Research, Development</option>
@@ -79,14 +82,19 @@
                 </select>
             </label>
 
+            <label for="nom">
+                Name of the Nominee
+                <input type="text" name="nominee" id="nom" required>
+            </label>
+
             <label for="description">
                 About the nominee &nbsp;
                 <textarea name="description" id="description" cols="60" rows="5" required></textarea>
             </label>
 
             <label for="attachment" style="width: 80vw">
-                File attachment <span style="color: red">(Supported formats: JPEG, pdf)</span>
-                <input type="file" name="attachment" id="attachment" required>
+                File attachment (optional)
+                <input type="file" name="attachment" id="attachment">
             </label>
 
             <label for="link">
@@ -97,7 +105,12 @@
             <button>SUBMIT</button>
 
         </form>
+
     </div>
+    <p style="max-width: 80vw; margin-left: 10vw; margin-bottom: 5vh">
+        <b>NB. </b>Hardcopy submissions are also welcome. Sealed envelopes clearly marked
+        ' Tanzania Annual InsuranceAwards 2019' can be delivered at any of the TIRA or IIT offices country wide.
+    </p>
 
 @endsection
 
