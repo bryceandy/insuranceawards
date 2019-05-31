@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="095a5a16-62b8-4ada-a5e1-3855b2f1c33f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NominationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NominationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/ApplicationSent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/ApplicationSent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mails/application.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mails/application.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/nomination/application.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/nomination/application.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/template/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/default.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/template/nomination.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/nomination.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" afterDir="false" />
-    </list>
+    <list default="true" id="095a5a16-62b8-4ada-a5e1-3855b2f1c33f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NominationController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
+            <state relative-caret-position="-95">
               <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
               <folding>
                 <element signature="e#40#69#0#PHP" expanded="true" />
@@ -51,7 +42,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deploy.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Mail/ApplicationSent.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-380">
@@ -486,18 +482,17 @@
       <workItem from="1558943710049" duration="13326000" />
       <workItem from="1546302266483" duration="60067000" />
       <workItem from="1559260393010" duration="322000" />
-      <workItem from="1559287045775" duration="14327000" />
+      <workItem from="1559287045775" duration="14762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352395000" />
+    <option name="totallyTimeSpent" value="352830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="824" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49830508" visible="true" weight="0.26323318" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49830508" visible="true" weight="0.26323318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.5016949" side_tool="true" weight="0.18597998" />
@@ -512,7 +507,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.41759777" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.0726257" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.424581" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -545,9 +540,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/comingsoon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/shortlist.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -800,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" selection-start-column="35" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -856,20 +841,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NominationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-          <folding>
-            <element signature="e#40#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Mail/ApplicationSent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-380">
           <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NominationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding>
+            <element signature="e#40#69#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
