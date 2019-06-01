@@ -1177,7 +1177,8 @@ a{ text-decoration: none!important }
         label{
             display: block;
             margin-bottom: 2rem;
-            width: 30%;
+            width: max-content;
+            width: -moz-max-content;
             margin-left: 20vw;
         }
         select{
@@ -1209,11 +1210,12 @@ a{ text-decoration: none!important }
             }
         }
         input{
+            display: block;
             border-right: 0;
             border-left: 0;
             border-top: 0;
             border-bottom: 1px solid #001001;
-            width: 30vw;
+            width: 35vw;
             text-align: center;
             outline: none;
             color: $primary-color;
@@ -1223,6 +1225,7 @@ a{ text-decoration: none!important }
             border: thin solid #001001;
             color: $primary-color;
             padding: 10px;
+            outline: none;
         }
         button{
             display: block;

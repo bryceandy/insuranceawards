@@ -37,26 +37,18 @@ class ApplicationSent extends Mailable
         else{
             $link = null;
         }
-        //check if a file was set
+        //check if files were set and attach
+        for($fileNumber = 1; $fileNumber < 4; $fileNumber++){
 
-        if(isset($app->file)){
-            return $this->markdown('mails.application')
-                ->with([
-                    'fname' => $app->firstname,
-                    'lname' => $app->lastname,
-                    'email' => $app->email,
-                    'phone' => $app->phone,
-                    'nominee' => $app->nominee,
-                    'description' => $app->description,
-                    'category' => $app->category,
-                    'link' => $link
-                ])
-                ->subject('Application Received')
-                ->attach($app->file, [
-                    'as' => $app->filename,
-                    'mime' => $app->filemime
+            if(isset($app->{'file'.$fileNumber})){
+                $this->attach($app->{'file'.$fileNumber}, [
+                    'as' => $app->{'filename'.$fileNumber},
+                    'mime' => $app->{'filemime'.$fileNumber}
                 ]);
+            }
         }
+
+        //display email
         return $this->markdown('mails.application')
             ->with([
                 'fname' => $app->firstname,
@@ -69,7 +61,6 @@ class ApplicationSent extends Mailable
                 'link' => $link
             ])
             ->subject('Application Received');
-
 
     }
 }

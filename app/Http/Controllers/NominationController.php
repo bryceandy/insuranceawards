@@ -25,20 +25,26 @@ class NominationController extends Controller
             'nominee' => $request->nominee,
             'category' => $request->category,
             'description' => $request->description,
-
         ];
 
+        //if there is a link, add it
         if($request->link !== ''){
             $application += ['link' => $request->link];
         }
-        if($request->hasFile('attachment') ){
-            $file = $request->file('attachment');
-            $application += [
-                'file' => $file->getRealPath(),
-                'filename' => $file->getClientOriginalName(),
-                'filemime' => $file->getMimeType()
-            ];
+        //if there are attachments
+        $attachments = ['attachment', 'attachment2', 'attachment3'];
+
+        for($fileNumber = 1; $fileNumber < 4; $fileNumber++){
+            if($request->hasFile($attachments[$fileNumber-1]) ){
+                $file = $request->file($attachments[$fileNumber-1]);
+                $application += [
+                    'file'.$fileNumber => $file->getRealPath(),
+                    'filename'.$fileNumber => $file->getClientOriginalName(),
+                    'filemime'.$fileNumber => $file->getMimeType()
+                ];
+            }
         }
+
         //send email
         try{
             Mail::to('glowconsults@gmail.com')->send(new ApplicationSent($application));

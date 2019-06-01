@@ -69,7 +69,7 @@
             </label>
 
             <label for="cat">
-                Click to select the award category &nbsp;
+                Click to select the award category <br>
                 <select name="category" id="cat">
                     <option value=""></option>
                     <option value="Insurance Company of the Year">Insurance Company of the Year</option>
@@ -88,12 +88,12 @@
             </label>
 
             <label for="description">
-                About the nominee &nbsp;
+                About the nominee <br>
                 <textarea name="description" id="description" cols="60" rows="5" required></textarea>
             </label>
 
             <label for="attachment" style="width: 80vw">
-                File attachment (optional)
+                File attachment (optional - 3 Maximum)
                 <input type="file" name="attachment" id="attachment">
                 <input type="file" name="attachment2" id="attachment2">
                 <input type="file" name="attachment3" id="attachment3">
