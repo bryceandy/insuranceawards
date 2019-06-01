@@ -19,6 +19,7 @@ a{ text-decoration: none!important }
     display: grid;
     grid-template-rows: 24vh auto auto;
     grid-template-columns: 100vw;
+    overflow-x: hidden;
 
     #top{
         grid-area: 1/1/2/2;
@@ -710,6 +711,7 @@ a{ text-decoration: none!important }
 }
 @media screen and (max-height: 735px){
     #homeContent{
+        grid-template-rows: 84vh 100vh 45vh 85vh!important;
         #whatWeDo{
             .theProcess{
                 .one, .two, .three, .four{}
@@ -855,7 +857,7 @@ a{ text-decoration: none!important }
         display: inline-block;
 
         &:last-of-type{
-            margin-bottom: 15vh;
+            margin-bottom: 5vh;
         }
 
         label{
@@ -934,7 +936,6 @@ a{ text-decoration: none!important }
         width: 100vw;
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 5vh;
         justify-content: center;
 
         .judge, .steering{
@@ -1169,13 +1170,6 @@ a{ text-decoration: none!important }
         width: 100%;
         padding-bottom: 5vh;
 
-        img{
-            width: 10rem;
-            height: auto;
-            display: block;
-            margin-left: 50%;
-            @include css3-prefix(transform, translateX(-50%))
-        }
         h1{
             margin-left: 20vw;
             padding-bottom: 6vh
@@ -1222,7 +1216,8 @@ a{ text-decoration: none!important }
             width: 30vw;
             text-align: center;
             outline: none;
-            color: $primary-color
+            color: $primary-color;
+            @include brad(0)
         }
         textarea{
             border: thin solid #001001;
@@ -1269,4 +1264,5 @@ a{ text-decoration: none!important }
         }
     }
 }
+/*end Application page*/
 

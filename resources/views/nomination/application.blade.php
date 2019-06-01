@@ -95,6 +95,8 @@
             <label for="attachment" style="width: 80vw">
                 File attachment (optional)
                 <input type="file" name="attachment" id="attachment">
+                <input type="file" name="attachment2" id="attachment2">
+                <input type="file" name="attachment3" id="attachment3">
             </label>
 
             <label for="link">
@@ -108,8 +110,8 @@
 
     </div>
     <p style="max-width: 80vw; margin-left: 10vw; margin-bottom: 5vh">
-        <b>NB. </b>Hardcopy submissions are also welcome. Sealed envelopes clearly marked
-        ' Tanzania Annual InsuranceAwards 2019' can be delivered at any of the TIRA or IIT offices country wide.
+        <b>NB. </b>Hard-copy submissions are also welcome. Sealed envelopes clearly marked
+        '<b>Tanzania Annual InsuranceAwards 2019</b>' can be delivered at any of the TIRA or IIT offices country wide.
     </p>
 
 @endsection
