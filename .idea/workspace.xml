@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="095a5a16-62b8-4ada-a5e1-3855b2f1c33f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/insuranceAwards.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/insuranceAwards.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NominationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NominationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/ApplicationSent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/ApplicationSent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/nomination/application.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/nomination/application.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/default.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template/nomination.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/nomination.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,12 +37,30 @@
     <favorites_list name="insurance" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
+            <state relative-caret-position="38">
               <caret line="1227" column="26" selection-start-line="1227" selection-start-column="26" selection-end-line="1227" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/analytics.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -96,7 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/images/globe.svg" />
         <option value="$PROJECT_DIR$/public/css/fonts.css" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/VoteController.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/shortlist.blade.php" />
@@ -137,9 +154,6 @@
         <option value="$PROJECT_DIR$/config/services.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/custom.css" />
         <option value="$PROJECT_DIR$/config/mail.php" />
-        <option value="$PROJECT_DIR$/resources/views/template/default.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/template/nomination.blade.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" />
         <option value="$PROJECT_DIR$/resources/views/mails/application.blade.php" />
@@ -147,6 +161,10 @@
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/NominationController.php" />
         <option value="$PROJECT_DIR$/app/Mail/ApplicationSent.php" />
+        <option value="$PROJECT_DIR$/storage/app/analytics/service-account-credentials.json" />
+        <option value="$PROJECT_DIR$/resources/views/template/default.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/template/nomination.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
       </list>
     </option>
   </component>
@@ -236,6 +254,14 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/madewithlove/illuminate-psr-cache-bridge" />
+      <path value="$PROJECT_DIR$/vendor/google/apiclient" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-analytics" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/vendor/google/apiclient-services" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -317,9 +343,20 @@
             <path>
               <item name="insurance" type="b2602c69:ProjectViewProjectNode" />
               <item name="insurance" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="insurance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="insurance" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="insurance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="insurance" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="analytics" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -410,17 +447,20 @@
       <workItem from="1558943710049" duration="13326000" />
       <workItem from="1546302266483" duration="60067000" />
       <workItem from="1559260393010" duration="322000" />
-      <workItem from="1559287045775" duration="25060000" />
+      <workItem from="1559287045775" duration="25209000" />
+      <workItem from="1559418522050" duration="15000" />
+      <workItem from="1559475462081" duration="2317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363128000" />
+    <option name="totallyTimeSpent" value="365609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="824" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49830508" visible="true" weight="0.18454936" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49830508" visible="true" weight="0.18884121" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.5016949" side_tool="true" weight="0.18597998" />
@@ -435,7 +475,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.41759777" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.7849162" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.41480446" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -468,20 +508,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/shortlist.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/about.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/steering.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -706,27 +732,6 @@
     <entry file="file://$PROJECT_DIR$/public/images/iit2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/template/default.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/template/nomination.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -748,13 +753,6 @@
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="-8537">
           <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" selection-start-column="35" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -789,10 +787,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-447">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/template/default.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/template/nomination.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/analytics/service-account-credentials.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="3" column="65" lean-forward="true" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/analytics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
+        <state relative-caret-position="38">
           <caret line="1227" column="26" selection-start-line="1227" selection-start-column="26" selection-end-line="1227" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
