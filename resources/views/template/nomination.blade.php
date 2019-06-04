@@ -34,7 +34,7 @@
             <div href="#" class="navlinks" id="nominationLink">
                 NOMINATION
                 <div class="nominationBlock">
-                    <a href="/nomination-categories">Categories</a>
+                    <a href="/nomination-guidelines">Guidelines</a>
                     <a href="/application-form">Application Forms</a>
                 </div>
             </div>
@@ -112,9 +112,8 @@
         <div id="socialFooter">
             <hr style="border-top-color: darkgrey; width: 90%; margin-top: -1rem; padding-bottom: 1rem">
             <a href="/" style="float: left; margin-left: 5vw">Tanzania Insurance Awards 2019</a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/bimaawards/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/bimaawards?lang=en"><i class="fab fa-twitter"></i></a>
         </div>
 
     </div>

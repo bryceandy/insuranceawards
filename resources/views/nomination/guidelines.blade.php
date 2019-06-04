@@ -1,14 +1,14 @@
 @extends('template.default')
 
 @section('title')
-    The Tanzania Insurance Awards 2019 - Nomination Categories
+    The Tanzania Insurance Awards 2019 - Nomination Guidelines
 @endsection
 
 @section('content')
 
     <div id="categoriesContent">
 
-        <h1>Nomination Categories</h1>
+        <h1>Nomination Guidelines</h1>
         <p>
             The following are guidelines on how every award category will be nominated and which groups are
             eligible to participate in a specific award. <span class="methodologyLink">See the methodology</span>

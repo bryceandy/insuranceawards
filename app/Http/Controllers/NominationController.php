@@ -57,9 +57,9 @@ class NominationController extends Controller
 
     }
 
-    public function categories(){
+    public function guidelines(){
         //view all categories
-        return view('nomination.categories');
+        return view('nomination.guidelines');
     }
 
     public function viewCategory($name){
