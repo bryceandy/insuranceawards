@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ApplicationSent;
+use App\Mail\ApplicationSentFeedback;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -31,12 +32,12 @@ class NominationController extends Controller
         if($request->link !== ''){
             $application += ['link' => $request->link];
         }
-        //if there are attachments
+        //if there are attachments, attach them
         $attachments = ['attachment', 'attachment2', 'attachment3'];
 
         for($fileNumber = 1; $fileNumber < 4; $fileNumber++){
-            if($request->hasFile($attachments[$fileNumber-1]) ){
-                $file = $request->file($attachments[$fileNumber-1]);
+            if($request->hasFile($attachments[$fileNumber - 1]) ){
+                $file = $request->file($attachments[$fileNumber - 1]);
                 $application += [
                     'file'.$fileNumber => $file->getRealPath(),
                     'filename'.$fileNumber => $file->getClientOriginalName(),
@@ -45,10 +46,15 @@ class NominationController extends Controller
             }
         }
 
-        //send email
         try{
+            //send application through email
             Mail::to('glowconsults@gmail.com')->send(new ApplicationSent($application));
-            //Mail::to('bryceandy@rocketmail.com')->send(new ApplicationSent($application));
+            //Mail::to('poyuke@tira.go.tz')->send(new ApplicationSent($application));
+            //Mail::to('ceo@iit.co.tz')->send(new ApplicationSent($application));
+
+            //send feedback to applicant
+            Mail::to($request->email)->send(new ApplicationSentFeedback($application));
+
             return back()->with(['mailsuccess'=> 'Your application was sent successfully!']);
 
         }catch (\Exception $e){

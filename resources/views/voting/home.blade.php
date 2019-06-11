@@ -35,22 +35,22 @@
             </label> <br>
 
             <label for="Choice1">
-                <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
+                <input type="radio" readonly id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
                 Tanzania Insurance Brokers Association <span class="Tanzania Insurance Brokers Association"></span>
             </label>
 
             <label for="Choice2">
-                <input type="radio" id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
+                <input type="radio" readonly id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
                 Tanzania Insurance Regulatory Authority <span class="Tanzania Insurance Regulatory Authority"></span>
             </label>
 
             <label for="Choice3">
-                <input type="radio" id="Choice3" name="name" value="Association of Tanzania Insurers">
+                <input type="radio" readonly id="Choice3" name="name" value="Association of Tanzania Insurers">
                 Association of Tanzania Insurers <span class="Association of Tanzania Insurers"></span>
             </label>
 
             <label for="Choice4">
-                <input type="radio" id="Choice4" name="name" value="I.I.T">
+                <input type="radio" readonly id="Choice4" name="name" value="I.I.T">
                 I.I.T <span class="I.I.T"></span>
             </label>
 
@@ -67,22 +67,22 @@
             </label> <br>
 
             <label for="Choice1">
-                <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
+                <input type="radio" readonly id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
                 Tanzania Insurance Brokers Association <span class="Tanzania Insurance Brokers Association"></span>
             </label>
 
             <label for="Choice2">
-                <input type="radio" id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
+                <input type="radio" readonly id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
                 Tanzania Insurance Regulatory Authority <span class="Tanzania Insurance Regulatory Authority"></span>
             </label>
 
             <label for="Choice3">
-                <input type="radio" id="Choice3" name="name" value="Association of Tanzania Insurers">
+                <input type="radio" readonly id="Choice3" name="name" value="Association of Tanzania Insurers">
                 Association of Tanzania Insurers <span class="Association of Tanzania Insurers"></span>
             </label>
 
             <label for="Choice4">
-                <input type="radio" id="Choice4" name="name" value="I.I.T">
+                <input type="radio" readonly id="Choice4" name="name" value="I.I.T">
                 I.I.T <span class="I.I.T"></span>
             </label>
 
@@ -99,22 +99,22 @@
             </label> <br>
 
             <label for="Choice1">
-                <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
+                <input type="radio" readonly id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
                 Tanzania Insurance Brokers Association <span class="Tanzania Insurance Brokers Association"></span>
             </label>
 
             <label for="Choice2">
-                <input type="radio" id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
+                <input type="radio" readonly id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
                 Tanzania Insurance Regulatory Authority <span class="Tanzania Insurance Regulatory Authority"></span>
             </label>
 
             <label for="Choice3">
-                <input type="radio" id="Choice3" name="name" value="Association of Tanzania Insurers">
+                <input type="radio" readonly id="Choice3" name="name" value="Association of Tanzania Insurers">
                 Association of Tanzania Insurers <span class="Association of Tanzania Insurers"></span>
             </label>
 
             <label for="Choice4">
-                <input type="radio" id="Choice4" name="name" value="I.I.T">
+                <input type="radio" readonly id="Choice4" name="name" value="I.I.T">
                 I.I.T <span class="I.I.T"></span>
             </label>
 
@@ -131,22 +131,22 @@
             </label> <br>
 
             <label for="Choice1">
-                <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
+                <input type="radio" readonly id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
                 Tanzania Insurance Brokers Association <span class="Tanzania Insurance Brokers Association"></span>
             </label>
 
             <label for="Choice2">
-                <input type="radio" id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
+                <input type="radio" readonly id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
                 Tanzania Insurance Regulatory Authority <span class="Tanzania Insurance Regulatory Authority"></span>
             </label>
 
             <label for="Choice3">
-                <input type="radio" id="Choice3" name="name" value="Association of Tanzania Insurers">
+                <input type="radio" readonly id="Choice3" name="name" value="Association of Tanzania Insurers">
                 Association of Tanzania Insurers <span class="Association of Tanzania Insurers"></span>
             </label>
 
             <label for="Choice4">
-                <input type="radio" id="Choice4" name="name" value="I.I.T">
+                <input type="radio" readonly id="Choice4" name="name" value="I.I.T">
                 I.I.T <span class="I.I.T"></span>
             </label>
 
@@ -163,22 +163,22 @@
             </label><br>
 
             <label for="Choice1">
-                <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
+                <input type="radio" readonly id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
                 Tanzania Insurance Brokers Association <span class="Tanzania Insurance Brokers Association"></span>
             </label>
 
             <label for="Choice2">
-                <input type="radio" id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
+                <input type="radio" readonly id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
                 Tanzania Insurance Regulatory Authority <span class="Tanzania Insurance Regulatory Authority"></span>
             </label>
 
             <label for="Choice3">
-                <input type="radio" id="Choice3" name="name" value="Association of Tanzania Insurers">
+                <input type="radio" readonly id="Choice3" name="name" value="Association of Tanzania Insurers">
                 Association of Tanzania Insurers <span class="Association of Tanzania Insurers"></span>
             </label>
 
             <label for="Choice4">
-                <input type="radio" id="Choice4" name="name" value="I.I.T">
+                <input type="radio" readonly id="Choice4" name="name" value="I.I.T">
                 I.I.T <span class="I.I.T"></span>
             </label>
 
@@ -195,22 +195,22 @@
             </label><br>
 
             <label for="Choice1">
-                <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
+                <input type="radio" readonly id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
                 Tanzania Insurance Brokers Association <span class="Tanzania Insurance Brokers Association"></span>
             </label>
 
             <label for="Choice2">
-                <input type="radio" id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
+                <input type="radio" readonly id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
                 Tanzania Insurance Regulatory Authority <span class="Tanzania Insurance Regulatory Authority"></span>
             </label>
 
             <label for="Choice3">
-                <input type="radio" id="Choice3" name="name" value="Association of Tanzania Insurers">
+                <input type="radio" readonly id="Choice3" name="name" value="Association of Tanzania Insurers">
                 Association of Tanzania Insurers <span class="Association of Tanzania Insurers"></span>
             </label>
 
             <label for="Choice4">
-                <input type="radio" id="Choice4" name="name" value="I.I.T">
+                <input type="radio" readonly id="Choice4" name="name" value="I.I.T">
                 I.I.T <span class="I.I.T"></span>
             </label>
 
@@ -227,22 +227,22 @@
             </label><br>
 
             <label for="Choice1">
-                <input type="radio" id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
+                <input type="radio" readonly id="Choice1" name="name" value="Tanzania Insurance Brokers Association">
                 Tanzania Insurance Brokers Association <span class="Tanzania Insurance Brokers Association"></span>
             </label>
 
             <label for="Choice2">
-                <input type="radio" id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
+                <input type="radio" readonly id="Choice2" name="name" value="Tanzania Insurance Regulatory Authority">
                 Tanzania Insurance Regulatory Authority <span class="Tanzania Insurance Regulatory Authority"></span>
             </label>
 
             <label for="Choice3">
-                <input type="radio" id="Choice3" name="name" value="Association of Tanzania Insurers">
+                <input type="radio" readonly id="Choice3" name="name" value="Association of Tanzania Insurers">
                 Association of Tanzania Insurers <span class="Association of Tanzania Insurers"></span>
             </label>
 
             <label for="Choice4">
-                <input type="radio" id="Choice4" name="name" value="I.I.T">
+                <input type="radio" readonly id="Choice4" name="name" value="I.I.T">
                 I.I.T <span class="I.I.T"></span>
             </label>
 
