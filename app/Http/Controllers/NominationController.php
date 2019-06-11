@@ -49,8 +49,8 @@ class NominationController extends Controller
         try{
             //send application through email
             Mail::to('glowconsults@gmail.com')->send(new ApplicationSent($application));
-            //Mail::to('poyuke@tira.go.tz')->send(new ApplicationSent($application));
-            //Mail::to('ceo@iit.co.tz')->send(new ApplicationSent($application));
+            Mail::to('poyuke@tira.go.tz')->send(new ApplicationSent($application));
+            Mail::to('ceo@iit.co.tz')->send(new ApplicationSent($application));
 
             //send feedback to applicant
             Mail::to($request->email)->send(new ApplicationSentFeedback($application));
