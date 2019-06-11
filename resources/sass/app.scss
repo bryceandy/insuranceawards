@@ -878,6 +878,7 @@ a{ text-decoration: none!important }
             }
         }
         input[type="radio"]{
+            //disable voting
             visibility: hidden;
             opacity: 0
         }
@@ -889,7 +890,10 @@ a{ text-decoration: none!important }
             width: 20vw;
             padding: 8px;
             margin-bottom: 10vh;
-            @include css3-prefix(box-shadow, 0 0 4px rgba(0, 0, 0, .5))
+            @include css3-prefix(box-shadow, 0 0 4px rgba(0, 0, 0, .5));
+            //disable voting
+            pointer-events: none;
+            cursor: default;
         }
         span{
             display: block;

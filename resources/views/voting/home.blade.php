@@ -54,7 +54,7 @@
                 I.I.T <span class="I.I.T"></span>
             </label>
 
-            <button type="submit" name="submit1">Vote</button>
+            <button type="submit" style="pointer-events: none; cursor: default" name="submit1">Vote</button>
 
         </form>
 
@@ -86,7 +86,7 @@
                 I.I.T <span class="I.I.T"></span>
             </label>
 
-            <button type="submit" name="submit2">Vote</button>
+            <button type="submit" style="pointer-events: none; cursor: default" name="submit2">Vote</button>
 
         </form>
 
@@ -118,7 +118,7 @@
                 I.I.T <span class="I.I.T"></span>
             </label>
 
-            <button type="submit" name="submit3">Vote</button>
+            <button type="submit" style="pointer-events: none; cursor: default" name="submit3">Vote</button>
 
         </form>
 
@@ -150,7 +150,7 @@
                 I.I.T <span class="I.I.T"></span>
             </label>
 
-            <button type="submit" name="submit4">Vote</button>
+            <button type="submit" style="pointer-events: none; cursor: default" name="submit4">Vote</button>
 
         </form>
 
@@ -182,7 +182,7 @@
                 I.I.T <span class="I.I.T"></span>
             </label>
 
-            <button type="submit" name="submit5">Vote</button>
+            <button type="submit" style="pointer-events: none; cursor: default" name="submit5">Vote</button>
 
         </form>
 
@@ -214,7 +214,7 @@
                 I.I.T <span class="I.I.T"></span>
             </label>
 
-            <button type="submit" name="submit6">Vote</button>
+            <button type="submit" style="pointer-events: none; cursor: default" name="submit6">Vote</button>
 
         </form>
 
@@ -246,7 +246,7 @@
                 I.I.T <span class="I.I.T"></span>
             </label>
 
-            <button type="submit" name="submit7">Vote</button>
+            <button type="submit" style="pointer-events: none; cursor: default" name="submit7">Vote</button>
 
         </form>
 
