@@ -259,13 +259,6 @@
   <script>
         $(document).ready(function () {
 
-            //disable voting
-            $('input[type = "radio"]').each(function (index) {
-            $(this).change(function () {
-                    return false;
-                });
-            });
-
             //load votes on ready
             let names = {!! json_encode($voteNames->toArray(), JSON_HEX_TAG) !!};
             let icoya = {!! json_encode($icoya->toArray(), JSON_HEX_TAG) !!};
