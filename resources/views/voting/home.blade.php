@@ -260,8 +260,10 @@
         $(document).ready(function () {
 
             //disable voting
-            $('input[type = "radio"]').change(function () {
-                return false;
+            $('input[type = "radio"]').each(function (index) {
+            $(this).change(function () {
+                    return false;
+                });
             });
 
             //load votes on ready
