@@ -10,7 +10,7 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'PagesController@index');
 
 /*voting*/
 Route::get('vote', 'VoteController@index');
@@ -23,23 +23,23 @@ Route::get('nomination-guidelines', 'NominationController@guidelines');
 Route::get('nomination-categories/{name}', 'NominationController@viewCategory');
 
 /*committee*/
-Route::get('steering', 'HomeController@steering');
-Route::get('judges', 'HomeController@judges');
-Route::get('secretariat', 'HomeController@secretariat');
+Route::get('steering', 'PagesController@steering');
+Route::get('judges', 'PagesController@judges');
+Route::get('secretariat', 'PagesController@secretariat');
 
-Route::get('shortlist', 'HomeController@shortlist');
+Route::get('shortlist', 'PagesController@shortlist');
 
 /*sponsor*/
-Route::get('sponsor', 'HomeController@sponsor');
-Route::get('sponsorship', 'HomeController@sponsorship');
+Route::get('sponsor', 'PagesController@sponsor');
+Route::get('sponsorship', 'PagesController@sponsorship');
 
-Route::get('faqs', 'HomeController@faqs');
-Route::get('about', 'HomeController@about');
-Route::get('contact', 'HomeController@contact');
+Route::get('faqs', 'PagesController@faqs');
+Route::get('about', 'PagesController@about');
+Route::get('contact', 'PagesController@contact');
 
-Route::get('fill', 'HomeController@fillInDefaultRoles');
-Route::get('fill-nominees', 'HomeController@fillInDefaultNominees');
+Route::get('fill', 'PagesController@fillInDefaultRoles');
+Route::get('fill-nominees', 'PagesController@fillInDefaultNominees');
 
 Auth::routes();
 
-Route::get('/dashboard', 'HomeController@dashboard')->name('home');
+Route::get('/dashboard', 'PagesController@dashboard')->name('home');

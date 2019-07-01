@@ -6,7 +6,7 @@ use App\Vote;
 use App\Role;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class PagesController extends Controller
 {
     /**
      * Create a new controller instance.
