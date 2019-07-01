@@ -32,10 +32,12 @@ class NominationController extends Controller
         if($request->link !== ''){
             $application += ['link' => $request->link];
         }
+
         //if there are attachments, attach them
         $attachments = ['attachment', 'attachment2', 'attachment3'];
 
         for($fileNumber = 1; $fileNumber < 4; $fileNumber++){
+
             if($request->hasFile($attachments[$fileNumber - 1]) ){
                 $file = $request->file($attachments[$fileNumber - 1]);
                 $application += [
@@ -55,15 +57,16 @@ class NominationController extends Controller
             //send feedback to applicant
             Mail::to($request->email)->send(new ApplicationSentFeedback($application));
 
-            return back()->with(['mailsuccess'=> 'Your application was sent successfully!']);
+            return back()->with(['mailsuccess' => 'Your application was sent successfully!']);
 
-        }catch (\Exception $e){
+        } catch (\Exception $e){
             return back()->with(['mailfail'=> 'Your application could not be sent, please try again later!']);
         }
 
     }
 
     public function guidelines(){
+
         //view all categories
         return view('nomination.guidelines');
     }

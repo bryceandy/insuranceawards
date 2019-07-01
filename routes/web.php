@@ -37,3 +37,9 @@ Route::get('faqs', 'HomeController@faqs');
 Route::get('about', 'HomeController@about');
 Route::get('contact', 'HomeController@contact');
 
+Route::get('fill', 'HomeController@fillInDefaultRoles');
+Route::get('fill-nominees', 'HomeController@fillInDefaultNominees');
+
+Auth::routes();
+
+Route::get('/dashboard', 'HomeController@dashboard')->name('home');

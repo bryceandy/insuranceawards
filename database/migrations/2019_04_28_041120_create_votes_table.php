@@ -19,9 +19,11 @@ class CreateVotesTable extends Migration
             $table->string('name');
             $table->integer('icoya')->default(0);
             $table->integer('miip')->default(0);
-            $table->integer('mce')->default(0);
-            $table->integer('mioya')->default(0);
-            $table->integer('ya')->default(0);
+            $table->integer('yaa1')->default(0);
+            $table->integer('yaa2')->default(0);
+            $table->integer('iboya')->default(0);
+            $table->integer('iacoya')->default(0);
+            $table->integer('csra')->default(0);
         });
     }
 

@@ -34,10 +34,10 @@ class VoteController extends Controller
         if(!$currentPoll){
 
             //store a new instance
-            Vote::create([ 'name' => $request->input('name'), $request->input('award') => 1 ]);
+            //Vote::create([ 'name' => $request->input('name'), $request->input('award') => 1 ]);
 
             //get all data
-            Vote::all();
+            //Vote::all();
         }
         else{
             //instead update the existing

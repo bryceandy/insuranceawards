@@ -1,4 +1,4 @@
-@extends('template.nomination')
+@extends('layouts.nomination')
 
 @section('title')
     The Tanzania Insurance Awards 2019 - {{$titleName}} Nomination

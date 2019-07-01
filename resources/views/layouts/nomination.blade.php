@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="{{'css/app.min.css'}}">
-    <link rel="stylesheet" href="{{'css/fonts.css'}}">
-    <link rel="stylesheet" href="{{'css/background.css'}}">
+    <link rel="stylesheet" href="{{'../css/app.min.css'}}">
+    <link rel="stylesheet" href="{{'../css/fonts.css'}}">
+    <link rel="stylesheet" href="{{'../css/background.css'}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     @yield('stylesheets')
 
@@ -29,7 +29,7 @@
 
     <div id="top">
         <div class="navigation">
-            <a href="/" class="navlinks" id="homeLink"><img id="homeButton" src="{{'images/icons8-home.svg'}}" alt="Home"></a>
+            <a href="/" class="navlinks" id="homeLink"><img id="homeButton" src="{{'../images/icons8-home.svg'}}" alt="Home"></a>
             <a href="/vote" class="navlinks" id="voteLink">VOTE</a>
             <div href="#" class="navlinks" id="nominationLink">
                 NOMINATION
@@ -62,11 +62,11 @@
         </div>
 
         <a class="homeLink" href="/">
-            <img src="{{'images/insurancelogo.png'}}" alt="Home">
+            <img src="{{'../images/insurancelogo.png'}}" alt="Home">
         </a>
 
         <div class="dateVenue">
-            <img src="{{'images/icons8-calendar.svg'}}" alt="Home">&nbsp;27<sup>th</sup> September 2019
+            <img src="{{'../images/icons8-calendar.svg'}}" alt="Home">&nbsp;27<sup>th</sup> September 2019
         </div>
     </div>
 
@@ -90,7 +90,7 @@
         {{--</svg>--}}
 
         <div id="companyContacts">
-            <img src="{{'images/tira.png'}}" class="logo" alt="TIRA">
+            <img src="{{'../images/tira.png'}}" class="logo" alt="TIRA">
             <div class="contactInfo">
                 LAPF Building, 5th floor, <br>
                 Plot No. 4/5, Makole street,
@@ -99,7 +99,7 @@
                 Email: coi@tira.go.tz <br>
                 Website: www.tira.go.tz <br>
             </div>
-            <img src="{{'images/iit.png'}}" class="logo" alt="IIT">
+            <img src="{{'../images/iit.png'}}" class="logo" alt="IIT">
             <div class="contactInfo">
                 3rd Floor,Maktaba Complex Building,<br>
                 Along Bibi Titi Mohammed Road<br>
@@ -112,28 +112,28 @@
         <div id="socialFooter">
             <hr style="border-top-color: darkgrey; width: 90%; margin-top: -1rem; padding-bottom: 1rem">
             <a href="/" style="float: left; margin-left: 5vw">Tanzania Insurance Awards 2019</a>
-            <a href="https://www.instagram.com/bimaawards/"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/bimaawards?lang=en"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/bimaawards/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/bimaawards?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
 
     </div>
 
 </div>
 
-<script async src="{{'js/app.js'}}"></script>
+<script async src="{{'../js/app.js'}}"></script>
 
 {{--jquery--}}
-<script src="{{'js/jquery3-4-0.min.js'}}"></script>
+<script src="{{'../js/jquery3-4-0.min.js'}}"></script>
 {{--GSAP--}}
-<script src="{{'js/Tweenmax2-1-3.min.js'}}"></script>
+<script src="{{'../js/Tweenmax2-1-3.min.js'}}"></script>
 {{--ScrollMagic--}}
-<script src="{{'js/scrollMagic2-0-6.min.js'}}"></script>
+<script src="{{'../js/scrollMagic2-0-6.min.js'}}"></script>
 {{--ScrollMagic-GSAP-animation--}}
-<script src="{{'js/scrollMagic-plugin-gsap-animation.js'}}"></script>
+<script src="{{'../js/scrollMagic-plugin-gsap-animation.js'}}"></script>
 {{--GSAP scrollTo--}}
 <script src="{{'js/gsap-scrollTo.min.js'}}"></script>
 
-<script src="{{'js/custom.js'}}"></script>
+<script src="{{'../js/custom.js'}}"></script>
 
 @yield('scripts')
 

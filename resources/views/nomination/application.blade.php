@@ -1,4 +1,4 @@
-@extends('template.default')
+@extends('layouts.default')
 
 @section('title')
     The Tanzania Insurance Awards 2019 - Application for Nomination
