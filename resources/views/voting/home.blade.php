@@ -292,20 +292,13 @@
                     let award = $(this).find("input[name='award']").val();
                     let url ='/vote';
 
+                    $(this).find("input[name='name']:checked").prop('checked', false);
+
                     $.ajaxSetup({
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                         }
                     });
-
-                    $(this).find("input[name='name']:checked").prop('checked', false);
-                    new Noty({
-                        text: 'Vote Success',
-                        type: 'success',
-                        theme: 'relax',
-                        layout : 'topRight',
-                        closeWith: ['click', 'button']
-                    }).show();
 
                     $.ajax({
                         url: url,
@@ -317,8 +310,27 @@
                         dataType: "json"
                     })
                         .fail(function( jqXHR, textStatus ) {
-                        //debug
-                    });
+                        if(jqXHR.status === 200)
+                        {
+                            new Noty({
+                                text: "Vote Success!",
+                                type: 'success',
+                                theme: 'relax',
+                                layout : 'topRight',
+                                closeWith: ['click', 'button']
+                            }).show();
+                        }
+                        else if(jqXHR.status === 406)
+                        {
+                            new Noty({
+                                text: "You already voted for this category!",
+                                type: 'error',
+                                theme: 'relax',
+                                layout : 'topRight',
+                                closeWith: ['click', 'button']
+                            }).show();
+                        }
+                    })
 
                 })
 

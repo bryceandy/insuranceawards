@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Events\VoteCasted;
 use App\Vote;
+use App\Voters;
 use Illuminate\Http\Request;
 
 class VoteController extends Controller
@@ -25,28 +26,34 @@ class VoteController extends Controller
 
     /**
      * @param Request $request
+     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
      */
-    public function cast(Request $request):void {
+    public function cast(Request $request) {
 
-        //get the current values of the voted entity
-        $currentPoll = Vote::where('name', $request->input('name'))->first();
+        $awardName = $request->input('award');
 
-        if(!$currentPoll){
+        $voter = Voters::where('ip', $request->ip())->first();
 
-            //store a new instance
-            //Vote::create([ 'name' => $request->input('name'), $request->input('award') => 1 ]);
-
-            //get all data
-            //Vote::all();
+        if(!$voter)
+        {
+            Voters::create([
+               'ip' => $request->ip(),
+                $awardName => 1
+            ]);
         }
         else{
-            //instead update the existing
-            Vote::where('name', $request->input('name'))->increment($request->input('award'));
-            $updatedVotes = Vote::all()->pluck($request->input('award'));
-            $updatedNames = Vote::all()->pluck('name');
-
-            event(new VoteCasted($request->input('award'), $updatedVotes, $updatedNames));
+            if($voter->$awardName === 1){
+                return response('Error: Invalid vote!', 406);
+            }
+            $voter->$awardName = 1;
+            $voter->update();
         }
+
+        Vote::where('name', $request->input('name'))->increment($request->input('award'));
+        $updatedVotes = Vote::all()->pluck($request->input('award'));
+        $updatedNames = Vote::all()->pluck('name');
+
+        event(new VoteCasted($request->input('award'), $updatedVotes, $updatedNames));
 
     }
 
