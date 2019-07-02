@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Vote;
 use App\Role;
+use App\Voters;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -27,7 +28,13 @@ class PagesController extends Controller
     public function dashboard(){
         //display the dashboard
         $users = User::all();
-        return view('dashboard', compact('users'));
+        $voters = Voters::all();
+        $votes = Vote::all();
+        return view('dashboard')->with([
+            'users' => $users,
+            'voters' => $voters,
+            'votes' => $votes
+        ]);
     }
 
     public function steering(){
