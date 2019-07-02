@@ -21,9 +21,9 @@ Trait RegisterUser{
     /**
      * Get the guard to be used during registration.
      *
-     * @return mixed
+     * @return \Illuminate\Contracts\Auth\StatefulGuard
      */
-    protected function guard()
+    protected function guard() : \Illuminate\Contracts\Auth\StatefulGuard
     {
         return Auth::guard();
     }
@@ -55,7 +55,10 @@ Trait RegisterUser{
     protected function registered(Request $request, $user)
     {
         //Give the registered user a role
-        return $user->roles()->attach(1);
+        $user->roles()->attach(1);
+
+        return redirect()->action('Auth\LoginController@loadDashboard');
+
     }
 }
 

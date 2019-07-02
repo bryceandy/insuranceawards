@@ -42,4 +42,4 @@ Route::get('fill-nominees', 'PagesController@fillInDefaultNominees');
 
 Auth::routes();
 
-Route::get('/dashboard', 'PagesController@dashboard')->name('home');
+Route::get('/dashboard', 'PagesController@dashboard');

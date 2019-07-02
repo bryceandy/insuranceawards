@@ -14,7 +14,19 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    @if (auth()->user()->roles[0]['id'] === 3)
+                        <div class="col-md-8">
+                            <b>Manage Users</b>
+                            <ul>
+                                @foreach( $users as $user)
+
+                                    <li class="col-md-12">
+                                        $user->name
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
