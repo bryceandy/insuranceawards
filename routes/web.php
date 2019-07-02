@@ -10,7 +10,7 @@
 |
 */
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'PagesController@index')->name('home');
 
 /*voting*/
 Route::get('vote', 'VoteController@index');
