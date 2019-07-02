@@ -14,17 +14,38 @@
                         </div>
                     @endif
 
-                    @if (auth()->user()->roles[0]['id'] === 3)
-                        <div class="col-md-8">
-                            <b>Manage Users</b>
-                            <ul>
-                                @foreach( $users as $user)
+                    @if (auth()->user()->roles[0]['id'] > 1)
+                        <div class="col-md-12">
+                            <p class="text-center"><b>Manage Users</b></p>
+                                <ul>
+                                    @foreach( $users as $user)
+                                        @if( auth()->id() === $user->id)
 
-                                    <li class="col-md-12">
-                                        $user->name
-                                    </li>
-                                @endforeach
-                            </ul>
+                                            <li class="col-md-12 card user-manage">
+                                                Me
+                                                <button type="button" class="btn btn-danger">Delete Account</button>
+                                                <button type="button" class="btn btn-info">Logout</button>
+                                            </li>
+                                        @else
+                                            <li class="col-md-12 card user-manage">
+
+                                                @if (auth()->user()->roles[0]['id'] === 2)
+
+                                                    <li class="col-md-12 card user-manage">
+                                                        {{ $user->name  }}
+                                                        <button type="button" class="btn btn-danger">Delete User</button>
+                                                    </li>
+                                                @else
+
+                                                <li class="col-md-12 card user-manage">
+                                                    {{ $user->name  }}
+                                                    <button type="button" class="btn btn-danger">Delete User</button>
+                                                    <button type="button" class="btn btn-info">Upgrade Admin</button>
+                                                </li>
+                                                @endif
+                                        @endif
+                                    @endforeach
+                                </ul>
                         </div>
                     @endif
                 </div>

@@ -57,7 +57,7 @@ Trait RegisterUser{
         //Give the registered user a role
         $user->roles()->attach(1);
 
-        return redirect()->action('Auth\LoginController@loadDashboard');
+        return redirect('dashboard');
 
     }
 }

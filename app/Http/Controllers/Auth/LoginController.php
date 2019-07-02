@@ -38,9 +38,4 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function loadDashboard()
-    {
-        $users = User::all();
-        return view('dashboard', compact('users'));
-    }
 }

@@ -106,9 +106,9 @@ Trait AuthenticateUser{
      * Send the response after the user was authenticated.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
-    protected function sendLoginResponse(Request $request) : \Illuminate\Http\Response
+    protected function sendLoginResponse(Request $request) : \Illuminate\Http\RedirectResponse
     {
         $request->session()->regenerate();
 
@@ -126,7 +126,7 @@ Trait AuthenticateUser{
      */
     protected function authenticated(Request $request, $user)
     {
-        return redirect()->action('Auth\LoginController@loadDashboard');
+        return redirect('dashboard');
     }
 
     /**
@@ -145,9 +145,9 @@ Trait AuthenticateUser{
      * Log the user out of the application.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function logout(Request $request) : \Illuminate\Http\Response
+    public function logout(Request $request) : \Illuminate\Http\RedirectResponse
     {
         $this->guard()->logout();
 
