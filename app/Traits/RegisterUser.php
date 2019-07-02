@@ -54,7 +54,8 @@ Trait RegisterUser{
      */
     protected function registered(Request $request, $user)
     {
-        //
+        //Give the registered user a role
+        return $user->roles()->attach(1);
     }
 }
 
