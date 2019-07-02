@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container dashboard-container">
     <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">Dashboard</div>
 
@@ -17,32 +17,31 @@
                     @if (auth()->user()->roles[0]['id'] > 1)
                         <div class="col-md-12">
                             <p class="text-center"><b>Manage Users</b></p>
-                                <ul>
+                                <ul style="padding-left: unset">
                                     @foreach( $users as $user)
                                         @if( auth()->id() === $user->id)
 
-                                            <li class="col-md-12 card user-manage">
-                                                Me
-                                                <button type="button" class="btn btn-danger">Delete Account</button>
-                                                <button type="button" class="btn btn-info">Logout</button>
+                                            <li class="w-100 card user-manage">
+                                                <span>Me</span>
+                                                <button type="button" class="btn btn-danger">Delete my Account</button>
+                                                <button type="button" class="btn btn-secondary">Logout</button>
                                             </li>
                                         @else
-                                            <li class="col-md-12 card user-manage">
 
-                                                @if (auth()->user()->roles[0]['id'] === 2)
-
-                                                    <li class="col-md-12 card user-manage">
-                                                        {{ $user->name  }}
-                                                        <button type="button" class="btn btn-danger">Delete User</button>
-                                                    </li>
-                                                @else
+                                            @if ( auth()->user()->roles[0]['id'] === 2)
 
                                                 <li class="col-md-12 card user-manage">
-                                                    {{ $user->name  }}
+                                                    <span>{{ $user->name  }}</span>
                                                     <button type="button" class="btn btn-danger">Delete User</button>
-                                                    <button type="button" class="btn btn-info">Upgrade Admin</button>
                                                 </li>
-                                                @endif
+                                            @else
+
+                                                <li class="col-md-12 card user-manage">
+                                                    <span>{{ $user->name  }}</span>
+                                                    <button type="button" class="btn btn-danger">Delete User</button>
+                                                    <button type="button" class="btn btn-info">Upgrade to Admin</button>
+                                                </li>
+                                            @endif
                                         @endif
                                     @endforeach
                                 </ul>

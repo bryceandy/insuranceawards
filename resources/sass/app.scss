@@ -1270,3 +1270,21 @@ a{ text-decoration: none!important }
 }
 /*end Application page*/
 
+/*Admin Dashboard*/
+.dashboard-container{
+    .user-manage{
+        display: flex;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        margin-bottom: 2%;
+        padding: 1%;
+
+        span {
+            width: 50%
+        }
+        button{
+            margin-right: 2%
+        }
+    }
+}
