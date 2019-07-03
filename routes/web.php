@@ -43,3 +43,6 @@ Route::get('fill-nominees', 'PagesController@fillInDefaultNominees');
 Auth::routes();
 
 Route::get('dashboard', 'PagesController@dashboard');
+
+Route::get('upgrade/user/{id}', 'AdminController@UpgradeToAdmin');
+Route::get('delete/user/{id}', 'AdminController@deleteUser');
