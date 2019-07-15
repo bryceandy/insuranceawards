@@ -93,7 +93,7 @@
             </label>
 
             <label for="attachment" style="width: 80vw">
-                File attachment (optional - 3 Maximum)
+                File attachment (optional - 3 Maximum, <b>Total file size should not exceed 20mb</b>)
                 <input type="file" name="attachment" id="attachment">
                 <input type="file" name="attachment2" id="attachment2">
                 <input type="file" name="attachment3" id="attachment3">
