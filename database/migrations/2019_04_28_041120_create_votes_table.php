@@ -24,8 +24,6 @@ class CreateVotesTable extends Migration
             $table->integer('iboya')->default(0);
             $table->integer('iacoya')->default(0);
             $table->integer('csra')->default(0);
-
-            $table->dropColumn(['yaa1', 'yaa2', 'iboya', 'iacoya', 'csra']);
         });
     }
 

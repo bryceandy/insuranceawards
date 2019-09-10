@@ -15,11 +15,12 @@ class VoteCasted implements ShouldBroadcast
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     public $award, $votes, $names;
+
     /**
-     * Create a new event instance.
-     * @param string $award
+     * VoteCasted constructor.
+     * @param $award
      * @param $votes
-     * @return void
+     * @param $names
      */
     public function __construct($award, $votes, $names)
     {
@@ -36,5 +37,6 @@ class VoteCasted implements ShouldBroadcast
     public function broadcastOn()
     {
         return new Channel('vote');
+        //activity will broadcast via Pusher. See /resources/js/bootstrap.js
     }
 }

@@ -11,17 +11,18 @@ class VoteController extends Controller
 {
     public function index(){
 
-        $voteNames = Vote::all()->pluck('name');
+        $icoyaNames = Vote::whereCategory('icoya')->pluck('name');
+        $miipNames = Vote::whereCategory('miip')->pluck('name');
 
-        $icoya = Vote::all()->pluck('icoya');
-        $miip = Vote::all()->pluck('miip');
+        $icoya = Vote::whereCategory('icoya')->pluck('icoya');
+        $miip = Vote::whereCategory('miip')->pluck('miip');
 
-        return view('voting.home', compact('voteNames', 'icoya', 'miip' ));
+        return view('voting.home', compact('icoyaNames', 'miipNames', 'icoya', 'miip' ));
     }
 
     /**
      * @param Request $request
-     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     * @return array|\Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response|null
      */
     public function cast(Request $request) {
 
@@ -31,24 +32,36 @@ class VoteController extends Controller
 
         if(!$voter)
         {
+            // check if the user voting has their ip address was
+            // not included in the voters table, then include
+
             Voters::create([
                'ip' => $request->ip(),
                 $awardName => 1
             ]);
         }
         else{
+            // if their ip address was included and they are
+            // voting for a category they previously voted
+
             if($voter->$awardName === 1){
-                return response('Error: Invalid vote!', 406);
+                return response('Invalid vote!', 406);
             }
+            // if their ip address was included and they are voting for a
+            // category they did not vote for, update the voters table
+
             $voter->$awardName = 1;
             $voter->update();
         }
 
+        // update the votes
         Vote::where('name', $request->input('name'))->increment($request->input('award'));
+
         $updatedVotes = Vote::all()->pluck($request->input('award'));
         $updatedNames = Vote::all()->pluck('name');
 
-        event(new VoteCasted($request->input('award'), $updatedVotes, $updatedNames));
+        // broadcast voting event to all users that are online to see live polling
+        return event(new VoteCasted($request->input('award'), $updatedVotes, $updatedNames));
 
     }
 

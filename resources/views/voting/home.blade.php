@@ -16,10 +16,6 @@
         <h1 class="text-center">Votes for all Award Categories</h1>
 
         <p class="text-left" style="padding-left: 5vw; padding-right: 5vw">
-            <b style="color: #15ace4">Voting:</b> <br>
-            The voting period has not begun. The actual nominees will be listed below as soon as the shortlist is available
-            <br> <br>
-
             <b style="color: #15ace4">How to vote:</b> <br>
             For every category, click on the radio-button on the left side of the company's name and then click the <b>VOTE</b> button below it.
             <br> You are advised not to vote for your own company.
@@ -98,17 +94,22 @@
         $(document).ready(function () {
 
             //load votes on ready
-            {{--let names = {!! json_encode($voteNames->toArray(), JSON_HEX_TAG) !!};--}}
-            {{--let icoya = {!! json_encode($icoya->toArray(), JSON_HEX_TAG) !!};--}}
-            {{--let miip = {!! json_encode($miip->toArray(), JSON_HEX_TAG) !!};--}}
+            let icoyanames = {!! json_encode($icoyaNames->toArray(), JSON_HEX_TAG) !!};
+            let miipnames = {!! json_encode($miipNames->toArray(), JSON_HEX_TAG) !!};
 
-            {{--//display votes--}}
-            {{--for (let i = 0; i< names.length; i++){--}}
+            let icoya = {!! json_encode($icoya->toArray(), JSON_HEX_TAG) !!};
+            let miip = {!! json_encode($miip->toArray(), JSON_HEX_TAG) !!};
 
-                {{--$("#icoya span[class='"+names[i]+"'] ").html(icoya[i]);--}}
-                {{--$("#miip span[class='"+names[i]+"'] ").html(miip[i]);--}}
+            //display votes
+            for (let i = 0; i< icoyanames.length; i++){
 
-            {{--}--}}
+                $("#icoya span[class='"+icoyanames[i]+"'] ").html(icoya[i]);
+            }
+
+            for (let i = 0; i< miipnames.length; i++) {
+
+            $("#miip span[class='"+miipnames[i]+"'] ").html(miip[i]);
+            }
 
             //making submission buttons active
             $('form').on('click', 'input', function () {
@@ -148,7 +149,7 @@
                         },
                         dataType: "json"
                     })
-                        .fail(function( jqXHR, textStatus ) {
+                        .fail(function( jqXHR ) {
                         if(jqXHR.status === 200)
                         {
                             new Noty({

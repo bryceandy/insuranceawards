@@ -92,24 +92,52 @@ class PagesController extends Controller
         }
 
         $nom1 = Vote::create([
-            'name' => 'Tanzania Insurance Regulatory Authority'
+            'name' => 'Sanlam Life Insurance Tanzania',
+            'category' => 'icoya'
         ]);
         $nom1->save();
 
         $nom2 = Vote::create([
-            'name' => 'Tanzania Insurance Brokers Association'
+            'name' => 'Alliance Insurance Corporation Limited',
+            'category' => 'icoya'
         ]);
         $nom2->save();
 
         $nom3 = Vote::create([
-            'name' => 'Association of Tanzania Insurers'
+            'name' => 'Alliance Life Assurance Limited',
+            'category' => 'icoya'
         ]);
         $nom3->save();
 
         $nom4 = Vote::create([
-            'name' => 'I.I.T'
+            'name' => 'Jubilee Insurance Limited Company',
+            'category' => 'icoya'
         ]);
         $nom4->save();
+
+        $nom5 = Vote::create([
+            'name' => 'Jubilee Insurance Limited Company - Safari Voucher',
+            'category' => 'miip'
+        ]);
+        $nom5->save();
+
+        $nom6 = Vote::create([
+            'name' => 'Milvik Tanzania Limited - Bima Mkononi',
+            'category' => 'miip'
+        ]);
+        $nom6->save();
+
+        $nom7 = Vote::create([
+            'name' => 'Mgen Tanzania Insurance Company Limited - Multi-Peril Crop Insurance',
+            'category' => 'miip'
+        ]);
+        $nom7->save();
+
+        $nom8 = Vote::create([
+            'name' => 'Acclavia Insurance Brokers - Boda Salama',
+            'category' => 'miip'
+        ]);
+        $nom8->save();
 
         $vote = Vote::all();
         return response()->json($vote);

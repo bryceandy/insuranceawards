@@ -56,16 +56,26 @@ window.Echo = new Echo({
     encrypted: true
 });
 
+/*select broadcasting channel*/
 window.Echo.channel('vote')
+
+    /*choose event*/
     .listen('VoteCasted', (e) => {
 
-        //display votes
-        for (let i = 0; i< (e.names).length; i++){
+        /*display votes*/
 
-            $("#"+e.award+ " span[class='"+e.names[i]+"']").empty().html(+e.votes[i]);
+        if (e.award === 'icoya'){
+             for (let i = 0; i< 4; i++){
 
+                $("#"+e.award+ " span[class='"+e.names[i]+"']").empty().html(+e.votes[i]);
+            }
         }
+        else {
+            for (let i = 4; i< (e.names).length; i++){
 
+                $("#"+e.award+ " span[class='"+e.names[i]+"']").empty().html(+e.votes[i]);
+            }
+        }
     });
 
 
