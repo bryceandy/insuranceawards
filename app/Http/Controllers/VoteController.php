@@ -15,13 +15,8 @@ class VoteController extends Controller
 
         $icoya = Vote::all()->pluck('icoya');
         $miip = Vote::all()->pluck('miip');
-        $yaa1 = Vote::all()->pluck('yaa1');
-        $yaa2 = Vote::all()->pluck('yaa2');
-        $iboya = Vote::all()->pluck('iboya');
-        $iacoya = Vote::all()->pluck('iacoya');
-        $csra = Vote::all()->pluck('csra');
 
-        return view('voting.home', compact('voteNames', 'icoya', 'miip', 'yaa1', 'yaa2', 'iboya', 'iacoya', 'csra' ));
+        return view('voting.home', compact('voteNames', 'icoya', 'miip' ));
     }
 
     /**

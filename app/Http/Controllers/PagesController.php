@@ -82,32 +82,15 @@ class PagesController extends Controller
         return view('pages.contact');
     }
 
-    public function fillInDefaultRoles()
-    {
-        $cust = Role::create([
-            'name' => 'viewer',
-            'description' => 'A role that is performed by anyone'
-        ]);
-        $cust->save();
-
-        $admin = Role::create([
-            'name' => 'admin',
-            'description' => 'A role performed by administrators'
-        ]);
-        $admin->save();
-
-        $super = Role::create([
-            'name' => 'super admin',
-            'description' => 'A role performed by super administrators'
-        ]);
-        $super->save();
-
-        $role = Role::all();
-        return response()->json($role);
-    }
-
     public function fillInDefaultNominees()
     {
+        $votes = Vote::all();
+
+        foreach ($votes as $vote)
+        {
+            $vote->delete();
+        }
+
         $nom1 = Vote::create([
             'name' => 'Tanzania Insurance Regulatory Authority'
         ]);

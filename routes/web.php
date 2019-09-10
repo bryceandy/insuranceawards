@@ -37,7 +37,6 @@ Route::get('faqs', 'PagesController@faqs');
 Route::get('about', 'PagesController@about');
 Route::get('contact', 'PagesController@contact');
 
-Route::get('fill', 'PagesController@fillInDefaultRoles');
 Route::get('fill-nominees', 'PagesController@fillInDefaultNominees');
 
 Auth::routes();

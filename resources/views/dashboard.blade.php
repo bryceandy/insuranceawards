@@ -77,66 +77,6 @@
                                         @endforeach
                                     </ul>
                                 </div>
-                                <div class="col col-md-6">
-                                    <h5>Young Achievers' Award (Ideas)</h5>
-
-                                    <ul style="padding-left: unset">
-                                        @foreach( $votes as $vote)
-
-                                            <li class="card col-md-12 votes">
-                                                {{ $vote->name }} - {{ $vote->yaa1 }}
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                                <div class="col col-md-6">
-                                    <h5>Young Achievers' Award (Entrepreneurship)</h5>
-
-                                    <ul style="padding-left: unset">
-                                        @foreach( $votes as $vote)
-
-                                            <li class="card col-md-12 votes">
-                                                {{ $vote->name }} - {{ $vote->yaa2 }}
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                                <div class="col col-md-6">
-                                    <h5>Insurance Brokerage of the Year</h5>
-
-                                    <ul style="padding-left: unset">
-                                        @foreach( $votes as $vote)
-
-                                            <li class="card col-md-12 votes">
-                                                {{ $vote->name }} - {{ $vote->iboya }}
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                                <div class="col col-md-6">
-                                    <h5>insurance Awareness Campaign of the Year</h5>
-
-                                    <ul style="padding-left: unset">
-                                        @foreach( $votes as $vote)
-
-                                            <li class="card col-md-12 votes">
-                                                {{ $vote->name }} - {{ $vote->iacoya }}
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                                <div class="col col-md-6">
-                                    <h5>Corporate Social Responsibility Award</h5>
-
-                                    <ul style="padding-left: unset">
-                                        @foreach( $votes as $vote)
-
-                                            <li class="card col-md-12 votes">
-                                                {{ $vote->name }} - {{ $vote->csra }}
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </div>
                             </div>
                         </div>
 
@@ -156,11 +96,6 @@
                                         <th>Address</th>
                                         <th>Insurance Company of the Year</th>
                                         <th>Most Innovative Insurance Product</th>
-                                        <th>Young Achievers' Award (Ideas)</th>
-                                        <th>Young Achievers' Award (Entrepreneurship)</th>
-                                        <th>Insurance Brokerage of the Year</th>
-                                        <th>Insurance Awareness Campaign of the Year</th>
-                                        <th>Corporate Social Responsibility Award</th>
                                     </tr>
                                     </thead>
                                     <!-- Table head -->
@@ -175,11 +110,6 @@
                                             <td>{{ $voter->ip }}</td>
                                             <td>{{ $voter->icoya }}</td>
                                             <td>{{ $voter->miip }}</td>
-                                            <td>{{ $voter->yaa1 }}</td>
-                                            <td>{{ $voter->yaa2 }}</td>
-                                            <td>{{ $voter->iboya }}</td>
-                                            <td>{{ $voter->iacoya }}</td>
-                                            <td>{{ $voter->csra }}</td>
                                         </tr>
                                     @endforeach
                                     </tbody>

@@ -24,6 +24,9 @@ class CreateVotersTable extends Migration
             $table->integer('iacoya')->default(0);
             $table->integer('csra')->default(0);
             $table->boolean('verified')->default(false);
+
+            $table->dropColumn(['yaa1', 'yaa2', 'iboya', 'iacoya', 'csra']);
+
             $table->timestamps();
         });
     }

@@ -12,8 +12,12 @@ class Voters extends Model
      * @var array
      */
     protected $casts = [
-        'verified' => 'bool',
+        'verified' => 'boolean'
     ];
 
-    public $fillable = ['ip', 'icoya', 'miip', 'yaa1', 'yaa2', 'iboya', 'iacoya', 'csra', 'verified'];
+    protected $fillable = ['ip', 'icoya', 'miip', 'verified'];
+
+    protected $table = 'voters';
+
+
 }
