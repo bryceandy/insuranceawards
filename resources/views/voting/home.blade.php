@@ -72,7 +72,7 @@
                 Milvik Tanzania Limited - Bima Mkononi <span class="Milvik Tanzania Limited - Bima Mkononi"></span>
             </label>
 
-            <label for="Choice3">
+            <label for="Choice3" style="font-size:medium">
                 <input type="radio" id="Choice3" name="name" value="Mgen Tanzania Insurance Company Limited - Multi-Peril Crop Insurance">
                 Mgen Tanzania Insurance Company Limited - Multi-Peril Crop Insurance <span class="Mgen Tanzania Insurance Company Limited - Multi-Peril Crop Insurance"></span>
             </label>
