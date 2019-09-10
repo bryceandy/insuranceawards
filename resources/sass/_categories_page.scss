@@ -1,0 +1,70 @@
+@import "variables";
+
+/*categories page*/
+#categoriesContent{
+    line-height: 2;
+    padding: 0 15vw 10vh;
+    background: #ffffff;
+    font-size: large;
+    text-align: left;
+
+    h1, h3{
+        padding: 5vw 3vw 1vw 0;
+        color: $primary-color;
+    }
+    .methodologyLink{
+        cursor: pointer;
+        color: $primary-color
+    }
+    .cats{
+        margin-top: 2.5vh;
+        padding: 0;
+        a{
+            text-decoration: none;
+            color: $primary-color;
+            @include css3-prefix(box-shadow, 0 3px 3px rgba(0,0, 0, 0.4));
+            width: 70vw;
+            padding: 1.25vw;
+            border: 1px solid;
+            margin-bottom: 3vw;
+            text-align: center;
+            display: block;
+
+            &:hover{
+                background: #001001;
+                border: 1px solid #001001;
+                color: #fff
+            }
+        }
+    }
+    b{
+        font-family: "AvantHeavy", sans-serif;
+    }
+}
+/*forms responsiveness*/
+@media screen and (max-width: 550px){
+    #categoriesContent {
+        font-size: medium;
+
+        h1{
+            font-size: 1.75rem
+        }
+    }
+}
+@media screen and (max-width: 485px){
+    #categoriesContent {
+        font-size: small;
+    }
+}
+@media screen and (max-width: 395px){
+    #categoriesContent {
+
+        h1{
+            font-size: 1.25rem
+        }
+        ul li{
+            margin-bottom: 2vw
+        }
+    }
+}
+/*Categories end*/

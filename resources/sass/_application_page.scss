@@ -1,0 +1,118 @@
+@import "variables";
+
+/*Application page*/
+#applicationContent{
+    background: #fff;
+    padding: 5vh 5% 5%;
+    text-align: left;
+    border: 1px solid;
+    margin: 5%;
+    @include css3-prefix(box-shadow, 3px 3px 3px 3px rgba(0,0, 0, 0.4));
+
+    form{
+        height: max-content;
+        width: 100%;
+        padding-bottom: 5vh;
+
+        h1{
+            margin-left: 20vw;
+            padding-bottom: 6vh
+        }
+        label{
+            display: block;
+            width: max-content;
+            width: -moz-max-content;
+            margin: {
+                left: 20vw;
+                bottom: 2rem
+            }
+        }
+        select{
+            color: $primary-color;
+            background-color: white;
+            border: thin solid #001001;
+            @include brad(0);
+            line-height: 1.5em;
+            padding: 0.5em 3.5em 0.5em 1em;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image:
+                linear-gradient(45deg, transparent 50%, gray 50%),
+                linear-gradient(135deg, gray 50%, transparent 50%),
+                radial-gradient(#ddd 70%, transparent 72%);
+            background-position:
+                calc(100% - 20px) calc(1em + 2px),
+                calc(100% - 15px) calc(1em + 2px),
+                calc(100% - .5em) .5em;
+            background-size:
+                5px 5px,
+                5px 5px,
+                1.5em 1.5em;
+            background-repeat: no-repeat;
+
+            &:focus{
+                border-color: white;
+                outline: 0
+            }
+        }
+        input{
+            display: block;
+            border: {
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 1px solid #001001
+            }
+            width: 35vw;
+            text-align: center;
+            outline: none;
+            color: $primary-color;
+            @include brad(0)
+        }
+        textarea{
+            border: thin solid #001001;
+            color: $primary-color;
+            padding: 10px;
+            outline: none;
+        }
+        button{
+            display: block;
+            border: none;
+            padding: 1.5% 4%;
+            background: $primary-color;
+            color: #fff;
+            float: right;
+            @include css3-prefix(box-shadow, 0 2px 2px rgba(0,0, 0, 0.4));
+        }
+    }
+}
+/*Application page responsiveness*/
+@media screen and (max-width: 875px){
+    #applicationContent form {
+        h1{
+            text-align: center;
+        }
+        label, h1{
+            margin-left: unset;
+        }
+    }
+}
+@media screen and (max-width: 745px){
+    #applicationContent form label{
+        display: block
+    }
+}
+@media screen and (max-width: 666px){
+    #applicationContent form{
+        select, textarea, input{
+            width: 80vw
+        }
+        label{
+            max-width: 80vw;
+        }
+        h1{
+            font-size: 1.75rem;
+        }
+    }
+}
+/*end Application page*/

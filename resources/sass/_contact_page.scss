@@ -1,0 +1,50 @@
+@import "variables";
+
+/*contact page*/
+#contactContent{
+    background: #ffffff;
+    padding: 5vw 5vw 0 5vw;
+
+    h4{
+        color: $primary-color;
+        font-weight: bolder;
+    }
+    .contactContainer{
+        margin-top: 5vw;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .contact{
+            display: inline-block;
+            height: 40vh;
+            width: 15rem;
+            margin-bottom: 5vw;
+
+            .name, .title, .company{width: 15rem; font-family: $font-family-sans-serif-normal;}
+            img{
+                @include brad(50%);
+                height: 10rem;
+                width: 10rem;
+                padding: 5px;
+                border: 1px solid $primary-color;
+                margin-left: calc(2.5rem - 5px);
+                display: block;
+            }
+            .name{
+                font-size: 1.2rem;
+                color: #001001;
+            }
+            .title{
+                font-size: 1.1rem;
+                color: $primary-color
+            }
+            .company{
+                color: #001001;
+                font-size: small;
+            }
+        }
+    }
+}
+/*end contact page*/

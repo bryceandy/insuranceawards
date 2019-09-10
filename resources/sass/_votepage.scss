@@ -1,0 +1,77 @@
+@import "variables";
+
+/*vote page*/
+#voteContent{
+    background: #ffffff;
+
+    h1{
+        padding: 5vh;
+        font-weight: 900;
+    }
+    form{
+        text-align: center;
+        font-size: 1.2rem;
+        display: inline-block;
+
+        &:last-of-type{
+            margin-bottom: 5vh;
+        }
+
+        label{
+            color: #001001;
+            display: block;
+            padding: 10px;
+            border: 1px solid;
+            width: 50vw;
+            margin-left: 25vw;
+            text-align: left;
+
+            &:nth-of-type(1){
+                color: green;
+                border: none;
+                padding: unset;
+                width: 100vw;
+                margin-left: unset;
+                text-align: unset;
+            }
+        }
+        input[type="radio"]{
+
+        }
+        button{
+            background: $primary-color;
+            color: #001001;
+            border: none;
+            font-size: x-large;
+            width: 20vw;
+            padding: 8px;
+            margin-bottom: 10vh;
+            pointer-events: none;
+            cursor: default;
+            @include css3-prefix(box-shadow, 0 0 4px rgba(0, 0, 0, .5))
+        }
+        span{
+            display: block;
+            float: right
+        }
+    }
+}
+
+/*Vote page responsiveness*/
+@media screen and (max-width: 405px){
+    #voteContent {
+        form{
+            font-size: 1rem;
+
+            label{
+                width: 70vw;
+                margin-left: 15vw
+            }
+            button{
+                font-size: large
+            }
+        }
+    }
+}
+
+/*end vote page*/

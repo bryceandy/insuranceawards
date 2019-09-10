@@ -1,0 +1,22 @@
+@import "variables";
+
+/*shortlist page*/
+#shortlistContent{
+
+    padding: 5vw;
+    background: #ffffff;
+
+    h3{
+        padding: {
+            top: 2.5vw;
+            bottom: 2.5vw
+        }
+        color: $primary-color
+    }
+    li{
+        font: {
+            size:large
+        }
+    }
+}
+/*end shortlist page*/

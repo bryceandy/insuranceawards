@@ -1,0 +1,66 @@
+@import "variables";
+
+/*judges and steering page*/
+#judgesContent, #steeringContent{
+    background: #fff;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 100vw;
+    padding-top: 10vh;
+
+    #judgesHeader, #steeringHeader{
+        grid-area: 1/1/2/2;
+        font-size: 2.5rem
+    }
+
+    #judges, #steeringContainer{
+        grid-area: 2/1/3/2;
+        height: min-content;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .judge, .steering{
+            display: inline-block;
+            height: 40vh;
+            width: 15rem;
+
+            .name, .title, .company{width: 15rem;}
+            img{
+                @include brad(50%);
+                height: 10rem;
+                width: 10rem;
+                padding: 5px;
+                border: 1px solid $primary-color;
+                margin-left: calc(2.5rem - 5px);
+                display: block;
+            }
+            .name{
+                font-family: $font-family-sans-serif-normal;
+                font-size: 1.2rem;
+                color: #001001;
+            }
+            .title{
+                font-family: $font-family-sans-serif-normal;
+                font-size: 1.1rem;
+                color: $primary-color
+            }
+            .company{
+                font-family: $font-family-sans-serif-light;
+                color: grey;
+                font-size: small;
+            }
+        }
+    }
+}
+/*Responsiveness judges, contact and steering page*/
+@media screen and (max-width: 474px){
+    #judgesContent #judges .judge, #steeringContent #steeringContainer .steering, #contactContent .contactContainer .contact{
+
+        img{
+            @include css3-prefix(transform, scale(.8));
+        }
+    }
+}
+/*End judges and steering page*/
