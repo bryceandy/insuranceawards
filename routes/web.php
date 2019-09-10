@@ -14,7 +14,7 @@ Route::get('/', 'PagesController@index')->name('home');
 
 /*voting*/
 Route::get('vote', 'VoteController@index');
-Route::post('vote/{category}', 'VoteController@cast');
+Route::post('vote', 'VoteController@cast');
 
 /*nomination*/
 Route::get('application-form', 'NominationController@viewApplication');

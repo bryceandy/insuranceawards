@@ -91,7 +91,7 @@ class PagesController extends Controller
             $vote->delete();
         }
 
-        $voters = Vote::all();
+        $voters = Voters::all();
 
         foreach ($voters as $voter)
         {
