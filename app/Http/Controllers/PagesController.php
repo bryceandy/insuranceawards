@@ -91,6 +91,13 @@ class PagesController extends Controller
             $vote->delete();
         }
 
+        $voters = Vote::all();
+
+        foreach ($voters as $voter)
+        {
+            $voter->delete();
+        }
+
         $nom1 = Vote::create([
             'name' => 'Sanlam Life Insurance Tanzania',
             'category' => 'icoya'
