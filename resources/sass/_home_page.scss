@@ -143,7 +143,10 @@
                 }
 
                 &:nth-of-type(2), &:nth-of-type(3){
-                    font-family: $font-family-sans-serif-light;
+                    font: {
+                        family: $font-family-sans-serif-normal;
+                        weight: bold
+                    }
                     text-align: left;
                     display: block;
                     line-height: 0

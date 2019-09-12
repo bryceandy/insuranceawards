@@ -2,7 +2,11 @@
 
 /*shortlist page*/
 #shortlistContent{
-
+    h1{
+        font: {
+            family: $font-family-sans-serif-heavy
+        }
+    }
     padding: 5vw;
     background: #ffffff;
 
@@ -11,11 +15,13 @@
             top: 2.5vw;
             bottom: 2.5vw
         }
-        color: $primary-color
+        color: $primary-color;
+        font-weight: bold
     }
     li{
+        text-transform: uppercase;
         font: {
-            size:large
+            size:large;
         }
     }
 }
