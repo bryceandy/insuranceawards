@@ -11,6 +11,7 @@
         <div id="landingMain">
             <p class="text-center">Welcome to the <br> <span style="display:block;white-space: nowrap">Tanzania Insurance Awards</span> 2019
                 <span id="theme">Rewarding Insurance Excellence in Tanzania</span>
+                <a href="/vote" id="vote-now">VOTE NOW</a>
             </p>
         </div>
 
@@ -69,7 +70,6 @@
             </p>
 
         </div>
-
     </div>
 
 @endsection
@@ -81,7 +81,6 @@
 
             $('#homeLink').addClass('activePage')
         })
-
     </script>
 @endsection
 

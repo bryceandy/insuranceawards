@@ -66,7 +66,7 @@
         </a>
 
         <div class="dateVenue">
-            <img src="{{'images/icons8-calendar.svg'}}" alt="Home">&nbsp;27<sup>th</sup> September 2019
+            <img src="{{'images/icons8-calendar.svg'}}" alt="Home">&nbsp;26<sup>th</sup> September 2019
         </div>
     </div>
 

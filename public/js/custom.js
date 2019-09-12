@@ -26,6 +26,7 @@ new ScrollMagic.Scene({
 })
     .setPin('#landingMain p' )
     .setTween(TweenMax.to('#landingMain p #theme', .1, {autoAlpha: 0.0}))
+    .setTween(TweenMax.to('#landingMain p #vote-now', .2, {autoAlpha: 0.0}))
     .addTo(controller);
 
 //another scene
