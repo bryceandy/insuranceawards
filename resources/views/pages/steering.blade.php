@@ -15,8 +15,8 @@
         <div id="steeringContainer">
 
             <div class="steering">
-                <img src="{{'images/saqware.jpeg'}}" alt="Steering">
-                <div class="name text-center">Baghayo Saqware</div>
+                <img src="{{'images/mussacjuma'}}" alt="Steering">
+                <div class="name text-center">Dr. Mussa Juma</div>
                 <div class="title text-center">Commissioner</div>
                 <div class="company text-center">TIRA</div>
             </div>
