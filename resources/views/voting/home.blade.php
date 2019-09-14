@@ -90,101 +90,98 @@
 
 @section('scripts')
 
-  <script>
-        $(document).ready(function () {
+    <script>
+      $(document).ready(function () {
 
-            //load votes on ready
-            let icoyanames = {!! json_encode($icoyaNames->toArray(), JSON_HEX_TAG) !!};
-            let miipnames = {!! json_encode($miipNames->toArray(), JSON_HEX_TAG) !!};
+        //load votes on ready
+        let icoyanames = {!! json_encode($icoyaNames->toArray(), JSON_HEX_TAG) !!};
+        let miipnames = {!! json_encode($miipNames->toArray(), JSON_HEX_TAG) !!};
 
-            let icoya = {!! json_encode($icoya->toArray(), JSON_HEX_TAG) !!};
-            let miip = {!! json_encode($miip->toArray(), JSON_HEX_TAG) !!};
+        let icoya = {!! json_encode($icoya->toArray(), JSON_HEX_TAG) !!};
+        let miip = {!! json_encode($miip->toArray(), JSON_HEX_TAG) !!};
 
-            //display votes
-            for (let i = 0; i< icoyanames.length; i++){
+        //display votes
+        for (let i = 0; i< icoyanames.length; i++){
 
-                $("#icoya span[class='"+icoyanames[i]+"'] ").html(icoya[i]);
-            }
+          $("#icoya span[class='"+icoyanames[i]+"'] ").html(icoya[i]);
+        }
 
-            for (let i = 0; i< miipnames.length; i++) {
+        for (let i = 0; i< miipnames.length; i++) {
 
-            $("#miip span[class='"+miipnames[i]+"'] ").html(miip[i]);
-            }
+          $("#miip span[class='"+miipnames[i]+"'] ").html(miip[i]);
+        }
 
-            //making submission buttons active
-            $('form').on('click', 'input', function () {
+        //making submission buttons active
+        $('form').on('click', 'input', function () {
 
-                var form = $(this).parent().parent();
+          var form = $(this).parent().parent();
 
-                $(form[0]).find('button').css({
-                    'pointer-events': 'auto',
-                    'cursor': 'pointer'
-                })
+          $(form[0]).find('button').css({
+            'pointer-events': 'auto',
+            'cursor': 'pointer'
+          })
+        });
+
+        $('form').each(function () {
+
+          //voting process
+          $(this).submit(function (e) {
+            e.preventDefault();
+
+            let name = $(this).find("input[name='name']:checked").val();
+            let award = $(this).find("input[name='award']").val();
+            let url ='/vote';
+
+            $(this).find("input[name='name']:checked").prop('checked', false);
+
+            $.ajaxSetup({
+              headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+              }
             });
 
-            $('form').each(function () {
-
-                //voting process
-                $(this).submit(function (e) {
-                    e.preventDefault();
-
-                    let name = $(this).find("input[name='name']:checked").val();
-                    let award = $(this).find("input[name='award']").val();
-                    let url ='/vote';
-
-                    $(this).find("input[name='name']:checked").prop('checked', false);
-
-                    $.ajaxSetup({
-                        headers: {
-                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                        }
-                    });
-
-                    $.ajax({
-                        url: url,
-                        method: "POST",
-                        data: {
-                            name: name,
-                            award: award
-                        },
-                        dataType: "json"
-                    })
-                        .fail(function( jqXHR ) {
-                        if(jqXHR.status === 200)
-                        {
-                            new Noty({
-                                text: "Vote Success!",
-                                type: 'success',
-                                theme: 'relax',
-                                layout : 'topRight',
-                                closeWith: ['click', 'button']
-                            }).show();
-                        }
-                        else if(jqXHR.status === 406)
-                        {
-                            new Noty({
-                                text: "Your vote was already placed for this category!",
-                                type: 'error',
-                                theme: 'relax',
-                                layout : 'topRight',
-                                closeWith: ['click', 'button']
-                            }).show();
-                        }
-                    })
-
-                })
-
-            });
+            $.ajax({
+              url: url,
+              method: "POST",
+              data: {
+                name: name,
+                award: award
+              },
+              dataType: "json",
+              statusCode: {
+                200: function() {
+                  new Noty({
+                    text: "Vote Success!",
+                    type: 'success',
+                    theme: 'relax',
+                    layout : 'topRight',
+                    closeWith: ['click', 'button']
+                  }).show();
+                },
+                406: function () {
+                  new Noty({
+                    text: "Your vote was already placed for this category!",
+                    type: 'error',
+                    theme: 'relax',
+                    layout : 'topRight',
+                    closeWith: ['click', 'button']
+                  }).show();
+                }
+              }
+            })
+          })
 
         });
+
+      });
     </script>
 
-  <script type="text/javascript">
+    <script type="text/javascript">
 
       $(document).ready(function () {
 
-          $('#voteLink').addClass('activePage')
+        $('#voteLink').addClass('activePage')
       })
-  </script>
+    </script>
 @endsection
 
