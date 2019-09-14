@@ -18,9 +18,9 @@ Route::post('vote', 'VoteController@cast');
 
 /*nomination*/
 Route::get('application-form', 'NominationController@viewApplication');
-Route::post('apply', 'NominationController@apply');
-Route::get('nomination-guidelines', 'NominationController@guidelines');
-Route::get('nomination-categories/{name}', 'NominationController@viewCategory');
+//Route::post('apply', 'NominationController@apply');
+//Route::get('nomination-guidelines', 'NominationController@guidelines');
+//Route::get('nomination-categories/{name}', 'NominationController@viewCategory');
 
 /*committee*/
 Route::get('steering', 'PagesController@steering');

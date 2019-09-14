@@ -31,13 +31,13 @@
         <div class="navigation">
             <a href="/" class="navlinks" id="homeLink"><img id="homeButton" src="{{'images/icons8-home.svg'}}" alt="Home"></a>
             <a href="/vote" class="navlinks" id="voteLink">VOTE</a>
-            <div href="#" class="navlinks" id="nominationLink">
-                NOMINATION
-                <div class="nominationBlock">
-                    <a href="/nomination-guidelines">Guidelines</a>
-                    <a href="/application-form">Application Forms</a>
-                </div>
-            </div>
+            {{--<div href="#" class="navlinks" id="nominationLink">--}}
+                {{--NOMINATION--}}
+                {{--<div class="nominationBlock">--}}
+                    {{--<a href="/nomination-guidelines">Guidelines</a>--}}
+                    {{--<a href="/application-form">Application Forms</a>--}}
+                {{--</div>--}}
+            {{--</div>--}}
             <div href="#" class="navlinks" id="committee">
                 COMMITTEE
                 <div class="committeeBlock">
