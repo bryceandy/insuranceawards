@@ -58,6 +58,29 @@
 }
 
 /*Vote page responsiveness*/
+@media screen and (max-width: 940px){
+    #voteContent {
+        form {
+
+            label {
+                width: 70vw;
+                margin-left: 15vw
+            }
+        }
+    }
+}
+@media screen and (max-width: 880px){
+    #voteContent {
+        form {
+
+            label {
+                span{
+                    display: unset
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 405px){
     #voteContent {
         form{
