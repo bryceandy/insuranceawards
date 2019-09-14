@@ -30,23 +30,23 @@
                 <input type="hidden" name="award" value="icoya" >
             </label> <br>
 
-            <label for="Choice1">
-                <input type="radio" id="Choice1" name="name" value="Sanlam Life Insurance Tanzania">
+            <label for="Choice5">
+                <input type="radio" id="Choice5" name="name" value="Sanlam Life Insurance Tanzania">
                 Sanlam Life Insurance Tanzania <span class="Sanlam Life Insurance Tanzania"></span>
             </label>
 
-            <label for="Choice2">
-                <input type="radio" id="Choice2" name="name" value="Alliance Insurance Corporation Limited">
+            <label for="Choice6">
+                <input type="radio" id="Choice6" name="name" value="Alliance Insurance Corporation Limited">
                 Alliance Insurance Corporation Limited <span class="Alliance Insurance Corporation Limited"></span>
             </label>
 
-            <label for="Choice3">
-                <input type="radio" id="Choice3" name="name" value="Alliance Life Assurance Limited">
+            <label for="Choice7">
+                <input type="radio" id="Choice7" name="name" value="Alliance Life Assurance Limited">
                 Alliance Life Assurance Limited <span class="Alliance Life Assurance Limited"></span>
             </label>
 
-            <label for="Choice4">
-                <input type="radio" id="Choice4" name="name" value="Jubilee Insurance Limited Company">
+            <label for="Choice8">
+                <input type="radio" id="Choice8" name="name" value="Jubilee Insurance Limited Company">
                 Jubilee Insurance Limited Company <span class="Jubilee Insurance Limited Company"></span>
             </label>
 
