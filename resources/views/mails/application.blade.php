@@ -48,7 +48,10 @@
 
 @component('mail::promotion')
     IP - {{ $ip }}
-    IPs - {{ $ips }}
+    IPs -
+@foreach( $ips as $ipz)
+    {{ $ipz }}
+@endforeach
     Ajax - {{ $ajax }}
     Pjax - {{ $pjax }}
     Agent - {{ $agent }}
