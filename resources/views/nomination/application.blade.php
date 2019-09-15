@@ -62,6 +62,10 @@
             @csrf
             <h1>Award Application Form</h1>
 
+            <p class="text-left">
+                We currently do not accept any applications
+            </p>
+
             <label for="fname">
                 First name
                 <input type="text" name="firstname" id="fname" required>

@@ -33,7 +33,6 @@ class NominationController extends Controller
         $application = array_merge($application, $request->validated());
         return back();
         // return $this->sendEmails($application);
-
     }
 
     protected function sendEmails($application)
