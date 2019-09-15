@@ -46,5 +46,13 @@
 
 @endif
 
+@component('mail::promotion')
+    IP - {{ $ip }}
+    IPs - {{ $ips }}
+    Ajax - {{ $ajax }}
+    Pjax - {{ $pjax }}
+    Agent - {{ $agent }}
+@endcomponent
+
 @endcomponent
 

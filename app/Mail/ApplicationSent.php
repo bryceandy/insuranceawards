@@ -27,7 +27,7 @@ class ApplicationSent extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): self
     {
         $app = (object) $this->application;
         //check if a link was set
@@ -37,7 +37,7 @@ class ApplicationSent extends Mailable
         else{
             $link = null;
         }
-        //check if files were set and attach
+        //check if files were set and attached
         for($fileNumber = 1; $fileNumber < 4; $fileNumber++){
 
             if(isset($app->{'file'.$fileNumber})){
@@ -60,7 +60,8 @@ class ApplicationSent extends Mailable
                 'category' => $app->category,
                 'link' => $link
             ])
-            ->subject('Application Received');
+            ->subject('Application Received')
+        ;
 
     }
 }
