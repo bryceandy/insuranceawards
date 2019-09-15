@@ -12,11 +12,11 @@ class ApplicationSent extends Mailable
     use Queueable, SerializesModels;
 
     public $application;
-    /**
-     * Create a new message instance.
-     *
-     * @return void
-     */
+
+  /**
+   * ApplicationSent constructor.
+   * @param $application
+   */
     public function __construct($application)
     {
         $this->application = $application;

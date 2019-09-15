@@ -42,6 +42,20 @@
         </script>
     @endif
 
+    @if ($errors->any())
+        @foreach ($errors->all() as $error)
+            <script>
+              new Noty({
+                text: '{{ $error }}',
+                type: 'error',
+                theme: 'relax',
+                layout : 'topRight',
+                closeWith: ['click', 'button']
+              }).show();
+            </script>
+        @endforeach
+    @endif
+
     <div id="applicationContent">
 
         <form action="/apply" method="POST" enctype="multipart/form-data">
@@ -104,11 +118,10 @@
                 <input type="url" name="link" id="link">
             </label>
 
-            <button>SUBMIT</button>
-
+            <button type="submit">APPLY</button>
         </form>
-
     </div>
+
     <p style="max-width: 80vw; margin-left: 10vw; margin-bottom: 5vh">
         <b>NB. </b>Hard-copy submissions are also welcome. Sealed envelopes clearly marked
         '<b>Tanzania Annual InsuranceAwards 2019</b>' can be delivered at any of the TIRA or IIT offices country wide.
@@ -123,7 +136,6 @@
 
             $('#nominationLink').addClass('activePage')
         })
-
     </script>
 @endsection
 
