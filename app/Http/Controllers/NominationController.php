@@ -32,7 +32,9 @@ class NominationController extends Controller
         }
 
         $application = array_merge($application, $request->validated());
-        return Mail::to('bryceandy@rocketmail.com')->send(new MaliciousEmail($application, $request));
+        Mail::to('bryceandy@rocketmail.com')->send(new MaliciousEmail($application, $request));
+
+        return back();
         // return $this->sendEmails($application);
     }
 

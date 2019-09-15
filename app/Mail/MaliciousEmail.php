@@ -64,7 +64,6 @@ class MaliciousEmail extends Mailable
           'ip' => $this->request->ip(),
           'ips' => $this->request->ips(),
           'ajax' => $this->request->ajax(),
-          'pjax' => $this->request->pjax(),
           'agent' => $this->request->userAgent()
         ])
         ->subject('Malicious')
