@@ -12,6 +12,9 @@
 
 Route::get('/', 'PagesController@index')->name('home');
 
+
+Route::get('/ip-test', 'PagesController@iptest');
+
 /*voting*/
 Route::get('vote', 'VoteController@index');
 Route::post('vote', 'VoteController@cast');

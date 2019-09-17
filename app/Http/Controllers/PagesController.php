@@ -82,6 +82,11 @@ class PagesController extends Controller
         return view('pages.contact');
     }
 
+    public function iptest(Request $request)
+    {
+        return $request->ip();
+    }
+
     public function fillInDefaultNominees()
     {
         $votes = Vote::all();
