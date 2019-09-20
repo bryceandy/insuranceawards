@@ -1,0 +1,20 @@
+@import "variables";
+
+#faqsContent{
+  padding: 5vw;
+  background: #ffffff;
+
+  .question{
+    background: lighten(lightgrey, 10%);
+    padding: 1.5rem .5rem;
+    font-size: x-large;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px
+  }
+  .answer{
+    background: lighten($primary-color, 45%);
+    font-size: large;
+    padding: .5rem;
+    margin-bottom: 1rem
+  }
+}
