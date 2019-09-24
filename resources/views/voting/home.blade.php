@@ -15,10 +15,9 @@
 
         <h1 class="text-center">Votes for all Award Categories</h1>
 
-        <p class="text-left" style="padding-left: 5vw; padding-right: 5vw">
-            <b style="color: #15ace4">How to vote:</b> <br>
-            For every category, click on the radio-button on the left side of the company's name and then click the <b>VOTE</b> button below it.
-            <br> You are advised not to vote for your own company.
+        <p class="text-left" style="padding-left: 5vw; padding-right: 5vw;font-size: large">
+            <b style="color: #15ace4;font-size:medium">About voting:</b> <br>
+            The voting period ended on 25<sup>th</sup> of September on the eve of the Insurance Awards event.
             <br> <br>
         </p>
 
@@ -112,7 +111,7 @@
         }
 
         //making submission buttons active
-        $('form').on('click', 'input', function () {
+        /* $('form').on('click', 'input', function () {
 
           var form = $(this).parent().parent();
 
@@ -120,9 +119,9 @@
             'pointer-events': 'auto',
             'cursor': 'pointer'
           })
-        });
+        }); */
 
-        $('form').each(function () {
+        /* $('form').each(function () {
 
           //voting process
           $(this).submit(function (e) {
@@ -171,7 +170,7 @@
             })
           })
 
-        });
+        }); */
 
       });
     </script>
